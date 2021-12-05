@@ -54,3 +54,24 @@ Bibliotecas do Andromeda®:
 ==========================
 
 O Andromeda® também fornece funções que devem ser utilizadas para interagir com o próprio ambiente Andromeda®. Essas bibliotecas incluem funções gráficas para montar interfaces em modo gráfico, bem como funções para verificar a versão do Andromeda® atualmente em execução. Os utilitários base Unix realizam a checagem da versão do Hexagon® para verificar se podem ser executados, utilizando o utilitário Unix uname ou diretamente por uma chamada de sistema do Hexagon®.
+
+Como testar o Andromeda®:
+=========================
+
+Para testar o Andromeda®, você vai precisar da imagem de disco disponível neste repositório e a ferramenta qemu instalada em seu computador. A imagem também pode ser utilizada para a gravação em um disco físico em uma máquina real. 
+
+Para o teste em ambiente virtualizado:
+
+Você deve fornecer ao menos 32 MB de RAM para a máquina virtual. Normalmente, a linha de comando abaixo cumpre todos os requisitos para a execução do sistema:
+
+qemu -hda andromeda.img -m 32 -soundhw pcspk
+
+Lembrando que vocÊ deve utilizar uma versão/edição do qemu que consiga executar software escrito para a arquitetura x86.
+
+Para teste em máquina física:
+
+Você deve utilizar o Linux/macOS ou alguma ferramenta Windows que te permita gravar essa imagem em disco.
+
+No Linux/macOS/Unix, use a linha abaixo:
+
+dd if=andromeda.img of=/dev/unidade, onde unidade equivale ao dispositivo desejado. Reinicie seu computador e teste o sistema. Vale lembrar que o modo de boot seguro não é suportado, além de que o boot só é suportado em BIOS ou no modo legado BIOS do UEFI.
