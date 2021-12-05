@@ -1,5 +1,9 @@
 # Andromeda
 Sistema Operacional Andromeda
+=============================
+
+Seja bem-vindo ao Sistema Operacional Andromeda®
+
 Sobre o Sistema Operacional Andromeda® 
 ======================================
 
