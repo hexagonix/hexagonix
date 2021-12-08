@@ -4,15 +4,10 @@ Sistema Operacional Andromeda
 
 Seja bem-vindo ao Sistema Operacional Andromeda®
 
-Sobre o Sistema Operacional Andromeda® 
-======================================
+Antes de mais nada:
+===================
 
-Sistema Operacional Andromeda®. Copyright © 2016-2021 Felipe Miguel Nery Lunkes. Todos os direitos reservados.
-Kernel Hexagon®. Copyright © 2016-2021 Felipe Miguel Nery Lunkes. Todos os direitos reservados.
-Gerenciador de Boot Saturno®. Copyright © 2016-2021 Felipe Miguel Nery Lunkes. Todos os direitos reservados.
-Hexagon® Boot (HBoot). Copyright © 2020-2021 Felipe Miguel Nery Lunkes. Todos os direitos reservados.
-
-Versão deste arquivo: 1.0
+No final deste arquivo você encontra um tutorial para executar o Andromeda® em seu computador, tanto em uma versão virtualizada como de forma nativa.
 
 O Andromeda®:
 =============
@@ -64,7 +59,7 @@ Para o teste em ambiente virtualizado:
 
 Você deve fornecer ao menos 32 MB de RAM para a máquina virtual. Normalmente, a linha de comando abaixo cumpre todos os requisitos para a execução do sistema:
 
-qemu -hda andromeda.img -m 32 -soundhw pcspk
+qemu-system-i386 -hda andromeda.img -m 32 -soundhw pcspk
 
 Lembrando que vocÊ deve utilizar uma versão/edição do qemu que consiga executar software escrito para a arquitetura x86.
 
@@ -75,3 +70,16 @@ Você deve utilizar o Linux/macOS ou alguma ferramenta Windows que te permita gr
 No Linux/macOS/Unix, use a linha abaixo:
 
 dd if=andromeda.img of=/dev/unidade, onde unidade equivale ao dispositivo desejado. Reinicie seu computador e teste o sistema. Vale lembrar que o modo de boot seguro não é suportado, além de que o boot só é suportado em BIOS ou no modo legado BIOS do UEFI.
+
+
+Sobre o Sistema Operacional Andromeda® 
+======================================
+
+Sistema Operacional Andromeda®. Copyright © 2016-2021 Felipe Miguel Nery Lunkes. Todos os direitos reservados.
+Kernel Hexagon®. Copyright © 2016-2021 Felipe Miguel Nery Lunkes. Todos os direitos reservados.
+Gerenciador de Boot Saturno®. Copyright © 2016-2021 Felipe Miguel Nery Lunkes. Todos os direitos reservados.
+Hexagon® Boot (HBoot). Copyright © 2020-2021 Felipe Miguel Nery Lunkes. Todos os direitos reservados.
+
+Contato: hexagonixdev@gmail.com (PT/EN)
+
+Versão deste arquivo: 2.0
