@@ -7,6 +7,8 @@ Seja bem-vindo ao Sistema Operacional Hexagonix/Andromeda
 
 O Hexagonix/Andromeda foi desenvolvido do zero por [Felipe Lunkes](https://github.com/felipenlunkes).
 
+Leia a [licença](https://github.com/hexagonix/Distro/blob/main/LICENSE) para mais informações sobre direitos autorais, propriedade de código e redistribuição.
+
 Sistema Operacional Andromeda. Copyright © 2016-2022 Felipe Miguel Nery Lunkes. Todos os direitos reservados.
 Kernel Hexagon. Copyright © 2016-2022 Felipe Miguel Nery Lunkes. Todos os direitos reservados.
 Gerenciador de Boot Saturno. Copyright © 2016-2022 Felipe Miguel Nery Lunkes. Todos os direitos reservados.
@@ -79,11 +81,12 @@ Para testar o Andromeda, obtenha o arquivo 'andromeda.img' neste repositório.
 
 Você deve fornecer ao menos 32 MB de RAM para a máquina virtual. Normalmente, a linha de comando abaixo cumpre todos os requisitos para a execução do sistema:
 
+´´´
 qemu-system-i386 -hda andromeda.img -m 32 -soundhw pcspk
-ou
 qemu-system-i386 -hda hexagonix.img -m 32 -soundhw pcspk
+´´´´
 
-Lembrando que vocÊ deve utilizar uma versão/edição do qemu que consiga executar software escrito para a arquitetura x86.
+Lembrando que você deve utilizar uma versão/edição do qemu que consiga executar software escrito para a arquitetura x86.
 
 ## Para teste em máquina física
 
@@ -101,7 +104,7 @@ Neste momento, tanto o sistema quanto a documentação estão disponíveis apena
 
 * [Felipe Miguel Nery Lunkes](https://github.com/felipenlunkes)
 
-# E-mail:
+## E-mail:
 
 hexagonixdev@gmail.com (PT/EN) 
 felipemiguel_nery@hotmail.com (PT/EN)
