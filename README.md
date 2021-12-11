@@ -312,8 +312,8 @@ Neste momento, tanto o sistema quanto a documentação estão disponíveis apena
 
 ## E-mail:
 
-hexagonixdev@gmail.com (PT/EN) 
-felipemiguel_nery@hotmail.com (PT/EN)
+* hexagonixdev@gmail.com (PT/EN) 
+* felipemiguel_nery@hotmail.com (PT/EN)
 
 ## Redes sociais:
 
