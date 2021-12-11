@@ -55,10 +55,176 @@ O primeiro componente do Hexagonix/Andromeda é o Saturno. Ele é responsável p
 
 ## Hexagon Boot (HBoot)
 
-O Hexagon Boot (HBoot) é um componente desenvolvido permitir a inicialização do kernel Hexagon. Até então, a inicialização era realizada por apenas um estágio, que definia um ambiente bem básico, carregava o Hexagon na memória e imediatamente passava o controle para ele, fornecendo um conjunto bem pequeno e limitado de parâmetros, uma vez que o código desse estágio fica restrito a 512 bytes, o que limita a realização de diversos testes e processamento de dados. Como o HBoot, foi possível expandir o número de tarefas realizadas antes da execução do Hexagon, além da possibilidade de fornecer mais informações a respeito do ambiente da máquina e de inicialização. Isso é particularmente importante para permitir a criação de uma árvore de dispositivos que pode ser utilizada pelo Hexagon para decidir como manipular cada dispositivo identificado. O HBoot é capaz de verificar quais unidades de disco estão disponíveis na máquina, emitir um tom de inicialização, obter a quantidade de memória RAM disponível instalada e permitir ou não o seguimento do processo de boot de acordo com essa informação. Além disso, permite o carregamento de módulos no formato HBoot, que podem ser úteis, no futuro, para permitir testes de hardware, como testes de memória e disco, caso os módulos estejam disponíveis no disco. Os módulos podem ser utilizados também para extender as funções do HBoot. No contexto do desenvolvimento do Hexagonix, o HBoot também pode carregar diretamente, a partir de um módulo atualmente built-in (essa função será movida para um módulo standalone o quanto antes) o núcleo do sistema operacional de código livre FreeDOS, para que ferramentas utilitárias já estabelecidas e robustas que sejam executadas em ambiente DOS possam ser executadas sobre o volume e arquivos Hexagonix/Andromeda. O FreeDOS foi escolhido devido a sua característica de kernel composto por um único arquivo, geralmente "KERNEL.SYS", além da sua distribuição livre e gratuita. Já outros DOS, como o MS-DOS, anterior a versão 7.0, utilizam dois arquivos que devem estar contíguos no disco, e isso não é possível aqui, visto que a instalação do FreeDOS ocorre já em um volume Hexagonix, com a cópia do kernel, interpretador de comando e outros utilitários DOS, sendo que o sistema operacional principal é o Hexagonix/Andromeda, com iniciação opcional do FreeDOS para alguma atividade em especial. Caso os componentes de sistema do FreeDOS não estejam presentes no disco (a cópia dos arquivos do FreeDOS não faz parte da imagem padrão), a inicialização em modo de compatibilidade DOS não irá ocorrer. Caso nenhuma interação do usuário seja detectada 3 segundos após todos os testes e atividades essenciais para criar um ambiente de inicialização para o Hexagon, o sistema irá carregar e executar o Hexagon, sendo descarregado da memória. A interação com o HBoot se dá pelo pressionamento da tecla F8 após a respectiva mensagem surgir na tela. 
+O Hexagon Boot (HBoot) é um componente desenvolvido permitir a inicialização do kernel Hexagon. Até então, a inicialização era realizada por apenas um estágio, que definia um ambiente bem básico, carregava o Hexagon na memória e imediatamente passava o controle para ele, fornecendo um conjunto bem pequeno e limitado de parâmetros, uma vez que o código desse estágio fica restrito a 512 bytes, o que limita a realização de diversos testes e processamento de dados. Como o HBoot, foi possível expandir o número de tarefas realizadas antes da execução do Hexagon, além da possibilidade de fornecer mais informações a respeito do ambiente da máquina e de inicialização. Isso é particularmente importante para permitir a criação de uma árvore de dispositivos que pode ser utilizada pelo Hexagon para decidir como manipular cada dispositivo identificado. O HBoot é capaz de verificar quais unidades de disco estão disponíveis na máquina, emitir um tom de inicialização, obter a quantidade de memória RAM disponível instalada e permitir ou não o seguimento do processo de boot de acordo com essa informação. Caso nenhuma interação do usuário seja detectada 3 segundos após todos os testes e atividades essenciais para criar um ambiente de inicialização para o Hexagon, o sistema irá carregar e executar o Hexagon (presente em um arquivo no volume nomeado de **HEXAGON.SIS**), sendo descarregado da memória. A interação com o HBoot se dá pelo pressionamento da tecla F8 após a respectiva mensagem surgir na tela. 
 
+### Funções disponíveis
+
+* O HBoot permite o carregamento de módulos no formato HBoot, que podem ser úteis, no futuro, para permitir testes de hardware, como testes de memória e disco, caso os módulos estejam disponíveis no disco. Os módulos podem ser utilizados também para extender as funções do HBoot. A especificação do formato já está disponível.
+* No contexto do desenvolvimento do Hexagonix, o HBoot também pode carregar diretamente, a partir de um módulo atualmente built-in (essa função será movida para um módulo standalone o quanto antes) o núcleo do sistema operacional de código livre FreeDOS, para que ferramentas utilitárias já estabelecidas e robustas que sejam executadas em ambiente DOS possam ser executadas sobre o volume e arquivos Hexagonix/Andromeda. O FreeDOS foi escolhido devido a sua característica de kernel composto por um único arquivo, geralmente "KERNEL.SYS", além da sua distribuição livre e gratuita. Já outros DOS, como o MS-DOS, anterior a versão 7.0, utilizam dois arquivos que devem estar contíguos no disco, e isso não é possível aqui, visto que a instalação do FreeDOS ocorre já em um volume Hexagonix, com a cópia do kernel, interpretador de comando e outros utilitários DOS, sendo que o sistema operacional principal é o Hexagonix/Andromeda, com iniciação opcional do FreeDOS para alguma atividade em especial. Caso os componentes de sistema do FreeDOS não estejam presentes no disco (a cópia dos arquivos do FreeDOS não faz parte da imagem padrão), a inicialização em modo de compatibilidade DOS não irá ocorrer.
+
+### Exemplo de módulo HBoot
+
+Abaixo é possível encontrar um exemplo de implementação de módulo HBoot:
+
+```
+;;************************************************************************************
+;;
+;;    
+;;                                Módulo do HBoot
+;;        
+;;                             Hexagon® Boot - HBoot
+;;           
+;;                 Copyright © 2020-2021 Felipe Miguel Nery Lunkes
+;;                         Todos os direitos reservados
+;;                                  
+;;************************************************************************************
+
+use16					
+
+;; O módulo deve apresentar um cabeçalho especial de imagem HBoot
+;; São 6 bytes, com assinatura (número mágico) e arquitetura alvo
+
+cabecalhoHBoot:
+
+.assinatura:  db "HBOOT"     ;; Assinatura, 5 bytes
+.arquitetura: db 01h         ;; Arquitetura (i386), 1 byte
+
+;; Configurar pilha e ponteiro
+
+    cli				   ;; Desativar interrupções
+    
+    mov ax, 0x2000                 ;; Definir aqui os registradores de pilha
+    mov ss, ax
+    mov sp, 0
+    
+    sti				   ;; Habilitar interrupções
+     
+    clc 
+
+    mov ax, 0x2000                 ;; Definir aqui os registradores de segmento
+    mov ds, ax
+    mov es, ax
+    
+    sti                            ;; Habilitar as interrupções
+
+;; Seu código aqui
+
+```
+
+### Sistemas de arquivos suportados
+
+* FAT16B
+* FAT12 (em desenvolvimento)
+
+Novos sistemas de arquivos serão implementados no futuro.
+
+### Informações úteis
 
 A inicialização em modo DOS foi possível após pesquisa na documentação do FreeDOS, especialmente no arquivo "SYS.C", que indica em qual segmento o kernel espera ser carregado e quais os parâmetros são necessários. Cada sistema DOS apresenta um segmento de carregamento preferencial e esse carregamento de outras edições do DOS pode ser implementada futuramente com o auxílio dos módulos HBoot. Todo o código para o carregamento do núcleo foi desenvolvido do zero e não se baseia em algum existente.
+
+### Reportar bugs
+
+O HBoot ganhou muita complexidade desde o início de seu desenvolvimento, em 2020. Devido a esse aumento de código e a natureza de sua operação (16-bit), bugs podem ser encontrados. Os mesmos podem ser reportados no repositório ou por email, disponível no final deste arquivo.
+
+## Kernel Hexagon
+
+### O que é
+
+O Hexagon é um núcleo (kernel) monolítico executado em modo protegido 32-bit, desenvolvido tendo como alvo a arquitetura PC (x86). É um kernel escrito do zero, visando a velocidade e a compatibilidade de harware moderno mas também sendo capaz de ser executado em hardware mais antigo. No momento, garante um ambiente monoutilizador, apesar do uso de terminais virtuais, e monotarefa, apesar da capacidade de carregar, manter em memória e controlar mais de um processo, em uma pilha de execução de ordem cronológica. Futuramente o kernel poderá receber suporte a execução de múltiplos processos em multitarefa preemptiva. O Hexagon é um kernel Unix-like e compõe a base do Sistema Operacional Hexagonix/Andromeda, embora independente deste. Ele executa imagens executáveis no formato HAPP, desenvolvido para o Hexagon. Implementa uma API bastante sofisticada acessível através de uma chamada de sistema.
+
+### História
+
+O kernel foi inicialmente desenhado e escrito visando uma estrutura e funcionamento próximos de sistemas DOS (Disk Operating System), como MS-DOS, nos ano de 2015 a 2017. Sendo assim, muitas chamadas de sistema e nomes de dispositivo seguiam uma sintaxe e nomes DOS. Com o passar do tempo, houve o interesse de aproximar o então núcleo do Andromeda, que a essa altura não possuia nome e era mantido junto ao código da distribuição, a uma estrutura e funcionamento mais próximos de sistemas do tipo Unix, como BSD ou Linux, por exemplo. Desta forma, muitas partes do kernel foram reimplementadas tendo em mente o novo objetivo. O código do núcleo foi separado do restante do Sistema e se tornou independente, em questão de desenvolvimento e também de funcionamento, além de ganhar um nome, Hexagon. Foi escrita uma camada de abstração de hardware com a inclusão de chamadas de sistema conhecidas no mundo Unix, como abrir(), fechar(), ler() e escrever(). Os dispositivos ganharam nome e as unidades de disco mudaram da nomenclatura DOS e foram para nomes de dispositivo Unix. O kernel então passa a seguir um processo de inicialização conhecido, com a execução, com PID 1, do primeiro processo do usuário, init, que então carrega o restante dos componentes. Foram então escritos utilitários Unix-like que passassem a utilizar a API Unix-like do kernel, e várias ferramentas Unix-like já foram escritas desde então (2017 em diante).
+
+### O formato executável HAPP
+
+O formato de imagem executável HAPP foi desenvolvida para o Hexagon para permitir o desenvolvimento de imagens que possam ser verificadas e validadas quanto a arquitetura e versões mínimas do kernel necessárias para a correta execução. O cabeçalho também armazena informações importantes, permitindo ao desenvolvedor adicionar diretamente um ponto de entrada, independente de onde ele esteja no interior da imagem, algo que deveria ser redirecionado anteriormente, quando a imagem executável era no formato binário puro. A imagem HAPP também permite validar se a imagem a ser carregada é realmente uma imagem executável, impedindo então que arquivos não suportados sejam executados, mesmo que não se tratem sequer de arquivos executáveis. Também permite que o sistema verifique as dependências do código, como a já citada arquitetura, bem como os números de versão do Hexagon, que devem ser iguais ou superiores ao mínimo especificado pelo cabeçalho. Todas as imagens HAPP devem apresentar este cabeçalho completo, incluindo as sessões reservadas, a fim de funcionarem corretamente em versões posteriores do Sistema. As imagens HAPP são sempre 32-bit.
+
+Em linguagem Assembly, a linguagem de desenvolvimento do sistema, o cabeçalho, em sua especificação 2.0:
+
+```
+cabecalhoAPP:
+
+.assinatura:      db "HAPP" ;; Assinatura
+.arquitetura:     db 01h    ;; Arquitetura (i386 = 01h)
+.versaoMinima:    db 8      ;; Versão mínima do Hexagon
+.subversaoMinima: db 40     ;; Subversão mínima do Hexagon
+.pontoEntrada:    dd        ;; Offset do ponto de entrada (referência à função principal aqui)
+.tipoImagem:      db 01h    ;; Tipo de imagem executável (executável = 01h)
+.reservado0:      dd 0      ;; Reservado (Dword)
+.reservado1:      db 0      ;; Reservado (Byte)
+.reservado2:      db 0      ;; Reservado (Byte)
+.reservado3:      db 0      ;; Reservado (Byte)
+.reservado4:      dd 0      ;; Reservado (Dword)
+.reservado5:      dd 0      ;; Reservado (Dword)
+.reservado6:      dd 0      ;; Reservado (Dword)
+.reservado7:      db 0      ;; Reservado (Byte)
+.reservado8:      dw 0      ;; Reservado (Word)
+.reservado9:      dw 0      ;; Reservado (Word)
+.reservado10:     dw 0      ;; Reservado (Word)
+```
+
+Abaixo, uma implementação de um pequeno aplicativo escrito como exemplo, que utiliza o cabeçalho e chamadas de sistema do Hexagon, escrito em linguagem Assembly x86 em sintaxe Intel e montada com o auxílio do flat assembler (FASM). Este aplicativo envia uma mensagem ao terminal e se encerra em seguida.
+
+```
+;; Este é um template para a construção de um app de modo texto para 
+;; o Hexagonix/Andromeda!
+;;
+;; Escrito por Felipe Miguel Nery Lunkes em 04/12/2020
+;;
+;; Voce pode gerar uma imagem HAPP executável utilizando o montador
+;; FASM. Para isso, utilize a linha de comando abaixo:
+;;
+;; fasmX tapp.asm
+;;       ou
+;; fasmX tapp.asm tapp.app
+
+use32
+
+cabecalhoAPP:
+
+.assinatura:      db "HAPP"    ;; Assinatura
+.arquitetura:     db 01h       ;; Arquitetura (i386 = 01h)
+.versaoMinima:    db 8         ;; Versão mínima do Hexagon
+.subversaoMinima: db 40        ;; Subversão mínima do Hexagon
+.pontoEntrada:    dd inicioAPP ;; Offset do ponto de entrada
+.tipoImagem:      db 01h       ;; Imagem executável
+.reservado0:      dd 0         ;; Reservado (Dword)
+.reservado1:      db 0         ;; Reservado (Byte)
+.reservado2:      db 0         ;; Reservado (Byte)
+.reservado3:      db 0         ;; Reservado (Byte)
+.reservado4:      dd 0         ;; Reservado (Dword)
+.reservado5:      dd 0         ;; Reservado (Dword)
+.reservado6:      dd 0         ;; Reservado (Dword)
+.reservado7:      db 0         ;; Reservado (Byte)
+.reservado8:      dw 0         ;; Reservado (Word)
+.reservado9:      dw 0         ;; Reservado (Word)
+.reservado10:     dw 0         ;; Reservado (Word)
+
+;;*************************************************************
+
+include "andrmda.s" ;; Incluir as chamadas de sistema
+
+;;*************************************************************
+
+;; Variaveis e constantes
+
+msg: db 10, 10, "Este e um template com um exemplo de aplicativo HAPP simples!", 10, 0
+
+;;*************************************************************
+
+;; Ponto de entrada
+
+inicioAPP:
+
+    mov esi, msg
+
+    imprimirString ;; Aqui temos um macro que configura e chama uma função da API
+
+    Andromeda encerrarProcesso ;; Outro macro que solicita qual chamada realizar
+``` 
+
+Uma documentação mais detalhada do Hexagon será disponibilizada no futuro.
 
 ## Ambiente Hexagonix:
 
@@ -66,7 +232,7 @@ O Hexagonix implementa uma série de utilitários Unix-like, com funcionalidade 
 
 ## Ambiente Andromeda:
 
-O ambiente Andromeda é construído sobre a base sólida fornecid pelo Hexagonix, incluindo aplicativos e utilitários que não implementam a filosofia Unix ou apresentam sintaxe e forma de uso bastante diferentes do que se esperaria de um ambiente Unix. Desta forma, eles são separados como **aplicativos Andromeda**, e não fazem parte da distribuição padrão do Hexagonix. Aqui estão o aplicativo de configurações do Sistema, calculadora, gerenciador de fontes, editores de texto e a IDE desenvolvida para o Andromeda. Estes utilitários podem ou não apresentar uma interface gráfica. Juntamente a eles, compõem o ambiente Andromeda bibliotecas desenvolvidas para permitir o desenvolvimento de aplicativos, como a biblioteca **Estelar**. Esse ambiente só está disponível na distribuição [Andromeda](andromeda.img).
+O ambiente Andromeda é construído sobre a base sólida fornecida pelo Hexagonix, incluindo aplicativos e utilitários que não implementam a filosofia Unix ou apresentam sintaxe e forma de uso bastante diferentes do que se esperaria de um ambiente Unix. Desta forma, eles são separados como **aplicativos Andromeda**, e não fazem parte da distribuição padrão do Hexagonix. Aqui estão o aplicativo de configurações do Sistema, calculadora, gerenciador de fontes, editores de texto e a IDE desenvolvida para o Andromeda. Estes utilitários podem ou não apresentar uma interface gráfica. Juntamente a eles, compõem o ambiente Andromeda bibliotecas desenvolvidas para permitir o desenvolvimento de aplicativos, como a biblioteca **Estelar**. Esse ambiente só está disponível na distribuição [Andromeda](andromeda.img).
 
 ## Fontes do Hexagonix:
 
@@ -104,7 +270,10 @@ Você deve utilizar o Linux/macOS ou alguma ferramenta Windows que te permita gr
 
 No Linux/macOS/Unix, use a linha abaixo:
 
-dd if=andromeda.img of=/dev/unidade, onde unidade equivale ao dispositivo desejado. Reinicie seu computador e teste o sistema. Vale lembrar que o modo de boot seguro não é suportado, além de que o boot só é suportado em BIOS ou no modo legado BIOS do UEFI.
+```
+dd if=andromeda.img of=/dev/unidade
+```
+onde unidade equivale ao dispositivo desejado. Reinicie seu computador e teste o sistema. Vale lembrar que o modo de boot seguro não é suportado, além de que o boot só é suportado em BIOS ou no modo legado BIOS do UEFI.
 
 # Idiomas
 
@@ -118,5 +287,9 @@ Neste momento, tanto o sistema quanto a documentação estão disponíveis apena
 
 hexagonixdev@gmail.com (PT/EN) 
 felipemiguel_nery@hotmail.com (PT/EN)
+
+## Redes sociais:
+
+* [Twitter](https://twitter.com/redLipes)
 
 Versão deste arquivo: 3.0
