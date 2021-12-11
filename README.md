@@ -81,10 +81,10 @@ Para testar o Andromeda, obtenha o arquivo 'andromeda.img' neste repositório.
 
 Você deve fornecer ao menos 32 MB de RAM para a máquina virtual. Normalmente, a linha de comando abaixo cumpre todos os requisitos para a execução do sistema:
 
-´´´
+```
 qemu-system-i386 -hda andromeda.img -m 32 -soundhw pcspk
 qemu-system-i386 -hda hexagonix.img -m 32 -soundhw pcspk
-´´´´
+```
 
 Lembrando que você deve utilizar uma versão/edição do qemu que consiga executar software escrito para a arquitetura x86.
 
