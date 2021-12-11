@@ -4,6 +4,11 @@ Sistema Operacional Hexagonix/Andromeda
 
 Seja bem-vindo ao Sistema Operacional Hexagonix/Andromeda
 
+Autor:
+======
+
+O Hexagonix/Andromeda foi desenvolvido do zero por Felipe Lunkes (você pode o encontrar em github.com/felipenlunkes).
+
 Antes de mais nada:
 ===================
 
