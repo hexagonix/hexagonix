@@ -22,6 +22,10 @@ No final deste arquivo você encontra um tutorial para executar o Hexagonix/Andr
 
 # Sobre o sistema
 
+## Desenvolvimento
+
+O Hexagonix/Andromeda e todos os seus componentes vêm sendo desenvolvidos desde 2015 e foram escritos completamente em linguagem Assembly.
+
 ## Por que dois nomes? Hexagonix e Andromeda, o quê são?
 
 No início, o Andromeda foi planejado para ser um sistema operacional completo, composto pelo kernel, bibliotecas, interface gráfica e de texto e utilitários. Mais tarde, com o passar do tempo e a mudança na abordagem da arquitetura e objetivos do sistema, os componentes foram separados e se tornaram projetos independentes a nível de funcionamento, organização e desenvolvimento. Como será possível observar a diante, o núcleo do Andromeda foi separado do restante da árvore de código do Andromeda, se tornando um projeto independente, recebendo até um nome, Hexagon. A partir de então, surgiu a ideia de flexibilizar a composição do sistema e permitir o desenvolvimento de distribuições, como ocorre no GNU/Linux. Desta forma, distribuições do Hexagon poderiam ser criadas, agrupando os componentes necessários para o funcionamento básico (Hexagonix) e permitindo a extensão do sistema caso seja necessário, com novos componentes, módulos e utilitários, sendo o userland definido a cada caso. Com a mudança de arquitetura do próprio sistema, com o núcleo se aproximando de uma arquitetura semelhante ao Unix, novos utilitários no estilo e sintaxe Unix foram desenvolvidos e mantidos separados, em um outro projeto. Do projeto Andromeda original temos os aplicativos e bibliotecas gráficas específicas do Andromeda. Foi então criado um sistema base, que por si só já pode ser executado plenamente, e se transformou na base do Andromeda. Esse sistema base se chama Hexagonix, e é composto pelo carregador de inicialização HBoot, pelo kernel Hexagon, pelo shell, bibliotecas de ambiente Unix (aqui denominado ambiente Hexagonix) e utilitários Unix. Esse sistema é plenamente funcional, mas carece de recursos gráficos e aplicativos desenvolvidos para o ambiente Andromeda. Dessa forma, o Andromeda se destaca por ser uma camada a mais construída sobre a base do Hexagonix, com recursos gráficos, uma biblioteca gráfica e utilitários que funcionam sobre o Hexagonix e estendem sua função. Esse ambiente construído foi nomeado de ambiente Andromeda. Para suprir diferentes necessidades, as duas distribuições serão sempre mantidas. Ambas as versões são funcionais e podem ser utilizadas, dependendo do uso final desejado. Em resumo, tanto o Hexagonix quanto o Andromeda são distribuições do kernel Hexagon, diferindo quanto aos componentes incluídos.
@@ -256,18 +260,18 @@ Após a inicialização do firmware, o BIOS ou outro firmware, como UEFI em modo
 * Memória RAM: 32 Mb mínimo (uma instalação mínima com 32 Mb costuma ser suficiente, na maioria dos casos);
 * Disco rígido: disco rígido IDE ou SATA com mínimo de 50 Mb;
 * Periféricos necessários:
- - Porta serial (1-4);
- - Porta paralela (1-4);
- - Teclado PS/2 ou USB;
- - Placa de vídeo VGA com 2 Mb de memória de vídeo (com suporte a cores).
+  - Porta serial (1-4);
+  - Porta paralela (1-4);
+  - Teclado PS/2 ou USB;
+  - Placa de vídeo VGA com 2 Mb de memória de vídeo (com suporte a cores).
 
 ### Recomendado
 
 * Processador: Pentium D ou mais recente;
 * Memória RAM: 50 Mb;
 * Periféricos opcionais:
- - Mouse PS/2 ou USB;
- - Placa de vídeo com > 2 Mb de memória de vídeo.
+  - Mouse PS/2 ou USB;
+  - Placa de vídeo com > 2 Mb de memória de vídeo.
 
 ## Obter as imagens de disco com a instação do sistema 
 
@@ -315,4 +319,4 @@ felipemiguel_nery@hotmail.com (PT/EN)
 
 * [Twitter](https://twitter.com/redLipes)
 
-Versão deste arquivo: 3.0
+Versão deste arquivo: 3.2
