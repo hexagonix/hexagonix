@@ -5,7 +5,7 @@ Seja bem-vindo ao Sistema Operacional Hexagonix/Andromeda
 
 ## Notas de direitos autorais 
 
-O Hexagonix/Andromeda foi desenvolvido do zero por Felipe Lunkes (você pode o encontrar em github.com/felipenlunkes).
+O Hexagonix/Andromeda foi desenvolvido do zero por [Felipe Lunkes](https://github.com/felipenlunkes).
 
 Sistema Operacional Andromeda. Copyright © 2016-2022 Felipe Miguel Nery Lunkes. Todos os direitos reservados.
 Kernel Hexagon. Copyright © 2016-2022 Felipe Miguel Nery Lunkes. Todos os direitos reservados.
@@ -16,7 +16,7 @@ Hexagon Boot (HBoot). Copyright © 2020-2022 Felipe Miguel Nery Lunkes. Todos os
 
 No final deste arquivo você encontra um tutorial para executar o Hexagonix/Andromeda em seu computador, tanto em uma versão virtualizada como de forma nativa. Lembre-se que é necessário possuir um computador de arquitetura x86 ou um emulador, caso esteja utilizando um dispositivo de outra arquitetura para testes. 
 
-* [Documentação do sistema (em construção)](https://github.com/hexagonix/Distro/Doc)
+* [Documentação do sistema (em construção)](https://github.com/hexagonix/Distro/tree/main/Doc)
 
 # Sobre o sistema
 
