@@ -70,7 +70,7 @@ O Hexagon Boot (HBoot) é um componente desenvolvido permitir a inicialização 
 
 Abaixo é possível encontrar um exemplo de implementação de módulo HBoot:
 
-```
+```assembly
 ;;************************************************************************************
 ;;
 ;;    
@@ -146,7 +146,7 @@ O formato de imagem executável HAPP foi desenvolvida para o Hexagon para permit
 
 Em linguagem Assembly, a linguagem de desenvolvimento do sistema, o cabeçalho, em sua especificação 2.0:
 
-```
+```assembly
 cabecalhoAPP:
 
 .assinatura:      db "HAPP" ;; Assinatura
@@ -170,7 +170,7 @@ cabecalhoAPP:
 
 Abaixo, uma implementação de um pequeno aplicativo escrito como exemplo, que utiliza o cabeçalho e chamadas de sistema do Hexagon, escrito em linguagem Assembly x86 em sintaxe Intel e montada com o auxílio do flat assembler (FASM). Este aplicativo envia uma mensagem ao terminal e se encerra em seguida.
 
-```
+```assembly
 ;; Este é um template para a construção de um app de modo texto para 
 ;; o Hexagonix/Andromeda!
 ;;
@@ -247,6 +247,7 @@ O Hexagonix inclui muitos dos utilitários Unix que você pode já estar familia
 * clear
 * top
 * ps
+* man
 * su
 * sh (shell padrão)
 * uname
@@ -267,7 +268,7 @@ O ambiente Andromeda é construído sobre a base sólida fornecida pelo Hexagoni
 * Configurações do Sistema (Config)
 * Editor de texto Quartzo
 * IDE Lyoko para desenvolvimento de aplicativos
-* Piano eletrônico returnPiano;
+* Piano eletrônico return Piano;
 * Utilitário de comunicação serial
 * Andromeda Shell (ASH) - Um novo shell para o Andromeda
 * Calculadora do Andromeda
