@@ -382,6 +382,7 @@ This project was possible and today it can see the light of day thanks to many o
 * [FreeBSD](https://www.freebsd.org/)
 * [XNU/Darwin](https://github.com/apple/darwin-xnu)
 * [LittleKernel](https://github.com/littlekernel/lk)
+* [Google Fuchsia](https://fuchsia.googlesource.com/fuchsia/)
 
 In addition, other projects have helped in the development of Hexagonix/Andromeda, either by providing new design ideas that go beyond the traditional organization of an operating system, or by providing well-documented code that allows us to understand the functioning of certain parts of an operating system, or by contributing with code examples that later came to inspire functions that were written exclusively for Hexagonix/Andromeda (mainly kernel code). Despite not having been copied, the code of these projects made it possible for the functioning of certain computer components to be understood, opening doors for author codes to be written based on the study of the code of these projects. Are they:
 
