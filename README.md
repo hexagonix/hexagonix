@@ -1,8 +1,4 @@
-# Hexagonix/Andromeda
-
-# Idioma/language
-
-### Pegue um atalho/take a shortcut
+## Pegue um atalho/take a shortcut
 
 * [Português](https://github.com/hexagonix/Distro#sistema-operacional-hexagonixandromeda)
 * [English](README.en.md)
