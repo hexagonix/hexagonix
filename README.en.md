@@ -2,7 +2,7 @@
 
 # Hexagonix/Andromeda Operating System
 
-![Logo Hexagonix](Img/Hexagonix.png width="200" height="200")
+<img src="Img/Hexagonix.png" width="200" height="200">
 
 Welcome to the Hexagonix/Andromeda Operating System
 
