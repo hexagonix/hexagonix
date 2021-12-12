@@ -1,8 +1,12 @@
+<title> Hexagonix/Andromeda Operating System</title>
+
 <!-- Versão em inglês -->
 
 # Hexagonix/Andromeda Operating System
 
-<img src="Img/Hexagonix.png" width="200" height="200" align="center">
+<p align="center">
+<img src="Img/Hexagonix.png" width="200" height="200">
+</p>
 
 Welcome to the Hexagonix/Andromeda Operating System
 
@@ -141,7 +145,9 @@ HBoot has gained a lot of complexity since the beginning of its development in 2
 
 Hexagon is a monolithic kernel (kernel) running in 32-bit protected mode, developed with the PC architecture (x86) in mind. It is a kernel written from scratch, aiming for the speed and compatibility of modern hardware but also being able to run on older hardware. For the moment, it guarantees a single-user environment, despite the use of virtual terminals, and monotasking, despite the ability to load, keep in memory and control more than one process, in a chronologically-ordered execution stack. In the future, the kernel will be able to support the execution of multiple processes in preemptive multitasking. Hexagon is a Unix-like kernel and forms the basis of the Hexagonix/Andromeda Operating System, although independent of it. It runs executable images in HAPP format, developed for Hexagon. It implements a very sophisticated API accessible via a system call.
 
-<img src="Img/LogoHexagon.png" width="200" height="200" align="center">
+<p align="center">
+<img src="Img/LogoHexagon.png" width="200" height="200">
+</p>
 
 ### History
 
