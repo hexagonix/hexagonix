@@ -5,7 +5,7 @@
 # Hexagonix/Andromeda Operating System
 
 <p align="center">
-<img src="Img/Hexagonix.png" width="200" height="200">
+<img src="Img/Hexagonix.png" width="250" height="250">
 </p>
 
 Welcome to the Hexagonix/Andromeda Operating System
@@ -146,7 +146,7 @@ HBoot has gained a lot of complexity since the beginning of its development in 2
 Hexagon is a monolithic kernel (kernel) running in 32-bit protected mode, developed with the PC architecture (x86) in mind. It is a kernel written from scratch, aiming for the speed and compatibility of modern hardware but also being able to run on older hardware. For the moment, it guarantees a single-user environment, despite the use of virtual terminals, and monotasking, despite the ability to load, keep in memory and control more than one process, in a chronologically-ordered execution stack. In the future, the kernel will be able to support the execution of multiple processes in preemptive multitasking. Hexagon is a Unix-like kernel and forms the basis of the Hexagonix/Andromeda Operating System, although independent of it. It runs executable images in HAPP format, developed for Hexagon. It implements a very sophisticated API accessible via a system call.
 
 <p align="center">
-<img src="Img/LogoHexagon.png" width="200" height="200">
+<img src="Img/LogoHexagon.png" width="250" height="250">
 </p>
 
 ### History
@@ -358,23 +358,27 @@ where unit equals the desired device. Restart your computer and test the system.
 
 # System screenshots
 
-## Andromeda
+## Hexagonix
 
-![Andromeda 1](Img/Andromeda1.png)
-![Andromeda 2](Img/Andromeda2.png)
-![Andromeda 3](Img/Andromeda3.png)
-![Andromeda 4](Img/Andromeda4.png)
-![Andromeda 5](Img/Andromeda5.png)
+<p align="center">
+<img src="Img/Hexagonix1.png" width="400" height="300">
+<img src="Img/Hexagonix2.png" width="400" height="300">
+<img src="Img/Hexagonix3.png" width="400" height="300">
+<img src="Img/Hexagonix4.png" width="400" height="300">
+<img src="Img/Hexagonix5.png" width="400" height="300">
+</p>
 
 You can see more [here](https://github.com/hexagonix/Distro/tree/main/Img).
 
-## Hexagonix
+## Andromeda
 
-![Hexagonix 1](Img/Hexagonix1.png)
-![Hexagonix 2](Img/Hexagonix2.png)
-![Hexagonix 3](Img/Hexagonix3.png)
-![Hexagonix 4](Img/Hexagonix4.png)
-![Hexagonix 5](Img/Hexagonix5.png)
+<p align="center">
+<img src="Img/Andromeda1.png" width="400" height="300">
+<img src="Img/Andromeda2.png" width="400" height="300">
+<img src="Img/Andromeda3.png" width="400" height="300">
+<img src="Img/Andromeda4.png" width="400" height="300">
+<img src="Img/Andromeda5.png" width="400" height="300">
+</p>
 
 You can see more [here](https://github.com/hexagonix/Distro/tree/main/Img).
 
@@ -414,4 +418,4 @@ Feel free to contact me, report bugs or be interested in participating in the pr
 
 * [Twitter](https://twitter.com/redLipes)
 
-
+Copyright © 2021 Felipe Miguel Nery Lunkes
