@@ -9,6 +9,8 @@
 
 # Sistema Operacional Hexagonix/Andromeda
 
+![Hexaonix](Img/Hexagonix.png){:height="400px" width="400px"}.
+
 <img src="Img/Hexagonix.png" width="200" height="200" align="center">
 
 Seja bem-vindo ao Sistema Operacional Hexagonix/Andromeda
