@@ -14,7 +14,7 @@ Hexagonix/Andromeda was developed from scratch by [Felipe Lunkes](https://github
 
 Read the [license](LICENSE) for more information on copyright, code ownership and redistribution.
 
-* Andromeda Operating System. Copyright © 2016-2022 Felipe Miguel Nery Lunkes. All rights reserved.
+* Hexagonix Operating System & Andromeda Operating System. Copyright © 2016-2022 Felipe Miguel Nery Lunkes. All rights reserved.
 * Hexagon kernel. Copyright © 2016-2022 Felipe Miguel Nery Lunkes. All rights reserved.
 * Saturn Boot Manager. Copyright © 2016-2022 Felipe Miguel Nery Lunkes. All rights reserved.
 * Hexagon Boot (HBoot). Copyright © 2020-2022 Felipe Miguel Nery Lunkes. All rights reserved.
