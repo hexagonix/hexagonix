@@ -348,11 +348,21 @@ onde unidade equivale ao dispositivo desejado. Reinicie seu computador e teste o
 
 ![Andromeda 1](Img/Andromeda1.png)
 ![Andromeda 2](Img/Andromeda2.png)
+![Andromeda 3](Img/Andromeda3.png)
+![Andromeda 4](Img/Andromeda4.png)
+![Andromeda 5](Img/Andromeda5.png)
+
+Você pode ver mais [aqui](https://github.com/hexagonix/Distro/tree/main/Img).
 
 ## Hexagonix
 
 ![Hexagonix 1](Img/Hexagonix1.png)
 ![Hexagonix 2](Img/Hexagonix2.png)
+![Hexagonix 3](Img/Hexagonix3.png)
+![Hexagonix 4](Img/Hexagonix4.png)
+![Hexagonix 5](Img/Hexagonix5.png)
+
+Você pode ver mais [aqui](https://github.com/hexagonix/Distro/tree/main/Img).
 
 # Idiomas
 
@@ -373,4 +383,4 @@ Sinta-se a vontade de me contatar, reportar bugs ou se interessar em participar 
 
 * [Twitter](https://twitter.com/redLipes)
 
-Versão deste arquivo: 3.3
+Versão deste arquivo: 3.4
