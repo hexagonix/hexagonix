@@ -310,7 +310,7 @@ Neste momento, tanto o sistema quanto a documentação estão disponíveis apena
 
 * [Felipe Miguel Nery Lunkes](https://github.com/felipenlunkes)
 
-Sinta-se a vontade de me contarar, reportar bugs ou se interessar em participar do projeto.
+Sinta-se a vontade de me contatar, reportar bugs ou se interessar em participar do projeto.
 
 ## E-mail:
 
