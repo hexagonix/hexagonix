@@ -9,9 +9,7 @@
 
 # Sistema Operacional Hexagonix/Andromeda
 
-![Hexaonix](Img/Hexagonix.png){:height="400px" width="400px"}.
-
-<img src="Img/Hexagonix.png" width="200" height="200" align="center">
+<img src="Img/Hexagonix.png" align="center" width="200" height="200">
 
 Seja bem-vindo ao Sistema Operacional Hexagonix/Andromeda
 
@@ -363,11 +361,13 @@ onde unidade equivale ao dispositivo desejado. Reinicie seu computador e teste o
 
 ## Andromeda
 
-![Andromeda 1](Img/Andromeda1.png)
-![Andromeda 2](Img/Andromeda2.png)
-![Andromeda 3](Img/Andromeda3.png)
-![Andromeda 4](Img/Andromeda4.png)
-![Andromeda 5](Img/Andromeda5.png)
+<p align="center">
+<img src="Img/Andromeda1.png" align="center" width="300" height="400">
+<img src="Img/Andromeda2.png" align="center" width="300" height="400">
+<img src="Img/Andromeda3.png" align="center" width="300" height="400">
+<img src="Img/Andromeda4.png" align="center" width="300" height="400">
+<img src="Img/Andromeda5.png" align="center" width="300" height="400">
+</p>
 
 Você pode ver mais [aqui](https://github.com/hexagonix/Distro/tree/main/Img).
 
