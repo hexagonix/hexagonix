@@ -1,5 +1,3 @@
-<title> Hexagonix/Andromeda Operating System</title>
-
 <!-- Versão em inglês -->
 
 # Hexagonix/Andromeda Operating System

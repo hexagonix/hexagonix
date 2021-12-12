@@ -1,5 +1,3 @@
-<title> Sistema Operacional Hexagonix/Andromeda</title>
-
 # Sistema Operacional Hexagonix/Andromeda
 
 ## Pegue um atalho/take a shortcut
@@ -425,4 +423,6 @@ Sinta-se a vontade de me contatar, reportar bugs ou se interessar em participar 
 
 * [Twitter](https://twitter.com/redLipes)
 
-Versão deste arquivo: 3.6
+Versão deste arquivo: 3.7
+
+Copyright © 2021 Felipe Miguel Nery Lunkes
