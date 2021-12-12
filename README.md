@@ -396,7 +396,7 @@ Sinta-se a vontade de me contatar, reportar bugs ou se interessar em participar 
 
 * [Twitter](https://twitter.com/redLipes)
 
-Versão deste arquivo: 3.4
+Versão deste arquivo: 3.5
 
 <!-- Versão em inglês -->
 
@@ -433,7 +433,7 @@ In the beginning, Andromeda was intended to be a complete operating system, cons
 
 To better understand this distribution model, a suitable example would be what happens with macOS (Apple)[^5]. macOS is a Unix-like operating system built on top of Darwin, a free operating system composed of the XNU kernel, libraries and utilities, adding the Aqua GUI and other applications and utilities developed by Apple and other vendors on top of Darwin. The Darwin environment is easily accessed and observed through macOS, such as using the terminal, for example. Darwin is a complete and functional system, but it lacks some graphical features, for example, which are only distributed together with macOS. In this analogy, we have macOS as Andromeda and Darwin as Hexagonix.
 
-[^5]: You can get more information about the relationship between Darwin and macOS [here](https ://en.wikipedia.org/wiki/Darwin_(operating_system).
+[^5]: You can get more information about the relationship between Darwin and macOS [here](https://en.wikipedia.org/wiki/Darwin_(operating_system)).
 
 ## And the source code?
 
@@ -470,7 +470,7 @@ Hexagon Boot (HBoot) is a component designed to allow booting of the Hexagon ker
 * In the context of Hexagonix development, HBoot can also load directly, from a currently built-in module (this function will be moved to a standalone module as soon as possible) the core of the FreeDOS open source operating system[^6] , so that established and robust utility tools that run in a DOS environment can run on the Hexagonix/Andromeda volume and files. FreeDOS was chosen because of its feature of a kernel composed of a single file, usually "KERNEL.SYS"[^7], in addition to its free and free distribution. On the other hand, other DOS, such as MS-DOS, prior to version 7.0, use two files that must be contiguous on the disk, and this is not possible here, since the installation of FreeDOS already takes place on a Hexagonix volume, with the kernel copy , command interpreter and other DOS utilities, the main operating system being Hexagonix/Andromeda, with optional launching of FreeDOS for some special activity[^8]. If the FreeDOS system components are not present on the disk (the copy of FreeDOS files is not part of the default image), booting into DOS compatibility mode will not occur.
 
 [^6]: You can find the project page [here](https://www.freedos.org/).
-[^7]: Booting in DOS mode was possible after searching the FreeDOS documentation, especially the "SYS.C" file (which can be found [here](http://www.ibiblio.org/pub/micro/ pc-stuff/freedos/files/dos/sys/2043/)), which indicates in which segment the kernel expects to be loaded and which parameters are needed. Each DOS system has a preferred loading segment and this loading of other DOS editions can be implemented in the future with the help of HBoot modules. All code for core loading was developed from scratch and is not based on any existing ones.
+[^7]: Booting in DOS mode was possible after searching the FreeDOS documentation, especially the "SYS.C" file (which can be found [here](http://www.ibiblio.org/pub/micro/pc-stuff/freedos/files/dos/sys/2043/), which indicates in which segment the kernel expects to be loaded and which parameters are needed. Each DOS system has a preferred loading segment and this loading of other DOS editions can be implemented in the future with the help of HBoot modules. All code for core loading was developed from scratch and is not based on any existing ones.
 [^8]: Booting in DOS compatibility mode of HBoot can be useful for running volume error checking, volume defragmenting, partitioner and other diagnostic tools, as well as development tools such as non-compilers and assemblers. supported by Hexagonix/Andromeda (the 16-bit tools, for example).
 
 ### HBoot Module Example
@@ -787,7 +787,4 @@ Feel free to contact me, report bugs or be interested in participating in the pr
 
 * [Twitter](https://twitter.com/redLipes)
 
-Version of this file: 3.4
-
--->
 
