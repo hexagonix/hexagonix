@@ -7,6 +7,8 @@
 
 # Sistema Operacional Hexagonix/Andromeda
 
+![Logo Hexagonix](Img/Hexagonix.png)
+
 Seja bem-vindo ao Sistema Operacional Hexagonix/Andromeda
 
 ## Notas de direitos autorais 
@@ -143,6 +145,8 @@ O HBoot ganhou muita complexidade desde o início de seu desenvolvimento, em 202
 ### O que é
 
 O Hexagon é um núcleo (kernel) monolítico executado em modo protegido 32-bit, desenvolvido tendo como alvo a arquitetura PC (x86). É um kernel escrito do zero, visando a velocidade e a compatibilidade de harware moderno mas também sendo capaz de ser executado em hardware mais antigo. No momento, garante um ambiente monoutilizador, apesar do uso de terminais virtuais, e monotarefa, apesar da capacidade de carregar, manter em memória e controlar mais de um processo, em uma pilha de execução de ordem cronológica. Futuramente o kernel poderá receber suporte a execução de múltiplos processos em multitarefa preemptiva. O Hexagon é um kernel Unix-like e compõe a base do Sistema Operacional Hexagonix/Andromeda, embora independente deste. Ele executa imagens executáveis no formato HAPP, desenvolvido para o Hexagon. Implementa uma API bastante sofisticada acessível através de uma chamada de sistema.
+
+![Logo Hexagon](Img/Hexagon.png)
 
 ### História
 
