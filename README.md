@@ -277,8 +277,8 @@ Após a inicialização do firmware, o BIOS ou outro firmware, como UEFI em modo
 
 Para testar o Hexagonix ou Andromeda, você vai precisar de uma das imagens de disco disponíveis neste repositório, bem como a ferramenta qemu instalada em seu computador. A imagem também pode ser utilizada para a gravação em um disco físico em uma máquina real. 
 
-Para testar o Hexagonix, obtenha o arquivo 'hexagonix.img' neste repositório.
-Para testar o Andromeda, obtenha o arquivo 'andromeda.img' neste repositório.
+Para testar o Hexagonix, obtenha o arquivo ['hexagonix.img'](hexagonix.img) neste repositório.
+Para testar o Andromeda, obtenha o arquivo ['andromeda.img'](andromeda.img) neste repositório.
 
 ## Para o teste em ambiente virtualizado
 
@@ -310,6 +310,8 @@ Neste momento, tanto o sistema quanto a documentação estão disponíveis apena
 
 * [Felipe Miguel Nery Lunkes](https://github.com/felipenlunkes)
 
+Sinta-se a vontade de me contarar, reportar bugs ou se interessar em participar do projeto.
+
 ## E-mail:
 
 * hexagonixdev@gmail.com (PT/EN) 
@@ -319,4 +321,4 @@ Neste momento, tanto o sistema quanto a documentação estão disponíveis apena
 
 * [Twitter](https://twitter.com/redLipes)
 
-Versão deste arquivo: 3.2
+Versão deste arquivo: 3.2.2
