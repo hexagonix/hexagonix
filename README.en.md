@@ -372,6 +372,22 @@ You can see more [here](https://github.com/hexagonix/Distro/tree/main/Img).
 
 At the moment, both the system and the documentation are only available in Portuguese. Documentation in English will be available soon, and there are plans to support English as a primary language possibility in addition to Portuguese (much of the work has already been done).
 
+# Inspiration
+
+This project was possible and today it can see the light of day thanks to many others who have come before and contributed with design ideas and teaching how an operating system, even a simple one, should work. Are they:
+
+* MS-DOS, with code available [here](https://github.com/microsoft/MS-DOS)
+* [MikeOS](http://mikeos.sourceforge.net/)
+* [Linux 0.1.1](https://kernel.org)
+* [FreeBSD](https://www.freebsd.org/)
+* [XNU/Darwin](https://github.com/apple/darwin-xnu)
+* [LittleKernel](https://github.com/littlekernel/lk)
+
+In addition, other projects have helped in the development of Hexagonix/Andromeda, either by providing new design ideas that go beyond the traditional organization of an operating system, or by providing well-documented code that allows us to understand the functioning of certain parts of an operating system, or by contributing with code examples that later came to inspire functions that were written exclusively for Hexagonix/Andromeda (mainly kernel code). Despite not having been copied, the code of these projects made it possible for the functioning of certain computer components to be understood, opening doors for author codes to be written based on the study of the code of these projects. Are they:
+
+* [Snowdrop OS](http://www.sebastianmihai.com/snowdrop/), which supported 16-bit functions available on HBoot
+* [Alotware](https://github.com/0x5CE/alotware), which inspired me to create the process management functions in early versions of Hexagon (now rewritten countless times)
+
 # Author & Contact
 
 * [Felipe Miguel Nery Lunkes](https://github.com/felipenlunkes)

@@ -377,6 +377,22 @@ Você pode ver mais [aqui](https://github.com/hexagonix/Distro/tree/main/Img).
 
 Neste momento, tanto o sistema quanto a documentação estão disponíveis apenas em português. O documentação em inglês estará disponível em breve, e há planos para suporte ao inglês como possibilidade de idioma principal, além do português (grande parte do trabalho já foi feita).
 
+# Inspiração
+
+Este projeto foi possível e hoje consegue ver a luz do dia graças a muitos outros que já vieram antes e contribuiram com ideias de design e ensinando como deve funcionar um sistema operacional, mesmo que simples. São eles:
+
+* MS-DOS, com código disponível [aqui](https://github.com/microsoft/MS-DOS)
+* [MikeOS](http://mikeos.sourceforge.net/)
+* [Linux 0.1.1](https://kernel.org)
+* [FreeBSD](https://www.freebsd.org/)
+* [XNU/Darwin](https://github.com/apple/darwin-xnu)
+* [LittleKernel](https://github.com/littlekernel/lk)
+
+Além disso, outros projetos auxiliaram no desenvolvimento do Hexagonix/Andromeda, seja fornecendo novas ideias de design que fogem da organização tradicional de um sistema operacional, seja fornecendo código bem documentado que permitia entender o funcionamento de certas partes de um sistema operacional, seja contribuindo com exemplos de código que mais tarde vieram a inspirar funções que foram escritas exclusivamente para o Hexagonix/Andromeda (principalmente o código do kernel). Apesar de não terem sido copiados, o código destes projetos possibilitaram que o funcionamento de determinados componentes do computador fossem compreendidos, abrindo portas para que códigos autorais fossem escritos com base no estudo do código destes projetos. São eles:
+
+* [Snowdrop OS](http://www.sebastianmihai.com/snowdrop/), que auxiliou em funções 16-bit disponíveis no HBoot
+* [Alotware](https://github.com/0x5CE/alotware), que me inspirou a criar as funções de gerenciamento de processos nas versões iniciais do Hexagon (hoje, já reescritas inúmeras vezes)
+
 # Autor & contato
 
 * [Felipe Miguel Nery Lunkes](https://github.com/felipenlunkes)
@@ -392,4 +408,4 @@ Sinta-se a vontade de me contatar, reportar bugs ou se interessar em participar 
 
 * [Twitter](https://twitter.com/redLipes)
 
-Versão deste arquivo: 3.5
+Versão deste arquivo: 3.6
