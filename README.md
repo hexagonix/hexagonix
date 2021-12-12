@@ -32,7 +32,7 @@ No início, o Andromeda foi planejado para ser um sistema operacional completo, 
 
 Para compreender melhor esse modelo de distribuição, um exemplo adequado seria o que ocorre com o macOS (Apple)[^1]. O macOS é um sistema operacional Unix-like constrúido sobre o Darwin, um sistema operacional livre composto pelo kernel XNU, bibliotecas e utilitários, adicionando sobre o Darwin a interface gráfica Aqua e demais aplicativos e utilitários desenvolvidos pela Apple e outros fornecedores. O ambiente Darwin é facilmente acessado e observado através do macOS, como na utilização do terminal, por exemplo. O Darwin é um sistema completo e funcional, mas carece de alguns recursos gráficos, por exemplo, que só são distribúidos juntamente ao macOS. Nessa analogia, temos o macOS como Andromeda e Darwin como Hexagonix. 
 
-[^1]: Você pode obter mais informações aqui [(PT)](https://pt.wikipedia.org/wiki/Darwin_(sistema_operacional))[(EN)](https://en.wikipedia.org/wiki/Darwin_(operating_system)).
+[^1]: Você pode obter mais informações sobre a relação entre o Darwin e o macOS aqui [(PT)](https://pt.wikipedia.org/wiki/Darwin_(sistema_operacional))[(EN)](https://en.wikipedia.org/wiki/Darwin_(operating_system)).
 ## E o código-fonte?
 
 O código-fonte do projeto ainda não está disponível publicamente, mas há planos para a disponibilização no futuro. Entretanto, a distribuição das imagens de disco, tanto com o Hexagonix quanto com o Andromeda, é livre. Observe a [licença](LICENSE) disponível neste repositório para mais informações.
