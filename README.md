@@ -234,7 +234,25 @@ Uma documentação mais detalhada do Hexagon será disponibilizada no futuro.
 
 O Hexagonix implementa, junto ao Hexagon, uma série de utilitários Unix-like, com funcionalidade e sintaxe de uso semelhante à sistemas UNIX e Unix-like. **Utilitários como init, login, sh, top, ps, cp, rm, cat, clear, man, dentre outros, estão inclusos na distribuição padrão do Hexagonix**. Estes utilitários compõem o pacote de utilitários base do Hexagonix. As ferramentas de inicialização de ambiente de modo usuário e login estão neste pacote, bem como vários arquivos de configuração deste ambiente. Estes utilitários não apresentam, no geral, uma interface gráfica, apenas uma interface em linha de comando (CLI). Entretanto, podem ser solicitados por aplicativos que apresentem interface gráfica. Este ambiente está disponível tanto na distribuição do [Hexagonix](hexagonix.img) quanto na distribuição [Andromeda](andromeda.img).
 
-### Aplicativos de terceiros disponíveis
+### Alguns aplicativos e utilitários do ambiente Hexagonix
+
+O Hexagonix inclui muitos dos utilitários Unix que você pode já estar familiarizado, como por exemplo:
+
+* init
+* login
+* ls
+* cat
+* cp
+* rm
+* clear
+* top
+* ps
+* su
+* sh (shell padrão)
+* uname
+* whoami, entre outros.
+
+### Aplicativos de terceiros disponíveis para o Hexagonix
 
 * [Flat Assembler (fasm)](https://flatassembler.net/index.php)
 
@@ -244,7 +262,7 @@ O Hexagonix recebeu um port do montador [Fasm](https://flatassembler.net/index.p
 
 O ambiente Andromeda é construído sobre a base sólida fornecida pelo Hexagonix, incluindo aplicativos e utilitários que não implementam a filosofia Unix ou apresentam sintaxe e forma de uso bastante diferentes do que se esperaria de um ambiente Unix. Desta forma, eles são separados como **aplicativos Andromeda**, e não fazem parte da distribuição padrão do Hexagonix. Aqui estão o aplicativo de configurações do Sistema, calculadora, gerenciador de fontes, editores de texto e a IDE desenvolvida para o Andromeda. Estes utilitários podem ou não apresentar uma interface gráfica. Juntamente a eles, compõem o ambiente Andromeda bibliotecas desenvolvidas para permitir o desenvolvimento de aplicativos, como a biblioteca **Estelar**. Esse ambiente só está disponível na distribuição [Andromeda](andromeda.img).
 
-### Alguns aplicativos e utilitários do Andromeda
+### Alguns aplicativos e utilitários do ambiente Andromeda
 
 * Configurações do Sistema (Config)
 * Editor de texto Quartzo
@@ -255,6 +273,10 @@ O ambiente Andromeda é construído sobre a base sólida fornecida pelo Hexagoni
 * Calculadora do Andromeda
 * Utilitário de alteração de fonte
 * Utilitário de desligamento do Andromeda
+
+### Aplicativos de terceiros disponíveis para o Andromeda
+
+Ainda não existem aplicativos de terceiros disponíveis para o ambiente Andromeda. Caso esteja interessado, você pode construir o primeiro!
 
 ## Fontes do Hexagonix:
 
