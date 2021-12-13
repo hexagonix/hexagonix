@@ -151,7 +151,7 @@ O HBoot ganhou muita complexidade desde o início de seu desenvolvimento, em 202
 O Hexagon é um núcleo (kernel) monolítico executado em modo protegido 32-bit, desenvolvido tendo como alvo a arquitetura PC (x86). É um kernel escrito do zero, visando a velocidade e a compatibilidade de harware moderno mas também sendo capaz de ser executado em hardware mais antigo. No momento, garante um ambiente monoutilizador, apesar do uso de terminais virtuais, e monotarefa, apesar da capacidade de carregar, manter em memória e controlar mais de um processo, em uma pilha de execução de ordem cronológica. Futuramente o kernel poderá receber suporte a execução de múltiplos processos em multitarefa preemptiva. O Hexagon é um kernel Unix-like e compõe a base do Sistema Operacional Hexagonix/Andromeda, embora independente deste. Ele executa imagens executáveis no formato HAPP, desenvolvido para o Hexagon. Implementa uma API bastante sofisticada acessível através de uma chamada de sistema.
 
 <p align="center">
-<img src="Img/LogoHexagon.png" width="250" height="250">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/LogoHexagon.png" width="250" height="250">
 </p>
 
 ### História
@@ -366,11 +366,11 @@ onde unidade equivale ao dispositivo desejado. Reinicie seu computador e teste o
 ## Hexagonix
 
 <p align="center">
-<img src="Img/Hexagonix1.png" width="400" height="300">
-<img src="Img/Hexagonix2.png" width="400" height="300">
-<img src="Img/Hexagonix3.png" width="400" height="300">
-<img src="Img/Hexagonix4.png" width="400" height="300">
-<img src="Img/Hexagonix5.png" width="400" height="300">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix1.png" width="400" height="300">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix2.png" width="400" height="300">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix3.png" width="400" height="300">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix4.png" width="400" height="300">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix5.png" width="400" height="300">
 </p>
 
 Você pode ver mais [aqui](https://github.com/hexagonix/Distro/tree/main/Img).
@@ -378,11 +378,11 @@ Você pode ver mais [aqui](https://github.com/hexagonix/Distro/tree/main/Img).
 ## Andromeda
 
 <p align="center">
-<img src="Img/Andromeda1.png" width="400" height="300">
-<img src="Img/Andromeda2.png" width="400" height="300">
-<img src="Img/Andromeda3.png" width="400" height="300">
-<img src="Img/Andromeda4.png" width="400" height="300">
-<img src="Img/Andromeda5.png" width="400" height="300">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda1.png" width="400" height="300">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda2.png" width="400" height="300">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda3.png" width="400" height="300">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda4.png" width="400" height="300">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda5.png" width="400" height="300">
 </p>
 
 Você pode ver mais [aqui](https://github.com/hexagonix/Distro/tree/main/Img).
