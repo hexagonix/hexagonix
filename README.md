@@ -10,7 +10,7 @@
 # Sistema Operacional Hexagonix/Andromeda
 
 <p align="center">
-<img src="https://github.com/hexagonix/Doc/tree/main/Img/Hexagonix.png" width="250" height="250">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix.png" width="250" height="250">
 </p>
 
 Seja bem-vindo ao Sistema Operacional Hexagonix/Andromeda
