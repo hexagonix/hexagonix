@@ -354,6 +354,17 @@ dd if=andromeda.img of=/dev/unit
 ```
 where unit equals the desired device. Restart your computer and test the system. Keep in mind that secure boot mode is not supported, and booting is only supported in BIOS or UEFI BIOS legacy mode.
 
+## First use
+
+When starting the system, you will be asked to enter a username and password. For first use, use
+
+```
+Username: root
+Password: root
+```
+
+You can add another user by changing the 'USUARIO.UNX' file in the root of the disk. Remember not to remove the root user. This can make the system permanently inoperable.
+
 # System screenshots
 
 ## Hexagonix

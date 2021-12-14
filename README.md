@@ -361,6 +361,17 @@ dd if=andromeda.img of=/dev/unidade
 ```
 onde unidade equivale ao dispositivo desejado. Reinicie seu computador e teste o sistema. Vale lembrar que o modo de boot seguro não é suportado, além de que o boot só é suportado em BIOS ou no modo legado BIOS do UEFI.
 
+## Primeiro uso
+
+Ao iniciar o sistema, você deverá introduzir um nome de usuário e senha. Para o primeiro uso, utilize
+
+```
+Usuário: root
+Senha: root
+```
+
+Você pode adicionar outro usuário alterando o arquivo 'USUARIO.UNX' na raiz do disco. Lembre-se de não remover o usuário raiz (root). Isso pode tornar o sistema inoperante de forma permanente.
+
 # Capturas de tela do sistema
 
 ## Hexagonix
@@ -423,6 +434,6 @@ Sinta-se a vontade de me contatar, reportar bugs ou se interessar em participar 
 
 * [Twitter](https://twitter.com/redLipes)
 
-Versão deste arquivo: 3.7.4
+Versão deste arquivo: 3.7.5
 
 Copyright © 2021 Felipe Miguel Nery Lunkes
