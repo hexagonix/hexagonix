@@ -243,7 +243,7 @@ More detailed Hexagon documentation will be made available in the future.
 
 ## Hexagonix environment:
 
-Hexagonix implements, together with Hexagon, a series of Unix-like utilities, with functionality and syntax similar to UNIX and Unix-like systems. **Utilities such as init, login, sh, top, ps, cp, rm, cat, clear, man, and more are included in the standard Hexagonix distribution**. These utilities make up the base Hexagonix utility package. The login and user mode environment startup tools are in this package, as well as several configuration files for this environment. These utilities generally don't have a graphical interface, just a command line interface (CLI). However, they can be requested by applications that have a graphical interface. This environment is available in both the [Hexagonix](hexagonix.img) distribution and the [Andromeda](andromeda.img) distribution.
+Hexagonix implements, together with Hexagon, a series of Unix-like utilities, with functionality and syntax similar to UNIX and Unix-like systems. **Utilities such as init, login, sh, top, ps, cp, rm, cat, clear, man, and more are included in the standard Hexagonix distribution**. These utilities make up the base Hexagonix utility package. The login and user mode environment startup tools are in this package, as well as several configuration files for this environment. These utilities generally don't have a graphical interface, just a command line interface (CLI). However, they can be requested by applications that have a graphical interface. This environment is available in both the [Hexagonix](en.hexagonix.img) distribution and the [Andromeda](en.andromeda.img) distribution.
 
 ### Some applications and utilities in the Hexagonix environment
 
@@ -272,7 +272,7 @@ Hexagonix received an assembler port [Fasm](https://flatassembler.net/index.php)
 
 ## Andromeda Environment:
 
-The Andromeda environment is built on the solid foundation provided by Hexagonix, including applications and utilities that either don't implement the Unix philosophy or have quite different syntax and usage than you'd expect from a Unix environment. As such, they are separated as **Andromeda apps**, and are not part of the standard Hexagonix distribution. Here are the System settings app, calculator, font manager, text editors and the IDE developed for Andromeda. These utilities may or may not have a graphical interface. Together with them, the Andromeda environment comprises libraries developed to allow the development of applications, such as the **Stellar** library. This environment is only available in the [Andromeda](andromeda.img) distribution.
+The Andromeda environment is built on the solid foundation provided by Hexagonix, including applications and utilities that either don't implement the Unix philosophy or have quite different syntax and usage than you'd expect from a Unix environment. As such, they are separated as **Andromeda apps**, and are not part of the standard Hexagonix distribution. Here are the System settings app, calculator, font manager, text editors and the IDE developed for Andromeda. These utilities may or may not have a graphical interface. Together with them, the Andromeda environment comprises libraries developed to allow the development of applications, such as the **Stellar** library. This environment is only available in the [Andromeda](en.andromeda.img) distribution.
 
 ### Some apps and utilities from the Andromeda environment
 
@@ -329,16 +329,16 @@ After booting the firmware, the [BIOS](https://en.wikipedia.org/wiki/BIOS) or ot
 
 To test Hexagonix or Andromeda, you will need one of the disk images available in this repository, as well as the [qemu](https://www.qemu.org) tool installed on your computer. The image can also be used for writing to a physical disk on a real machine.
 
-To test Hexagonix, get the ['hexagonix.img'](hexagonix.img) file from this repository.
-To test Andromeda, get the ['andromeda.img'](andromeda.img) file from this repository.
+To test Hexagonix, get the ['en.hexagonix.img'](en.hexagonix.img) file from this repository.
+To test Andromeda, get the ['en.andromeda.img'](en.andromeda.img) file from this repository.
 
 ## For testing in a virtualized environment
 
 You must provide at least 32 MB of RAM for the virtual machine. Typically, the command line below fulfills all requirements for running the system:
 
 ```
-qemu-system-i386 -hda andromeda.img -m 32 -soundhw pcspk
-qemu-system-i386 -hda hexagonix.img -m 32 -soundhw pcspk
+qemu-system-i386 -hda en.andromeda.img -m 32 -soundhw pcspk
+qemu-system-i386 -hda en.hexagonix.img -m 32 -soundhw pcspk
 ```
 
 Remembering that you must use a qemu version/edition that can run software written for the x86 architecture. To download and install qemu, click [here](https://www.qemu.org/download/).
@@ -350,7 +350,7 @@ You must use Linux/macOS or some Windows tool that allows you to burn this image
 On Linux/macOS/Unix, use the line below:
 
 ```
-dd if=andromeda.img of=/dev/unit
+dd if=en.andromeda.img of=/dev/unit
 ```
 where unit equals the desired device. Restart your computer and test the system. Keep in mind that secure boot mode is not supported, and booting is only supported in BIOS or UEFI BIOS legacy mode.
 
