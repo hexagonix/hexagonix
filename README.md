@@ -344,9 +344,11 @@ Para testar o Andromeda, obtenha o arquivo ['andromeda.img'](andromeda.img) nest
 Você deve fornecer ao menos 32 MB de RAM para a máquina virtual. Normalmente, a linha de comando abaixo cumpre todos os requisitos para a execução do sistema:
 
 ```
-qemu-system-i386 -hda andromeda.img -m 32 -soundhw pcspk
-qemu-system-i386 -hda hexagonix.img -m 32 -soundhw pcspk
+qemu-system-i386 -hda andromeda.img -m 32 -soundhw pcspk -serial file:"Serial.txt"
+qemu-system-i386 -hda hexagonix.img -m 32 -soundhw pcspk -serial file:"Serial.txt"
 ```
+
+Você pode omitir po parâmetro -serial caso queira. Esse parâmetro garante que a saída de debug do Hexagon e aplicativos serão direcionados para um arquivo em seu computador, onde você poderá consultar o que foi enviado.
 
 Lembrando que você deve utilizar uma versão/edição do qemu que consiga executar software escrito para a arquitetura x86. Para realizar o download e instalação do qemu, clique [aqui](https://www.qemu.org/download/).
 
