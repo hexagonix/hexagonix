@@ -137,7 +137,7 @@ New file systems will be implemented in the future.
 
 HBoot has gained a lot of complexity since the beginning of its development in 2020. Due to this increase in code and the nature of its operation (16-bit), bugs can be found. They can be reported in the repository or by email, available at the end of this file.
 
-## Kernel Hexagon
+## Hexagon Kernel
 
 ### What is it
 
