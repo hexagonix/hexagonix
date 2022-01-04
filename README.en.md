@@ -23,7 +23,7 @@ Read the [License](LICENSE) for more information on copyright, code ownership an
 
 At the end of this file you will find a tutorial to run Hexagonix/Andromeda on your computer, both in a virtualized version and in a physical hardware. Remember that you must have a computer with x86 architecture or an emulator if you are using a device of another architecture for testing.
 
-* [System Documentation (under construction)](https://github.com/hexagonix/Distro/tree/main/Doc)
+* [System Documentation (under construction)](https://github.com/hexagonix/Doc)
 
 # About the system
 
