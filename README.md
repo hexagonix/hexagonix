@@ -352,14 +352,16 @@ Lembrando que você deve utilizar uma versão/edição do qemu que consiga execu
 
 ## Para teste em máquina física
 
-Você deve utilizar o Linux/macOS ou alguma ferramenta Windows que te permita gravar essa imagem em disco.
+Você deve utilizar o Linux/macOS ou alguma ferramenta disponível para o Windows que te permita gravar essa imagem em disco.
 
 No Linux/macOS/Unix, use a linha abaixo:
 
 ```
 dd if=andromeda.img of=/dev/unidade
 ```
-onde unidade equivale ao dispositivo desejado. Reinicie seu computador e teste o sistema. Vale lembrar que o modo de boot seguro não é suportado, além de que o boot só é suportado em BIOS ou no modo legado BIOS do UEFI.
+onde unidade equivale ao dispositivo desejado (geralmente sdb ou sdc, em caso de dispositivos USB e hda, hdb, sda ou sdb, para unidades de disco rígido/estado sólido). Reinicie seu computador e teste o sistema. Vale lembrar que o modo de boot seguro não é suportado, além de que o boot só é suportado em BIOS ou no modo legado BIOS do UEFI.
+
+Vale ressaltar que o desempenho do sistema pode variar de acordo com a máquina testada. Junta-se a isso o fato de que as versões mais recentes do sistema não foram ou estão sendo testadas diretamente na máquina física, como sistema operacional principal. Caso algum problema ocorra ao executar o Hexagonix/Andromeda em uma máquina física, por favor reporte o erro detalhado [aqui](https://github.com/hexagonix/Distro/issues), em português ou inglês, informando dados como marca do dispositivo, processador, quantidade de memória RAM, placa de vídeo (se disponível) e periféricos conectados, bem como o dispositivo utilizado para instalar o sistema (unidade de disco interna ou mídia removível USB).
 
 ## Primeiro uso
 
@@ -371,6 +373,10 @@ Senha: root
 ```
 
 Você pode adicionar outro usuário alterando o arquivo 'USUARIO.UNX' na raiz do disco. Lembre-se de não remover o usuário raiz (root). Isso pode tornar o sistema inoperante de forma permanente.
+
+# Reportar erros
+
+Você pode reportar erros e ajudar a desenvolver o sistema. Para isso, abra uma notificação de erro [aqui](https://github.com/hexagonix/Distro/issues), informando o erro da forma mais detalhada possível (como marca do dispositivo, processador, quantidade de memória RAM, placa de vídeo e periféricos conectados, bem como o dispositivo utilizado para instalar o sistema, como unidade de disco interna ou mídia removível USB). Lembre-se de informar em qual aplicativo ocorreu o erro, caso o erro ocorra já com o sistema em operação. Caso o problema se dê no processo de inicialização, informe o que foi exibido/o comportamento observado da máquina.
 
 # Capturas de tela do sistema
 
@@ -434,6 +440,6 @@ Sinta-se a vontade de me contatar, reportar bugs ou se interessar em participar 
 
 * [Twitter](https://twitter.com/redLipes)
 
-Versão deste arquivo: 3.7.5
+Versão deste arquivo: 3.7.6
 
 Copyright © 2021 Felipe Miguel Nery Lunkes

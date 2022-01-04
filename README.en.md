@@ -21,7 +21,7 @@ Read the [license](LICENSE) for more information on copyright, code ownership an
 
 ## First of all
 
-At the end of this file you will find a tutorial to run Hexagonix/Andromeda on your computer, both in a virtualized version and natively. Remember that you must have a computer with x86 architecture or an emulator if you are using a device of another architecture for testing.
+At the end of this file you will find a tutorial to run Hexagonix/Andromeda on your computer, both in a virtualized version and in a physical hardware. Remember that you must have a computer with x86 architecture or an emulator if you are using a device of another architecture for testing.
 
 * [System Documentation (under construction)](https://github.com/hexagonix/Distro/tree/main/Doc)
 
@@ -43,7 +43,7 @@ To better understand this distribution model, a suitable example would be what h
 
 The project's source code is not yet publicly available, but there are plans to make it available in the future. However, distribution of disk images with both Hexagonix and Andromeda is free. Please note the [license](LICENSE) available in this repository for more information.
 
-## What is an operational system?
+## What is an operating system?
 
 The Hexagonix/Andromeda Operating System is a collection of software pieces that manage the hardware of the computer where it is installed, allowing the loading and operation of applications and communication between the different devices connected to the device. It is composed of several components, which act in the computer boot process, resource testing and loading of the operating system kernel (core), the kernel, a user interaction interface and a series of utilities.
 Both hexagonix and Andromeda are distributions that incorporate a Unix-like kernel, called Hexagon, support libraries, utilities developed exclusively for the Andromeda environment, and Unix-like command-line utilities (the latter and the Hexagon kernel itself are already there configure a base operating system, Hexagonix).
@@ -60,9 +60,9 @@ Normally, Hexagonix and Andromeda have the same major version numbering, but thi
 
 # System components
 
-## Saturn
+## Saturno
 
-The first component of Hexagonix/Andromeda is Saturn. It is responsible for taking control of the boot process performed by the BIOS/UEFI and searching the volume for the second boot stage. For that, it implements a driver for reading a FAT16 file system. The second boot stage (see below) can implement drivers for other file systems and is responsible for finding Hexagon, loading HBoot modules or loading a DOS compatible system (BETA).
+The first component of Hexagonix/Andromeda is Saturno. It is responsible for taking control of the boot process performed by the BIOS/UEFI and searching the volume for the second boot stage. For that, it implements a driver for reading a FAT16 file system. The second boot stage (see below) can implement drivers for other file systems and is responsible for finding Hexagon, loading HBoot modules or loading a DOS compatible system (BETA).
 
 ## Hexagon Boot (HBoot)
 
@@ -141,7 +141,7 @@ HBoot has gained a lot of complexity since the beginning of its development in 2
 
 ### What is it
 
-Hexagon is a monolithic kernel (kernel) running in 32-bit protected mode, developed with the PC architecture (x86) in mind. It is a kernel written from scratch, aiming for the speed and compatibility of modern hardware but also being able to run on older hardware. For the moment, it guarantees a single-user environment, despite the use of virtual terminals, and monotasking, despite the ability to load, keep in memory and control more than one process, in a chronologically-ordered execution stack. In the future, the kernel will be able to support the execution of multiple processes in preemptive multitasking. Hexagon is a Unix-like kernel and forms the basis of the Hexagonix/Andromeda Operating System, although independent of it. It runs executable images in HAPP format, developed for Hexagon. It implements a very sophisticated API accessible via a system call.
+Hexagon is a monolithic kernel (the operating system core) running in 32-bit protected mode, developed with the PC architecture (x86) in mind. It is a kernel written from scratch, aiming for the speed and compatibility of modern hardware but also being able to run on older hardware. For the moment, it guarantees a single-user environment, despite the use of virtual terminals, and monotasking, despite the ability to load, keep in memory and control more than one process, in a chronologically-ordered execution stack. In the future, the kernel will be able to support the execution of multiple processes in preemptive multitasking. Hexagon is a Unix-like kernel and forms the basis of the Hexagonix/Andromeda Operating System, although independent of it. It runs executable images in HAPP format, developed for Hexagon. It implements a very sophisticated API accessible via a system call.
 
 <p align="center">
 <img src="https://github.com/hexagonix/Doc/blob/main/Img/LogoHexagon.png" width="250" height="250">
@@ -279,7 +279,7 @@ The Andromeda environment is built on the solid foundation provided by Hexagonix
 * System Settings (Config)
 * Quartz text editor
 * Lyoko IDE for application development
-* Electronic Piano return Piano;
+* Virtual Piano "return Piano";
 * Serial communication utility
 * Andromeda Shell (ASH) - A new shell for Andromeda
 * Andromeda Calculator
@@ -332,6 +332,9 @@ To test Hexagonix or Andromeda, you will need one of the disk images available i
 To test Hexagonix, get the ['en.hexagonix.img'](en.hexagonix.img) file from this repository.
 To test Andromeda, get the ['en.andromeda.img'](en.andromeda.img) file from this repository.
 
+
+Remember that images available in english may not always be up-to-date compared to those in portuguese.
+
 ## For testing in a virtualized environment
 
 You must provide at least 32 MB of RAM for the virtual machine. Typically, the command line below fulfills all requirements for running the system:
@@ -352,7 +355,9 @@ On Linux/macOS/Unix, use the line below:
 ```
 dd if=en.andromeda.img of=/dev/unit
 ```
-where unit equals the desired device. Restart your computer and test the system. Keep in mind that secure boot mode is not supported, and booting is only supported in BIOS or UEFI BIOS legacy mode.
+where drive equates to the desired device (usually sdb or sdc for USB and hda devices, hdb, sda or sdb for hard disk/solid state drives). Restart your computer and test the system. Keep in mind that secure boot mode is not supported, and booting is only supported in BIOS or UEFI BIOS legacy mode.
+
+It is noteworthy that system performance may vary depending on the machine tested. Added to this is the fact that the latest versions of the system have not been or are being tested directly on the physical hardware. If any problem occurs when running Hexagonix/Andromeda on a physical hardware, please report the detailed error [here](https://github.com/hexagonix/Distro/issues), in Portuguese or English, stating data of the device, like processor, amount of RAM memory, graphics card (if available), and connected peripherals, as well as the device used to install the system (internal disk drive or USB removable media).
 
 ## First use
 
@@ -364,6 +369,10 @@ Password: root
 ```
 
 You can add another user by changing the 'USUARIO.UNX' file in the root of the disk. Remember not to remove the root user. This can make the system permanently inoperable.
+
+# Report bugs
+
+You can report bugs and help develop the system. To do this, open an error notification [here](https://github.com/hexagonix/Distro/issues), reporting the error as detailed as possible (such as device brand, processor, amount of RAM memory, card video and connected peripherals, as well as the device used to install the system, such as an internal disk drive or USB removable media). Remember to inform in which application the error occurred, in case the error occurs with the system already in operation. If the problem occurs in the boot process, inform what was displayed/the observed behavior of the machine.
 
 # System screenshots
 
