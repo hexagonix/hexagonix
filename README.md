@@ -445,6 +445,6 @@ Sinta-se a vontade de me contatar, reportar bugs ou se interessar em participar 
 
 * [Twitter](https://twitter.com/redLipes)
 
-Versão deste arquivo: 3.7.6.2
+Versão deste arquivo: 3.7.6.3
 
 Copyright © 2021-2022 Felipe Miguel Nery Lunkes
