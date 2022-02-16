@@ -424,7 +424,7 @@ Este projeto foi possível e hoje consegue ver a luz do dia graças a muitos out
 
 Além disso, outros projetos auxiliaram no desenvolvimento do Hexagonix/Andromeda, seja fornecendo novas ideias de design que fogem da organização tradicional de um sistema operacional, seja fornecendo código bem documentado que permitia entender o funcionamento de certas partes de um sistema operacional, seja contribuindo com exemplos de código que mais tarde vieram a inspirar funções que foram escritas exclusivamente para o Hexagonix/Andromeda (principalmente o código do kernel). Apesar de não terem sido copiados, o código destes projetos possibilitaram que o funcionamento de determinados componentes do computador fossem compreendidos, abrindo portas para que códigos autorais fossem escritos com base no estudo do código destes projetos. São eles:
 
-* [Snowdrop OS](http://www.sebastianmihai.com/snowdrop/), que auxiliou em funções 16-bit disponíveis no HBoot
+* [Snowdrop OS](http://www.sebastianmihai.com/snowdrop/), que me inspirou a escrever várias rotinas de controle de hardware e outras funções 16-bit disponíveis no HBoot
 * [Alotware](https://github.com/0x5CE/alotware), que me inspirou a criar as funções de gerenciamento de processos nas versões iniciais do Hexagon (hoje, já reescritas inúmeras vezes)
 
 # Autor & contato
@@ -442,6 +442,6 @@ Sinta-se a vontade de me contatar, reportar bugs ou se interessar em participar 
 
 * [Twitter](https://twitter.com/redLipes)
 
-Versão deste arquivo: 3.7.6.1
+Versão deste arquivo: 3.7.6.2
 
 Copyright © 2021-2022 Felipe Miguel Nery Lunkes
