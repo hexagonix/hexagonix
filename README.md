@@ -86,7 +86,7 @@ O Hexagon Boot (HBoot) é um componente desenvolvido permitir a inicialização 
 
 ### Exemplo de módulo HBoot
 
-Abaixo é possível encontrar um exemplo de implementação de módulo HBoot:
+Abaixo é possível encontrar um exemplo de implementação de módulo HBoot (especificação de módulo HBoot v2.0):
 
 ```assembly
 ;;************************************************************************************
@@ -108,8 +108,11 @@ use16
 
 cabecalhoHBoot:
 
-.assinatura:  db "HBOOT"     ;; Assinatura, 5 bytes
-.arquitetura: db 01h         ;; Arquitetura (i386), 1 byte
+.assinatura:  db "HBOOT"       ;; Assinatura, 5 bytes
+.arquitetura: db 01h           ;; Arquitetura (i386), 1 byte
+.versaoMod:   db 01h           ;; Versão, com 1 byte
+.subverMod:   db 00h           ;; Subversão, com 1 byte
+.nomeMod:     db "NOME    "    ;; Nome do módulo, com 8 bytes
 
 ;; Configurar pilha e ponteiro
 
