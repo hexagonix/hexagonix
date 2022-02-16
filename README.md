@@ -3,7 +3,7 @@
 ## Pegue um atalho/take a shortcut
 
 * [Português](https://github.com/hexagonix/Distro#sistema-operacional-hexagonixandromeda)
-* [English](README.en.md)
+* [English](README.en.md) (under development)
 
 <!-- Versão em português -->
 
@@ -442,6 +442,6 @@ Sinta-se a vontade de me contatar, reportar bugs ou se interessar em participar 
 
 * [Twitter](https://twitter.com/redLipes)
 
-Versão deste arquivo: 3.7.6
+Versão deste arquivo: 3.7.6.1
 
-Copyright © 2021 Felipe Miguel Nery Lunkes
+Copyright © 2021-2022 Felipe Miguel Nery Lunkes
