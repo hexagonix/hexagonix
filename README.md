@@ -1,5 +1,3 @@
-<p align="justify">
-
 # Sistema Operacional Hexagonix/Andromeda
 
 ## Pegue um atalho/take a shortcut
@@ -18,6 +16,8 @@
 Seja bem-vindo ao Sistema Operacional Hexagonix/Andromeda
 
 ## Notas de direitos autorais 
+
+<p align="justify">
 
 O Hexagonix/Andromeda foi desenvolvido do zero por [Felipe Lunkes](https://github.com/felipenlunkes).
 
