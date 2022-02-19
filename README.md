@@ -17,8 +17,6 @@ Seja bem-vindo ao Sistema Operacional Hexagonix/Andromeda
 
 ## Notas de direitos autorais 
 
-<p align="justify">
-
 O Hexagonix/Andromeda foi desenvolvido do zero por [Felipe Lunkes](https://github.com/felipenlunkes).
 
 Leia a [licença](LICENSE) para mais informações sobre direitos autorais, propriedade de código e redistribuição que se aplicam apenas aos aqruivos disponíveis neste repositório (não se aplicam ao conjunto de arquivos de dados e de código fonte que compõem o Hexagonix/Andromeda).
@@ -447,6 +445,6 @@ Sinta-se a vontade de me contatar, reportar bugs ou se interessar em participar 
 
 * [Twitter](https://twitter.com/redLipes)
 
-Versão deste arquivo: 3.7.6.3
+Versão deste arquivo: 3.7.6.4
 
 Copyright © 2021-2022 Felipe Miguel Nery Lunkes
