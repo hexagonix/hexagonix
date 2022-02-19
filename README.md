@@ -1,3 +1,5 @@
+<p align="justify">
+
 # Sistema Operacional Hexagonix/Andromeda
 
 ## Pegue um atalho/take a shortcut
