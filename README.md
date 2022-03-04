@@ -1,5 +1,3 @@
-# Sistema Operacional Hexagonix/Andromeda
-
 ## Pegue um atalho/take a shortcut
 
 * [Português](README.pt.md)
