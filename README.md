@@ -26,7 +26,7 @@ Leia a [licença](LICENSE) para mais informações sobre direitos autorais, prop
 * Gerenciador de Boot Saturno. Copyright © 2016-2022 Felipe Miguel Nery Lunkes. Todos os direitos reservados.
 * Hexagon Boot (HBoot). Copyright © 2020-2022 Felipe Miguel Nery Lunkes. Todos os direitos reservados.
 
-## Antes de mais nada
+## Antes de mais nada - pular para o download e teste
 
 No [final deste arquivo](https://github.com/hexagonix/distro#obter-as-imagens-de-disco-com-a-insta%C3%A7%C3%A3o-do-sistema) você encontra um tutorial para executar o Hexagonix/Andromeda em seu computador, tanto em uma versão virtualizada como de forma nativa. Lembre-se que é necessário possuir um computador de arquitetura x86 ou um emulador, caso esteja utilizando um dispositivo de outra arquitetura para testes. 
 
@@ -337,23 +337,31 @@ Após a inicialização do firmware, o [BIOS](https://pt.wikipedia.org/wiki/BIOS
 
 ## Obter as imagens de disco com a instação do sistema 
 
-Para testar o Hexagonix ou Andromeda, você vai precisar de uma das imagens de disco disponíveis neste repositório, bem como a ferramenta [qemu](https://www.qemu.org) instalada em seu computador. A imagem também pode ser utilizada para a gravação em um disco físico em uma máquina real. 
+Para testar o Hexagonix ou Andromeda, você vai precisar de uma das imagens de disco disponíveis neste repositório, bem como a ferramenta [qemu](https://www.qemu.org) instalada em seu computador, caso deseje testar o sistema em ambiente virtualizado. A imagem também pode ser utilizada para a gravação em um disco físico em uma máquina real. 
 
 Para testar o Hexagonix, obtenha o arquivo ['hexagonix.img'](hexagonix.img) neste repositório.
 Para testar o Andromeda, obtenha o arquivo ['andromeda.img'](andromeda.img) neste repositório.
 
 ## Para o teste em ambiente virtualizado
 
-Você deve fornecer ao menos 32 MB de RAM para a máquina virtual. Normalmente, a linha de comando abaixo cumpre todos os requisitos para a execução do sistema:
+Primeiramente, você deve instalar a ferramenta qemu, que irá gerenciar a máquina virtual. Para isso, você pode instalar o qemu utilizando repositórios oficiais de distribuições Linuz ou acessando [aqui](https://www.qemu.org) para obter os arquivos de instalação para Windows e macOS. Para o Ubuntu, a linha a seguir irá instalar o qemu e todas as suas dependências (privilégios de superusuário necessários):
+
+```
+sudo apt install qemu qemu-system-i386
+```
+
+Agora que você tem o qemu instalado em seu computador, você pode prosseguir com a execução do sistema.
+
+Para executar o sistema de maneira satisfatória, você deve fornecer ao menos 32 MB de RAM para a máquina virtual. Isso se deve a arquitetura de gerenciamento de memória do Hexagon, que exige 16 MB de RAM exclusiva para o kernel a ao menos 16 MB para alocar os aplicativos, utilitários e arquivos abertos. O Hexagon não admite menos que isso para ser executado. Caso mais memória seja fornecida, a memória adicional será sempre reservada, com prioridade, para ser disponibilizada aos processos do usuário. Normalmente, a linha de comando abaixo cumpre todos os requisitos para a execução do sistema:
 
 ```
 qemu-system-i386 -hda andromeda.img -m 32 -soundhw pcspk -serial file:"Serial.txt"
 qemu-system-i386 -hda hexagonix.img -m 32 -soundhw pcspk -serial file:"Serial.txt"
 ```
 
-Você pode omitir po parâmetro -serial caso queira. Esse parâmetro garante que a saída de debug do Hexagon e aplicativos serão direcionados para um arquivo em seu computador, onde você poderá consultar o que foi enviado.
+Você pode omitir po parâmetro -serial caso queira. Esse parâmetro garante que a saída de debug do Hexagon e aplicativos serão direcionados para um arquivo em seu computador, onde você poderá consultar o que foi enviado. Você também pode omitir o parâmetro -soundhw, responsável por direcionar a saída de som do sistema virtual para seu computador físico. Em alguns sistema Linux, a configuração acima pode entrar em conflito com o pulseaudio, e pode ser omitida. Lembre-se que ao omitir o parâmetro, os sons do sistema não serão emitidos para você.
 
-Lembrando que você deve utilizar uma versão/edição do qemu que consiga executar software escrito para a arquitetura x86. Para realizar o download e instalação do qemu, clique [aqui](https://www.qemu.org/download/).
+Lembrando que você deve utilizar uma versão/edição do qemu que consiga executar software escrito para a arquitetura x86 (i386 ou x86_64). Para realizar o download e instalação do qemu, clique [aqui](https://www.qemu.org/download/).
 
 ## Para teste em máquina física
 
@@ -445,6 +453,6 @@ Sinta-se a vontade de me contatar, reportar bugs ou se interessar em participar 
 
 * [Twitter](https://twitter.com/redLipes)
 
-Versão deste arquivo: 3.7.6.4
+Versão deste arquivo: 3.8
 
 Copyright © 2021-2022 Felipe Miguel Nery Lunkes
