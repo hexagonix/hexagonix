@@ -8,12 +8,12 @@
 # Pegue um atalho/take a shortcut
 
 * [Português (Brasil)](README.pt.md)
-* [English (under development)](README.en.md) 
+* [English (under construction)](README.en.md) 
 
 ## Documentação/documentation
 
 * [Clique aqui para ir à documentação do Hexagonix](https://github.com/hexagonix/Doc)
-* [Click here to go to the Hexagonix documentation](https://github.com/hexagonix/Doc)
+* [Click here to go to the Hexagonix documentation (under construction)](https://github.com/hexagonix/Doc)
 
 <!-- Versão do arquivo: 2.0 -->
 
