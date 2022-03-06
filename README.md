@@ -1,6 +1,6 @@
 ## Pegue um atalho/take a shortcut
 
-* [Português](README.pt.md)
+* [Português (Brasil)](README.pt.md)
 * [English](README.en.md) (under development)
 
 <!-- Versão em português -->
