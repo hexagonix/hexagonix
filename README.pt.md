@@ -20,9 +20,9 @@ Para compreender melhor esse modelo de distribuição, um exemplo adequado seria
 
 [^1]: Você pode obter mais informações sobre a relação entre o Darwin e o macOS [aqui](https://pt.wikipedia.org/wiki/Darwin_(sistema_operacional)).
 
-## E o código-fonte?
+## E o código-fonte? Ele já está entre nós (e vai estar mais ainda)!
 
-O código-fonte do projeto ainda não está disponível publicamente, mas há planos para a disponibilização no futuro. Entretanto, a distribuição das imagens de disco, tanto com o Hexagonix quanto com o Andromeda, é livre. Observe a [licença](LICENSE) disponível neste repositório para mais informações.
+O código-fonte do projeto está sendo disponibilizado publicamente aos poucos, começando pelas fontes e outros componentes. O código do kernel e dos utilitários Unix-like e aplicativos Andromeda serão disponibilizados em breve, assim como o pacote de fontes que compõe o HBoot. Entretanto, as imagens de disco, tanto com o Hexagonix quanto com o Andromeda, já estão disponíveis e sua distribuição é livre. Observe a [licença](LICENSE) disponível neste repositório para mais informações. Vale ressaltar que a licença de cada pacote de código que compõe o sistema (Hexagon, HBoot, utilitarios Hexagonix, utilitários Andromeda, fontes e outros componentes) pode variar. Cada pacote pode ser liberado com um tipo de licença diferente (como GPL, MIT ou BSD, por exemplo). Fique atento a cada licença nos respectivos repositórios.
 
 ## O que é um sistema operacional?
 
@@ -438,6 +438,6 @@ Leia a [licença](LICENSE) para mais informações sobre direitos autorais, prop
 * Gerenciador de Boot Saturno. Copyright © 2016-2022 Felipe Miguel Nery Lunkes. Todos os direitos reservados.
 * Hexagon Boot (HBoot). Copyright © 2020-2022 Felipe Miguel Nery Lunkes. Todos os direitos reservados.
 
-Versão deste arquivo: 3.9
+Versão deste arquivo: 3.10
 
 Copyright © 2021-2022 Felipe Miguel Nery Lunkes
