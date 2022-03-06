@@ -17,4 +17,4 @@
 
 <!-- Versão do arquivo: 2.0 -->
 
-Copyright © 2021-2022 Felipe Miguel Nery Lunkes
+Copyright © 2015-2022 Felipe Miguel Nery Lunkes
