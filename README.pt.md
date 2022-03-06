@@ -1,12 +1,28 @@
 # Sistema Operacional Hexagonix/Andromeda
 
-## Antes de mais nada - pular para o download e teste
+## Antes de mais nada - um breve atalho
 
-No [final deste arquivo](https://github.com/hexagonix/distro#obter-as-imagens-de-disco-com-a-insta%C3%A7%C3%A3o-do-sistema) você encontra um tutorial para executar o Hexagonix/Andromeda em seu computador, tanto em uma versão virtualizada como de forma nativa. Lembre-se que é necessário possuir um computador de arquitetura x86 ou um emulador, caso esteja utilizando um dispositivo de outra arquitetura para testes. 
+## Fazer download e testar o sistema agora mesmo
+
+No [final deste arquivo](https://github.com/hexagonix/hexagonix#obter-as-imagens-de-disco-com-a-insta%C3%A7%C3%A3o-do-sistema) você encontra um tutorial para executar o Hexagonix/Andromeda em seu computador, tanto em uma versão virtualizada como de forma nativa. Lembre-se que é necessário possuir um computador de arquitetura x86 ou um emulador, caso esteja utilizando um dispositivo de outra arquitetura para testes. 
+
+### Documentação do sistema 
 
 * [Documentação do sistema (em construção)](https://github.com/hexagonix/Doc)
 
+### Ajude no desenvolvimento do Hexagonix/Andromeda
+
+Se você tem conhecimento em criar código em assembly x86 e gostaria de ajudar no desenvolvimento do sistema, sinta-se a vontade em me enviar um email! Veja [aqui](https://github.com/hexagonix/hexagonix/blob/main/README.pt.md#autor--contato) como entrar em contato comigo!
+
+### Reporte erros no sistema
+
+Você pode reportar erros do sistema [aqui](https://github.com/hexagonix/hexagonix/blob/main/README.pt.md#reportar-erros).
+
 # Sobre o sistema
+
+<p align="center">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix.png" width="250" height="250">
+</p>
 
 ## Desenvolvimento
 
@@ -431,13 +447,13 @@ Sinta-se a vontade de me contatar, reportar bugs ou se interessar em participar 
 
 O Hexagonix/Andromeda foi desenvolvido do zero por [Felipe Lunkes](https://github.com/felipenlunkes).
 
-Leia a [licença](LICENSE) para mais informações sobre direitos autorais, propriedade de código e redistribuição que se aplicam apenas aos aqruivos disponíveis neste repositório (não se aplicam ao conjunto de arquivos de dados e de código fonte que compõem o Hexagonix/Andromeda).
+Leia a [licença](LICENSE) para mais informações sobre direitos autorais, propriedade de código e redistribuição que se aplicam apenas aos arquivos disponíveis neste repositório (não se aplicam ao conjunto de arquivos de dados e de código fonte que compõem o Hexagonix/Andromeda). Vale ressaltar que o código dos componentes do sistema estão sendo liberados aos poucos e que cada pacote pode ser liberado com uma licença diferente. Sempre fique atento ao arquivo 'LICENSE' disponível em casa repositório para estar ciente dos direitos e obrigações legais.
 
 * Sistema Operacional Hexagonix e Sistema Operacional Andromeda. Copyright © 2016-2022 Felipe Miguel Nery Lunkes. Todos os direitos reservados.
 * Kernel Hexagon. Copyright © 2016-2022 Felipe Miguel Nery Lunkes. Todos os direitos reservados.
 * Gerenciador de Boot Saturno. Copyright © 2016-2022 Felipe Miguel Nery Lunkes. Todos os direitos reservados.
 * Hexagon Boot (HBoot). Copyright © 2020-2022 Felipe Miguel Nery Lunkes. Todos os direitos reservados.
 
-Versão deste arquivo: 3.10
+Versão deste arquivo: 3.11
 
 Copyright © 2021-2022 Felipe Miguel Nery Lunkes
