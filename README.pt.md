@@ -179,7 +179,9 @@ cabecalhoAPP:
 .reservado10:     dw 0      ;; Reservado (Word)
 ```
 
-Abaixo, uma implementação de um pequeno aplicativo escrito como exemplo, que utiliza o cabeçalho e chamadas de sistema do Hexagon, escrito em linguagem Assembly x86 em sintaxe Intel e montada com o auxílio do flat assembler (FASM). Este aplicativo envia uma mensagem ao terminal e se encerra em seguida.
+Os aplicativos para Hexagonix/Andromeda podem ser desenvolvidos em Assembly, até o momento, utilizando o montador de sua preferência (desde que consiga gerar código x86). Bibliotecas para o desenvolvimento de aplicativos, contendo macros, funções e chamadas de sistema, podem ser encontradas [aqui (libasm)](https://github.com/hexagonix/libasm) e foram desenvolvidas para funcionar com os montadores [fasm](https://flatassembler.net/) e [nasm](https://www.nasm.us/). Ao acessar o repositório da **libasm**, você terá acesso às bibliotecas divididas de acordo com o suporte a um montador específico. O suporte a mais montadores pode ser adicionado no futuro. Uma biblioteca C (libc) também está nos planos para um futuro próximo.
+
+Abaixo, uma implementação de um pequeno aplicativo escrito como exemplo, que utiliza o cabeçalho e chamadas de sistema do Hexagon, escrito em linguagem Assembly x86 em sintaxe Intel e montada com o auxílio do flat assembler (FASM). Note que para solicitar o acesso À chamadas do Hexagon, este aplicativo deve importar o arquivo **hexagon.s** da libasm (a depender do montador escolhido. Neste caso, fasm/hexagon.s). Este aplicativo envia uma mensagem ao terminal e se encerra em seguida.
 
 ```assembly
 ;; Este é um template para a construção de um app de modo texto para 
@@ -193,6 +195,8 @@ Abaixo, uma implementação de um pequeno aplicativo escrito como exemplo, que u
 ;; fasmX tapp.asm
 ;;       ou
 ;; fasmX tapp.asm tapp.app
+
+format binary as "app" ;; Define o formato e extensão do arquivo gerado
 
 use32
 
@@ -218,7 +222,7 @@ cabecalhoAPP:
 
 ;;*************************************************************
 
-include "andrmda.s" ;; Incluir as chamadas de sistema
+include "hexagon.s" ;; Incluir as chamadas de sistema
 
 ;;*************************************************************
 
