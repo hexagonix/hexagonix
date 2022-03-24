@@ -319,6 +319,69 @@ Ainda não existem aplicativos de terceiros disponíveis para o ambiente Androme
 
 A instalação padrão do Hexagonix também fornece uma série de fontes que podem ser carregadas pelo aplicativo de configurações ou utilitário de fontes (gerenciador de fontes). Esses arquivos são utilizados para alterar a fonte de exibição em modo gráfico do Hexagonix e Andromeda.
 
+As fontes de modo gráfico para Hexagon são desenvolvidas como um bitmap em Assembly que, compiladas, geram uma imagem binária da fonte com representações de cada caractere. Os códigos das fontes padrão do Hexagonix já foram liberados como código livre e estão disponíveis no [repositório de fontes do Hexagonix](https://github.com/hexagonix/Fontes). 
+
+### Como criar sua própria fonte gráfica
+
+Sinta-se a vontade para realizar o download da fonte [modelo](https://github.com/hexagonix/Fontes/blob/main/modelo.asm), que já vem estruturada mas com os caracteres em braco, e desenhar a sua própria fonte gráfica! Para isso, você precisa saber algumas informações técnicas sobre elas:
+
+* As fontes apresentam um altura de 16 e largura de 8. Essa informação é necessária para garantir que a sua fonte não apresente problemas durante o uso.
+* Você pode dividir livremente os espaços reservados para acentuação e outras características gráficas de cada caractere, como cedilha ou porções que ficam abaixo da linha de caracteres, como y, vírgula e etc.
+* As fontes são desenhadas no formato bitmap. Sendo assim, cada caractere é um mapa de pixels composto de 0s e 1s. Os 0s simbolizam áreas que não serão exibidas do caractere, enquanto os 1s representam os pixels do caractere que serão exibidos ao usuário. Você deve alterar cada matrix de caractere na fonte modelo adicionando os 1s onde deseja que os pixels sejam exibidos para formar o caractere. Abaixo, você verá um exemplo de um caractere em branco e a mesma representação deste caractere pronto para a fonte.
+
+O código abaixo mostra a representação em bitmap da cerquilha (#) em branco e a implementação na fonte [hint](https://github.com/hexagonix/Fontes/blob/main/hint.asm).
+
+´´´assembly
+;; Representação em branco do caractere cerquilha (#), no modelo 
+
+cedilha: 
+
+	db 00000000b ;; Dois pixels de altura para caracteres acima da letra
+	db 00000000b
+	
+	db 00000000b
+	db 00000000b
+	db 00000000b
+	db 00000000b
+	db 00000000b
+	db 00000000b
+	db 00000000b
+	db 00000000b
+	db 00000000b
+
+	db 00000000b ;; Cinco pixels de altura para caracteres acima da letra
+	db 00000000b
+	db 00000000b
+	db 00000000b
+	db 00000000b
+
+;; Representação em branco do caractere cerquilha (#), na fonte hint 
+
+	db 00000000b
+	db 00000000b
+	
+	db 00000000b
+	db 00000000b
+	db 00100010b
+	db 00100010b
+	db 01111111b
+	db 00100010b
+	db 01111111b
+	db 00100010b
+	db 00100010b
+
+	db 00000000b
+	db 00000000b
+	db 00000000b
+	db 00000000b
+	db 00000000b
+
+´´´ 
+
+Você já deve conseguir visualizar, dentro da matrix, a cerquilha, marcada pela presença de 1s.
+
+Você pode desenvolver quantas fontes quiser e brincar com designs diferentes e inovadores, bem como extender os caracteres disponíveis (utilizando a referência ASCII).
+
 # Bibliotecas de desenvolvimento do sistema:
 
 O Hexagonix/Andromeda também fornece funções que devem ser utilizadas para interagir com o próprio ambiente do sistema. As bibliotecas são utilizadas para acessar funções implementadas pelo Hexagon ou pelas próprias bibliotecas, permitindo o desenvolvimento facilitado de aplicativos e utilitários tanto para o ambiente Hexagonix quanto para o Andromeda. As bibliotecas implementam funções para exibição de texto, cálculos matemáticos, envio de mensagens, abertura de arquivos e dispositivos e muito mais. A biblioteca básica (andrmda.s ou hexagonix.s) fornecem funções acessíveis para ambos os ambientes possíveis de distribuição, enquanto outras bibliotecas podem ser exclusivas do ambiente Andromeda. Essas bibliotecas incluem funções gráficas para montar interfaces em modo gráfico (Andromeda), bem como funções para verificar a versão do sistema atualmente em execução (Hexagonix e Andromeda). Os utilitários base Hexagonix realizam a checagem da versão do Hexagon para verificar se podem ser executados, utilizando o utilitário Unix uname ou diretamente por uma chamada de sistema do Hexagon.
@@ -479,7 +542,7 @@ Leia a [licença](LICENSE) para mais informações sobre direitos autorais, prop
 * Gerenciador de Boot Saturno. Copyright © 2016-2022 Felipe Miguel Nery Lunkes. Todos os direitos reservados.
 * Hexagon Boot (HBoot). Copyright © 2020-2022 Felipe Miguel Nery Lunkes. Todos os direitos reservados.
 
-Versão deste arquivo: 4.0
+Versão deste arquivo: 4.1
 
 Copyright © 2021-2022 Felipe Miguel Nery Lunkes
 
