@@ -323,7 +323,7 @@ As fontes de modo gráfico para Hexagon são desenvolvidas como um bitmap em Ass
 
 ### Como criar sua própria fonte gráfica
 
-Sinta-se a vontade para realizar o download da fonte [modelo](https://github.com/hexagonix/Fontes/blob/main/modelo.asm), que já vem estruturada mas com os caracteres em braco, e desenhar a sua própria fonte gráfica! Para isso, você precisa saber algumas informações técnicas sobre elas:
+Sinta-se a vontade para realizar o download da fonte [modelo](https://github.com/hexagonix/Fontes/blob/main/modelo.asm), que já vem estruturada mas com os caracteres em branco, e desenhar a sua própria fonte gráfica! Para isso, você precisa saber algumas informações técnicas sobre elas:
 
 * As fontes apresentam um altura de 16 e largura de 8. Essa informação é necessária para garantir que a sua fonte não apresente problemas durante o uso.
 * Você pode dividir livremente os espaços reservados para acentuação e outras características gráficas de cada caractere, como cedilha ou porções que ficam abaixo da linha de caracteres, como y, vírgula e etc.
