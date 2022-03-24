@@ -180,7 +180,7 @@ cabecalhoAPP:
 
 Os aplicativos para Hexagonix/Andromeda podem ser desenvolvidos em Assembly, até o momento, utilizando o montador de sua preferência (desde que consiga gerar código x86). Bibliotecas para o desenvolvimento de aplicativos, contendo macros, funções e chamadas de sistema, podem ser encontradas [aqui (libasm)](https://github.com/hexagonix/libasm) e foram desenvolvidas para funcionar com os montadores [fasm](https://flatassembler.net/) e [nasm](https://www.nasm.us/). Ao acessar o repositório da **libasm**, você terá acesso às bibliotecas divididas de acordo com o suporte a um montador específico. O suporte a mais montadores pode ser adicionado no futuro. Uma biblioteca C (libc) também está nos planos para um futuro próximo.
 
-Abaixo, uma implementação de um pequeno aplicativo escrito como exemplo, que utiliza o cabeçalho e chamadas de sistema do Hexagon, escrito em linguagem Assembly x86 em sintaxe Intel e montada com o auxílio do flat assembler (FASM). Note que para solicitar o acesso às chamadas do Hexagon, este aplicativo deve importar o arquivo **hexagon.s** da libasm (a depender do montador escolhido. Neste caso, fasm/hexagon.s). Este aplicativo envia uma mensagem ao terminal e se encerra em seguida. Você pode verificar mais da especificação do formato HAPP nos arquivos correspondentes da biblioteca HAPP da [libasm para fasm](https://github.com/hexagonix/libasm/blob/main/fasm/HAPP.s) ou [libasm para nasm](https://github.com/hexagonix/libasm/blob/main/nasm/HAPP.s). Abaixo, você poderá obter mais informações sobre as chamadas de sistema.
+Abaixo, uma implementação de um pequeno aplicativo escrito como exemplo, que utiliza o cabeçalho e chamadas de sistema do Hexagon, escrito em linguagem Assembly x86 em sintaxe Intel e montada com o auxílio do flat assembler (FASM). Note que para solicitar o acesso às chamadas do Hexagon, este aplicativo deve importar o arquivo **hexagon.s** da libasm (a depender do montador escolhido. Neste caso, fasm/hexagon.s). Este aplicativo envia uma mensagem ao terminal e se encerra em seguida. Você pode obter mais informações sobre a especificação do formato HAPP na biblioteca HAPP da [libasm para fasm](https://github.com/hexagonix/libasm/blob/main/fasm/HAPP.s) ou [libasm para nasm](https://github.com/hexagonix/libasm/blob/main/nasm/HAPP.s). Abaixo, você poderá obter mais informações sobre as chamadas de sistema.
 
 ```assembly
 ;; Este é um template para a construção de um app de modo texto para 
@@ -249,7 +249,7 @@ inicioAPP:
     Andromeda encerrarProcesso ;; Outro macro que solicita qual chamada realizar
 ``` 
 
-Uma documentação mais detalhada do Hexagon será disponibilizada no futuro.
+Uma documentação mais detalhada do Hexagon está em preparação e está sendo liberada conforme pronta.
 
 ### Chamadas de sistema
 
