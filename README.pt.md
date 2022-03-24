@@ -331,7 +331,7 @@ Sinta-se a vontade para realizar o download da fonte [modelo](https://github.com
 
 O código abaixo mostra a representação em bitmap da cerquilha (#) em branco e a implementação na fonte [hint](https://github.com/hexagonix/Fontes/blob/main/hint.asm).
 
-´´´assembly
+```assembly
 ;; Representação em branco do caractere cerquilha (#), no modelo 
 
 cedilha: 
@@ -376,7 +376,7 @@ cedilha:
 	db 00000000b
 	db 00000000b
 
-´´´ 
+```
 
 Você já deve conseguir visualizar, dentro da matrix, a cerquilha, marcada pela presença de 1s.
 
