@@ -327,7 +327,7 @@ Sinta-se a vontade para realizar o download da fonte [modelo](https://github.com
 
 * As fontes apresentam um altura de 16 e largura de 8. Essa informação é necessária para garantir que a sua fonte não apresente problemas durante o uso.
 * Você pode dividir livremente os espaços reservados para acentuação e outras características gráficas de cada caractere, como cedilha ou porções que ficam abaixo da linha de caracteres, como y, vírgula e etc.
-* As fontes são desenhadas no formato bitmap. Sendo assim, cada caractere é um mapa de pixels composto de 0s e 1s. Os 0s simbolizam áreas que não serão exibidas do caractere, enquanto os 1s representam os pixels do caractere que serão exibidos ao usuário. Você deve alterar cada matrix de caractere na fonte modelo adicionando os 1s onde deseja que os pixels sejam exibidos para formar o caractere. Abaixo, você verá um exemplo de um caractere em branco e a mesma representação deste caractere pronto para a fonte.
+* As fontes são desenhadas no formato bitmap. Sendo assim, cada caractere é um mapa de pixels composto de 0s e 1s. Os 0s simbolizam áreas que não serão exibidas do caractere, enquanto os 1s representam os pixels do caractere que serão exibidos ao usuário. Você deve alterar cada matriz de caractere na fonte modelo adicionando os 1s onde deseja que os pixels sejam exibidos para formar o caractere. Abaixo, você verá um exemplo de um caractere em branco e a mesma representação deste caractere pronto para a fonte.
 
 O código abaixo mostra a representação em bitmap da cerquilha (#) na fonte [modelo](https://github.com/hexagonix/Fontes/blob/main/modelo.asm) e a implementação na fonte [hint](https://github.com/hexagonix/Fontes/blob/main/hint.asm).
 
@@ -378,7 +378,7 @@ cedilha:
 
 ```
 
-Você já deve conseguir visualizar, dentro da matrix, a cerquilha, marcada pela presença de 1s.
+Você já deve conseguir visualizar, dentro da matriz, a cerquilha, marcada pela presença de 1s.
 
 Você pode desenvolver quantas fontes quiser e brincar com designs diferentes e inovadores, bem como extender os caracteres disponíveis (utilizando a referência ASCII).
 
