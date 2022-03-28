@@ -547,7 +547,6 @@ Leia a [licença](LICENSE) para mais informações sobre direitos autorais, prop
 Versão deste arquivo: 4.2
 
 Copyright © 2021-2022 Felipe Miguel Nery Lunkes
-
 Todos os direitos reservados.
 
 [^1]: Você pode obter mais informações sobre a relação entre o Darwin e o macOS [aqui](https://pt.wikipedia.org/wiki/Darwin_(sistema_operacional)).
