@@ -67,7 +67,7 @@ O Hexagon Boot (HBoot) é um componente desenvolvido permitir a inicialização 
 
 #### Módulos HBoot
 
-O HBoot permite o carregamento de módulos no formato HBoot, que podem ser úteis, no futuro, para permitir testes de hardware, como testes de memória e disco, caso os módulos estejam disponíveis no disco. Os módulos podem ser utilizados também para extender as funções do HBoot. A especificação do formato já está disponível e um exemplo pode ser encontrado abaixo. Esses módulos podem ser utilizados para testar dispositivos específicos, obter informações do hardware ou carregar arquivos em sistemas de arquivos não suportados originalmente pelo HBoot.
+O HBoot permite o carregamento de módulos no formato HBoot, que podem ser úteis, no futuro, para permitir testes de hardware, como testes de memória e disco, caso os módulos estejam disponíveis no disco. Os módulos podem ser utilizados também para estender as funções do HBoot. A especificação do formato já está disponível e um exemplo pode ser encontrado abaixo. Esses módulos podem ser utilizados para testar dispositivos específicos, obter informações do hardware ou carregar arquivos em sistemas de arquivos não suportados originalmente pelo HBoot.
 
 #### Carregar um sistema operacional do tipo DOS com modDOS
 
@@ -380,7 +380,7 @@ cedilha:
 
 Você já deve conseguir visualizar, dentro da matriz, a cerquilha, marcada pela presença de 1s.
 
-Você pode desenvolver quantas fontes quiser e brincar com designs diferentes e inovadores, bem como extender os caracteres disponíveis (utilizando a referência ASCII).
+Você pode desenvolver quantas fontes quiser e brincar com designs diferentes e inovadores, bem como estender os caracteres disponíveis (utilizando a referência ASCII).
 
 # Bibliotecas de desenvolvimento do sistema:
 
