@@ -255,7 +255,7 @@ Uma documentação mais detalhada do Hexagon está em preparação e está sendo
 
 As chamadas de sistema são realizadas no estilo BSD, com o número da função presente na pilha e os parâmetros/argumentos junto aos registradores. Para uma lista completa de chamadas de sistema disponíveis na versão atual do sistema, dê uma olhada na biblioteca do Hexagon na [libasm para fasm](https://github.com/hexagonix/libasm/blob/main/fasm/hexagon.s) ou [libasm para nasm](https://github.com/hexagonix/libasm/blob/main/nasm/hexagon.s).
 
-## Ambiente Hexagonix:
+## Ambiente Hexagonix
 
 O Hexagonix implementa, junto ao Hexagon, uma série de utilitários Unix-like, com funcionalidade e sintaxe de uso semelhante à sistemas UNIX e Unix-like. **Utilitários como init, login, sh, top, ps, cp, rm, cat, clear, man, dentre outros, estão inclusos na distribuição padrão do Hexagonix**. Estes utilitários compõem o pacote de utilitários base do Hexagonix. As ferramentas de inicialização de ambiente de modo usuário e login estão neste pacote, bem como vários arquivos de configuração deste ambiente. Estes utilitários não apresentam, no geral, uma interface gráfica, apenas uma interface em linha de comando (CLI). Entretanto, podem ser solicitados por aplicativos que apresentem interface gráfica. Este ambiente está disponível tanto na distribuição do [Hexagonix](hexagonix.img) quanto na distribuição [Andromeda](andromeda.img).
 
