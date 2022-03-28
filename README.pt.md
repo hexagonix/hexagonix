@@ -246,7 +246,7 @@ inicioAPP:
 
     imprimirString ;; Aqui temos um macro que configura e chama uma função da API
 
-    Andromeda encerrarProcesso ;; Outro macro que solicita qual chamada realizar
+    Hexagon encerrarProcesso ;; Outro macro que solicita qual chamada realizar
 ``` 
 
 Uma documentação mais detalhada do Hexagon está em preparação e está sendo liberada conforme pronta.
