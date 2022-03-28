@@ -246,7 +246,7 @@ inicioAPP:
 
     imprimirString ;; Aqui temos um macro que configura e chama uma função da API
 
-    Hexagon encerrarProcesso ;; Outro macro que solicita qual chamada realizar
+    Hexagonix encerrarProcesso ;; Outro macro que solicita qual chamada realizar
 ``` 
 
 Uma documentação mais detalhada do Hexagon está em preparação e está sendo liberada conforme pronta.
@@ -544,7 +544,7 @@ Leia a [licença](LICENSE) para mais informações sobre direitos autorais, prop
 * Gerenciador de Boot Saturno. Copyright © 2016-2022 Felipe Miguel Nery Lunkes. Todos os direitos reservados.
 * Hexagon Boot (HBoot). Copyright © 2020-2022 Felipe Miguel Nery Lunkes. Todos os direitos reservados.
 
-Versão deste arquivo: 4.1
+Versão deste arquivo: 4.2
 
 Copyright © 2021-2022 Felipe Miguel Nery Lunkes
 
