@@ -334,7 +334,7 @@ O código abaixo mostra a representação em bitmap da cerquilha (#) na fonte [m
 ```assembly
 ;; Representação em branco do caractere cerquilha (#), no modelo 
 
-cedilha: 
+.cerquilha: 
 
 	db 00000000b ;; Dois pixels de altura para caracteres acima da letra
 	db 00000000b
@@ -356,6 +356,8 @@ cedilha:
 	db 00000000b
 
 ;; Representação em branco do caractere cerquilha (#), na fonte hint 
+
+.cerquilha: 
 
 	db 00000000b
 	db 00000000b
