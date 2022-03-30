@@ -61,7 +61,11 @@ O primeiro componente do Hexagonix/Andromeda é o Saturno. Ele é responsável p
 
 ## Hexagon Boot (HBoot)
 
-O Hexagon Boot (HBoot) é um componente desenvolvido para permitir a inicialização do kernel Hexagon. Até então, a inicialização era realizada por apenas um estágio, que definia um ambiente bem básico, carregava o Hexagon na memória e imediatamente passava o controle para ele, fornecendo um conjunto bem pequeno e limitado de parâmetros, uma vez que o código desse estágio fica restrito a 512 bytes, o que limita a realização de diversos testes e processamento de dados. Como o HBoot, foi possível expandir o número de tarefas realizadas antes da execução do Hexagon, além da possibilidade de fornecer mais informações a respeito do ambiente da máquina e de inicialização. Isso é particularmente importante para permitir a criação de uma árvore de dispositivos que pode ser utilizada pelo Hexagon para decidir como manipular cada dispositivo identificado. O HBoot é capaz de verificar quais unidades de disco estão disponíveis na máquina, emitir um tom de inicialização, obter a quantidade de memória RAM disponível instalada e permitir ou não o seguimento do processo de boot de acordo com essa informação. Caso nenhuma interação do usuário seja detectada 3 segundos após todos os testes e atividades essenciais para criar um ambiente de inicialização para o Hexagon, o sistema irá carregar e executar o Hexagon (presente em um arquivo no volume nomeado de **HEXAGON.SIS**), sendo descarregado da memória. A interação com o HBoot se dá pelo pressionamento da tecla F8 após a respectiva mensagem surgir na tela.
+O Hexagon Boot (HBoot) é um componente desenvolvido para permitir a inicialização do kernel Hexagon. Até então, a inicialização era realizada por apenas um estágio, que definia um ambiente bem básico, carregava o Hexagon na memória e imediatamente o executava, fornecendo um conjunto bem limitado de parâmetros. Isso se deve ao fato de que o código desse estágio fica restrito a 512 bytes, o que limita a realização de diversos testes e processamento de dados. Como o HBoot, foi possível expandir o número de tarefas realizadas antes da execução do Hexagon, além da possibilidade de fornecer mais informações a respeito do ambiente do dispositivo e de inicialização. Isso é particularmente importante para permitir a criação de uma árvore de dispositivos que pode ser utilizada pelo Hexagon para decidir como manipular cada dispositivo identificado. O HBoot é capaz de verificar quais unidades de disco estão disponíveis na máquina, emitir um tom de inicialização, obter a quantidade de memória RAM disponível instalada e permitir ou não o prosseguimento do processo de boot de acordo com essa informação. Caso nenhuma interação do usuário seja detectada (em um tempo de 3 segundos após a inicialização do HBoot e exibição de mensagens ao usuário), o HBoot irá realizar testes adicionais para verificar a capacidade do dispositivo em executar o sistema e irá carregar e executar o Hexagon (presente em um arquivo no volume nomeado de **HEXAGON.SIS**). Após o carregamento, o HBoot transfere o controle para o Hexagon, que é inicializado e armazena no ambiente do kernel os dados fornecidos pelo HBoot.
+
+### Como interagir com o HBoot
+
+A interação com o HBoot se dá pelo pressionamento da tecla F8 após a inicialização e exibição de mensagens na tela. O HBoot aguarda por 3 segundos alguma intereação e, caso nenhuma tenha ocorrido, continua a executar o protocolo de boot. A interação com o HBoot pode ser interessante para carregar módulos no formato HBoot, fornecer parâmetros de inicialização ao Hexagon, carregar algum sistema do tipo DOS cujos arquivos estejam presentes no mesmo volume ou ainda carregar imagens HAPP de outros núcleos (caso o desenvolvedor deseje utilizar a implementação HBoot em seu projeto). Abaixo, veja mais alguns detalhes de funções adicionais e de diagnóstico que podem ser realizadas via interação com o HBoot antes do carregamento do Hexagonix.
 
 ### Outras funções disponíveis (módulos HBoot e modDOS)
 
@@ -90,7 +94,7 @@ Abaixo é possível encontrar um exemplo de implementação de módulo HBoot (es
 ;;                                  
 ;;************************************************************************************
 
-use16					
+use16
 
 ;; O módulo deve apresentar um cabeçalho especial de imagem HBoot
 ;; São 6 bytes, com assinatura (número mágico) e arquitetura alvo
@@ -105,21 +109,21 @@ cabecalhoHBoot:
 
 ;; Configurar pilha e ponteiro
 
-    cli				   ;; Desativar interrupções
+    cli            ;; Desativar interrupções
     
-    mov ax, 0x2000                 ;; Definir aqui os registradores de pilha
+    mov ax, 0x2000 ;; Definir aqui os registradores de pilha
     mov ss, ax
     mov sp, 0
     
-    sti				   ;; Habilitar interrupções
+    sti            ;; Habilitar interrupções
      
     clc 
 
-    mov ax, 0x2000                 ;; Definir aqui os registradores de segmento
+    mov ax, 0x2000 ;; Definir aqui os registradores de segmento
     mov ds, ax
     mov es, ax
     
-    sti                            ;; Habilitar as interrupções
+    sti            ;; Habilitar as interrupções
 
 ;; Seu código aqui
 
@@ -152,7 +156,7 @@ O kernel foi inicialmente desenhado e escrito visando uma estrutura e funcioname
 
 ### O formato executável HAPP
 
-O formato de imagem executável HAPP foi desenvolvida para o Hexagon para permitir o desenvolvimento de imagens que possam ser verificadas e validadas quanto a arquitetura e versões mínimas do kernel necessárias para a correta execução. O cabeçalho também armazena informações importantes, permitindo ao desenvolvedor adicionar diretamente um ponto de entrada, independente de onde ele esteja no interior da imagem, algo que deveria ser redirecionado anteriormente, quando a imagem executável era no formato binário puro. A imagem HAPP também permite validar se a imagem a ser carregada é realmente uma imagem executável, impedindo então que arquivos não suportados sejam executados, mesmo que não se tratem sequer de arquivos executáveis. Também permite que o sistema verifique as dependências do código, como a já citada arquitetura, bem como os números de versão do Hexagon, que devem ser iguais ou superiores ao mínimo especificado pelo cabeçalho. Todas as imagens HAPP devem apresentar este cabeçalho completo, incluindo as sessões reservadas, a fim de funcionarem corretamente em versões posteriores do Sistema. As imagens HAPP são sempre 32-bit.
+O formato de imagem executável HAPP foi desenvolvida para o Hexagon para permitir o desenvolvimento de imagens que possam ser verificadas e validadas quanto a arquitetura e versões mínimas do kernel necessárias para a correta execução. O cabeçalho também armazena informações importantes, permitindo ao desenvolvedor adicionar diretamente um ponto de entrada, independente de onde ele esteja no interior da imagem, algo que deveria ser redirecionado anteriormente, quando a imagem executável era no formato binário puro. A imagem HAPP também permite validar se a imagem a ser carregada é realmente uma imagem executável, impedindo então que arquivos não suportados sejam executados, mesmo que não se tratem sequer de arquivos executáveis. Também permite que o sistema verifique as dependências do código, como a já citada arquitetura, bem como os números de versão do Hexagon, que devem ser iguais ou superiores ao mínimo especificado pelo cabeçalho. Todas as imagens HAPP devem apresentar este cabeçalho completo, incluindo as sessões reservadas, a fim de funcionarem corretamente em versões posteriores do Sistema. As imagens HAPP são sempre 32-bit. Para imagens 16-bit, o sistema utiliza a implementação de cabeçalho HBoot (implementação encontrada em módulos de inicialização do sistema).
 
 Em linguagem Assembly, a linguagem de desenvolvimento do sistema, o cabeçalho, em sua especificação 2.0:
 
@@ -247,7 +251,7 @@ inicioAPP:
     imprimirString ;; Aqui temos um macro que configura e chama uma função da API
 
     Hexagonix encerrarProcesso ;; Outro macro que solicita qual chamada realizar
-``` 
+```
 
 Uma documentação mais detalhada do Hexagon está em preparação e está sendo liberada conforme pronta.
 
@@ -294,7 +298,7 @@ Vale lembrar que os utilitários do Hexagonix tentam implementar uma interface P
 * [Flat Assembler (fasm)](https://flatassembler.net/index.php)
 
 O Hexagonix recebeu um port do montador [Fasm](https://flatassembler.net/index.php), que foi adaptado para o Hexagonix, permitindo ao usuário desenvolver aplicativos diretamente no sistema. Este port é chamado de fasmX. As alterações adicionadas ao código, assim como licença do software, podem ser encontradas no [repositório do fasm para o Hexagonix](https://github.com/hexagonix/fasm). Este repositório é um fork do [repositório original](https://github.com/tgrysztar/fasm). O código adicionado é baseado em modificações realizadas do código original e adições autorais. Esse código modificado/autoral pode ser encontrado no repositório, [clicando aqui](https://github.com/hexagonix/fasm/tree/master/SOURCE/HEXAGONIX). O fasmX, port do fasm para Hexagonix, sempre é atualizado quando novidades são adicionadas no repositório do fasm. Para indicar que se trata de uma versão estável e testada, o número de versão do fasmX sempre herda a numeração do fasm, sucedido por um caractere x (como exemplo, a versão baseada no fasm 1.73.30, após teste, recebe a numeração 1.73.30x). Você pode reportar bugs ou problemas de geração ou otimização de código na versão para Hexagonix [aqui](https://github.com/hexagonix/fasm/issues). Para reportar erros gerais do fasm, utilize o repositório [oficial](https://github.com/tgrysztar/fasm).
- 
+
 ## Ambiente Andromeda
 
 O ambiente Andromeda é construído sobre a base sólida fornecida pelo Hexagonix, incluindo aplicativos e utilitários que não implementam a filosofia Unix ou apresentam sintaxe e forma de uso bastante diferentes do que se esperaria de um ambiente Unix. Desta forma, eles são separados como **aplicativos Andromeda**, e não fazem parte da distribuição padrão do Hexagonix. Aqui estão o aplicativo de configurações do Sistema, calculadora, gerenciador de fontes, editores de texto e a IDE desenvolvida para o Andromeda. Estes utilitários podem ou não apresentar uma interface gráfica. Juntamente a eles, compõem o ambiente Andromeda bibliotecas desenvolvidas para permitir o desenvolvimento de aplicativos, como a biblioteca **Estelar**. Esse ambiente só está disponível na distribuição [Andromeda](andromeda.img).
@@ -398,28 +402,30 @@ Após a inicialização do firmware, o [BIOS](https://pt.wikipedia.org/wiki/BIOS
 
 ## Requisitos do sistema
 
+Abaixo, uma lista de requisitos mínimos e recomendados para testar o Hexagonix/Andromeda em uma máquina virtual ou máquina física.
+
 ### Requisitos mínimos
 
 * Processador: Pentium III (1999) com suporte a SSE e MMX ou mais recente;
 * Memória RAM: 32 Mb mínimo (uma instalação mínima com 32 Mb costuma ser suficiente, na maioria dos casos);
 * Disco rígido: disco rígido IDE ou SATA com mínimo de 50 Mb;
 * Periféricos necessários:
-  - Porta serial (1-4);
-  - Porta paralela (1-4);
-  - Teclado PS/2 ou USB;
-  - Placa de vídeo VGA com 2 Mb de memória de vídeo (com suporte a cores).
+  * Porta serial (1-4);
+  * Porta paralela (1-4);
+  * Teclado PS/2 ou USB;
+  * Placa de vídeo VGA com 2 Mb de memória de vídeo (com suporte a cores).
 
 ### Recomendado
 
 * Processador: Pentium D ou mais recente;
 * Memória RAM: 50 Mb;
 * Periféricos opcionais:
-  - Mouse PS/2 ou USB;
-  - Placa de vídeo com > 2 Mb de memória de vídeo.
+  * Mouse PS/2 ou USB;
+  * Placa de vídeo com > 2 Mb de memória de vídeo.
 
-## Obter as imagens de disco com a instação do sistema 
+## Obter as imagens de disco com a instação do sistema
 
-Para testar o Hexagonix ou Andromeda, você vai precisar de uma das imagens de disco disponíveis neste repositório, bem como a ferramenta [qemu](https://www.qemu.org) instalada em seu computador, caso deseje testar o sistema em ambiente virtualizado. A imagem também pode ser utilizada para a gravação em um disco físico em uma máquina real. 
+Para testar o Hexagonix ou Andromeda, você vai precisar de uma das imagens de disco disponíveis neste repositório, bem como a ferramenta [qemu](https://www.qemu.org) instalada em seu computador, caso deseje testar o sistema em ambiente virtualizado. A imagem também pode ser utilizada para a gravação em um disco físico em uma máquina real.
 
 Para testar o Hexagonix, obtenha o arquivo ['hexagonix.img'](hexagonix.img) neste repositório.
 Para testar o Andromeda, obtenha o arquivo ['andromeda.img'](andromeda.img) neste repositório.
@@ -526,16 +532,16 @@ Além disso, outros projetos auxiliaram no desenvolvimento do Hexagonix/Andromed
 
 Sinta-se a vontade de me contatar, reportar bugs ou se interessar em participar do projeto.
 
-## E-mail:
+## E-mail
 
 * hexagonixdev@gmail.com (PT/EN) 
 * felipemiguel_nery@hotmail.com (PT/EN)
 
-## Redes sociais:
+## Redes sociais
 
 * [Twitter](https://twitter.com/redLipes)
 
-# Notas de direitos autorais 
+# Notas de direitos autorais
 
 O Hexagonix/Andromeda foi desenvolvido do zero por [Felipe Lunkes](https://github.com/felipenlunkes).
 
@@ -546,7 +552,7 @@ Leia a [licença](LICENSE) para mais informações sobre direitos autorais, prop
 * Gerenciador de Boot Saturno. Copyright © 2016-2022 Felipe Miguel Nery Lunkes. Todos os direitos reservados.
 * Hexagon Boot (HBoot). Copyright © 2020-2022 Felipe Miguel Nery Lunkes. Todos os direitos reservados.
 
-Versão deste arquivo: 4.2
+Versão deste arquivo: 4.3
 
 Copyright © 2021-2022 Felipe Miguel Nery Lunkes
 <br>
