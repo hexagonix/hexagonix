@@ -4,7 +4,9 @@
 
 ### Fazer download e testar o sistema agora mesmo
 
-No [final deste arquivo](https://github.com/hexagonix/hexagonix/blob/main/README.pt.md#como-testar-o-hexagonix-ou-o-andromeda) você encontra um tutorial para executar o Hexagonix/Andromeda em seu computador, tanto em uma versão virtualizada como de forma nativa. Lembre-se que é necessário possuir um computador de arquitetura x86 ou um emulador, caso esteja utilizando um dispositivo de outra arquitetura para testes. 
+No [final deste arquivo](https://github.com/hexagonix/hexagonix/blob/main/README.pt.md#como-testar-o-hexagonix-ou-o-andromeda) você encontra um tutorial para executar o Hexagonix/Andromeda em seu computador, tanto em uma versão virtualizada como de forma nativa. Lembre-se que é necessário possuir um computador de arquitetura x86 ou um emulador, caso esteja utilizando um dispositivo de outra arquitetura para testes.
+
+Você pode ir até a sessão [Releases](https://github.com/hexagonix/hexagonix/releases) para obter as versões estáveis do sistema. As versões disponíveis diretamente neste repositório são versões de desenvolvimento (beta e release candidate), que também podem ser executadas e estão minimamente funcionais.
 
 ### Documentação do sistema 
 
