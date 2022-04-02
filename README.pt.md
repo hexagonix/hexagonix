@@ -87,13 +87,13 @@ Módulos HBoot vêm sendo desenvolvidos para estender a funcionalidade do HBoot.
 * Spartan: implementação modelo de um módulo HBoot. Exibe uma mensagem na tela e solicita ao usuário o pressionamento de qualquer tecla para reiniciar o computador e iniciar o Hexagonix.
 * x86-Detect: módulo de diagnóstico e inicialização do hardware do computador. Esse módulo detecta unidades de armazenamento disponíveis, verifica requisitos mínimos do computador para a execução do Hexagon (como memória RAM e processador), detecta e inicializa portas seriais e paralelas e exibe para o usuário se o dispositivo pode ou não executar o Hexagonix. Futuramente, será utilizado para encontrar outros sistemas operacionais instalados, realizar o teste de memória RAM e de desempenho de discos e encontrar e configurar dispositivos PCI. Uma entrada de inicialização rápida ao x86-Detect pode ser adicionada de forma permanente no HBoot, para execução mais fácil e com menos passos.
 
-<p align="center">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/x86-Detect.png" width="600" height="500">
-</p>
-
 #### Carregar um sistema operacional do tipo DOS com modDOS
 
 No contexto do desenvolvimento do Hexagonix, o HBoot também pode carregar e executar o núcleo do sistema operacional de código livre FreeDOS[^2], para que ferramentas utilitárias já estabelecidas e robustas que sejam executadas em ambiente DOS possam ser executadas sobre o volume e arquivos Hexagonix/Andromeda. Essa função é realizada por um módulo HBoot (modDOS) que, até esse momento, se integra ao HBoot como uma biblioteca de módulo, já contendo toda a estrutura necessária para ser um módulo independente. Futuramente, o plano é que essa biblioteca/módulo seja removida do HBoot e mantida como um módulo separado, removendo a complexidade e o código do HBoot. Por desempenho, neste momento, o modDOS ainda é mantido na árvore de código do HBoot. O FreeDOS foi escolhido devido a diversas características interessantes que facilitam a implementação necessária no modDOS. Primeiramente, o kernel do sistema está contido em um único arquivo, geralmente "KERNEL.SYS"[^3] (embora que no contexto do modDOS, o nome de arquivo não é importante, visto que a inicialização não se dará pelo inicializador do projeto FreeDOS, que espera encontrar um arquivo com este nome), além da sua distribuição livre e gratuita. Já outros sistemas do tipo DOS, como o MS-DOS (principalmente em sua versão anterior a 7.0), podem utilizar mais de um arquivo no disco, bem como exigem que estes arquivos estejam em locais definidos e sejam contíguos no disco. Essa obrigatoriedade de localização definida não pode ser atendida aqui, visto que a instalação de uma cópia do sistema DOS ocorre já em uma partição Hexagonix. A instalação de um sistema DOS é opcional e o modDOS torna a execução deste tipo de sistema mais fácil, sendo necessária apenas a cópia do kernel, interpretador de comandos  demais utilitários desejados a uma partição do Hexagonix. Além disso, a utilização de um sistema de distribuição livre remove qualquer problema de licenciamento. A instalação de um sistema DOS juntamente ao Hexagonix/Andromeda permite que ferramentas DOS sejam utilizadas para realizar tarefas específicas deste ambiente ou adicionar funções e utilitários que ainda não estão disponíveis ou terminados para serem utilizados no Hexagonix, como um utilitário de particionamento de disco, por exemplo [^4]. Caso os componentes de sistema do FreeDOS não estejam presentes no disco (a cópia dos arquivos do FreeDOS não faz parte da imagem e instalação padrão), a inicialização em modo de compatibilidade DOS não irá ocorrer.
+
+<p align="center">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/modDOS.png" width="600" height="500">
+</p>
 
 ### Exemplo de módulo HBoot
 
@@ -502,11 +502,11 @@ Você pode reportar erros e ajudar a desenvolver o sistema. Para isso, abra uma 
 ## Hexagonix
 
 <p align="center">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix1.png" width="400" height="300">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix2.png" width="400" height="300">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix3.png" width="400" height="300">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix4.png" width="400" height="300">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix5.png" width="400" height="300">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix1.png" width="600" height="500">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix2.png" width="600" height="500">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix3.png" width="600" height="500">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix4.png" width="600" height="500">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix5.png" width="600" height="500">
 </p>
 
 Você pode ver mais [aqui](https://github.com/hexagonix/Distro/tree/main/Img).
@@ -514,11 +514,11 @@ Você pode ver mais [aqui](https://github.com/hexagonix/Distro/tree/main/Img).
 ## Andromeda
 
 <p align="center">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda1.png" width="400" height="300">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda2.png" width="400" height="300">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda3.png" width="400" height="300">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda4.png" width="400" height="300">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda5.png" width="400" height="300">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda1.png" width="600" height="500">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda2.png" width="600" height="500">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda3.png" width="600" height="500">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda4.png" width="600" height="500">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda5.png" width="600" height="500">
 </p>
 
 Você pode ver mais [aqui](https://github.com/hexagonix/Distro/tree/main/Img).
