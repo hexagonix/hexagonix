@@ -65,13 +65,14 @@ O primeiro componente do Hexagonix/Andromeda é o Saturno. Ele é responsável p
 
 O Hexagon Boot (HBoot) é um componente desenvolvido para permitir a inicialização do kernel Hexagon. Até então, a inicialização era realizada por apenas um estágio, que definia um ambiente bem básico, carregava o Hexagon na memória e imediatamente o executava, fornecendo um conjunto bem limitado de parâmetros. Isso se deve ao fato de que o código desse estágio fica restrito a 512 bytes, o que limita a realização de diversos testes e processamento de dados. Como o HBoot, foi possível expandir o número de tarefas realizadas antes da execução do Hexagon, além da possibilidade de fornecer mais informações a respeito do ambiente do dispositivo e de inicialização. Isso é particularmente importante para permitir a criação de uma árvore de dispositivos que pode ser utilizada pelo Hexagon para decidir como manipular cada dispositivo identificado. O HBoot é capaz de verificar quais unidades de disco estão disponíveis na máquina, emitir um tom de inicialização, obter a quantidade de memória RAM disponível instalada e permitir ou não o prosseguimento do processo de boot de acordo com essa informação. Caso nenhuma interação do usuário seja detectada (em um tempo de 3 segundos após a inicialização do HBoot e exibição de mensagens ao usuário), o HBoot irá realizar testes adicionais para verificar a capacidade do dispositivo em executar o sistema e irá carregar e executar o Hexagon (presente em um arquivo no volume nomeado de **HEXAGON.SIS**). Após o carregamento, o HBoot transfere o controle para o Hexagon, que é inicializado e armazena no ambiente do kernel os dados fornecidos pelo HBoot.
 
-<p align="center">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/HBoot.png" width="600" height="500">
-</p>
-
 ### Como interagir com o HBoot
 
 A interação com o HBoot se dá pelo pressionamento da tecla F8 após a inicialização e exibição de mensagens na tela. O HBoot aguarda por 3 segundos alguma intereação e, caso nenhuma tenha ocorrido, continua a executar o protocolo de boot. A interação com o HBoot pode ser interessante para carregar módulos no formato HBoot, fornecer parâmetros de inicialização ao Hexagon, carregar algum sistema do tipo DOS cujos arquivos estejam presentes no mesmo volume ou ainda carregar imagens HAPP de outros núcleos (caso o desenvolvedor deseje utilizar a implementação HBoot em seu projeto). Abaixo, veja mais alguns detalhes de funções adicionais e de diagnóstico que podem ser realizadas via interação com o HBoot antes do carregamento do Hexagonix.
+
+
+<p align="center">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/HBoot.png" width="600" height="500">
+</p>
 
 ### Outras funções disponíveis (módulos HBoot e modDOS)
 
