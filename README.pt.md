@@ -514,11 +514,11 @@ Você pode ver mais [aqui](https://github.com/hexagonix/Distro/tree/main/Img).
 ## Andromeda
 
 <p align="center">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda1.png" width="500" height="500">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda2.png" width="500" height="500">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda3.png" width="500" height="500">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda4.png" width="500" height="500">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda5.png" width="500" height="500">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda1.png" width="500" height="400">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda2.png" width="500" height="400">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda3.png" width="500" height="400">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda4.png" width="500" height="400">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda5.png" width="500" height="400">
 </p>
 
 Você pode ver mais [aqui](https://github.com/hexagonix/Distro/tree/main/Img).
