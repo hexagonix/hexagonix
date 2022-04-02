@@ -502,11 +502,11 @@ Você pode reportar erros e ajudar a desenvolver o sistema. Para isso, abra uma 
 ## Hexagonix
 
 <p align="center">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix1.png" width="600" height="500">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix2.png" width="600" height="500">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix3.png" width="600" height="500">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix4.png" width="600" height="500">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix5.png" width="600" height="500">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix1.png" width="500" height="400">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix2.png" width="500" height="400">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix3.png" width="500" height="400">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix4.png" width="500" height="400">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix5.png" width="500" height="400">
 </p>
 
 Você pode ver mais [aqui](https://github.com/hexagonix/Distro/tree/main/Img).
@@ -514,11 +514,11 @@ Você pode ver mais [aqui](https://github.com/hexagonix/Distro/tree/main/Img).
 ## Andromeda
 
 <p align="center">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda1.png" width="600" height="500">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda2.png" width="600" height="500">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda3.png" width="600" height="500">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda4.png" width="600" height="500">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda5.png" width="600" height="500">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda1.png" width="500" height="500">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda2.png" width="500" height="500">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda3.png" width="500" height="500">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda4.png" width="500" height="500">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda5.png" width="500" height="500">
 </p>
 
 Você pode ver mais [aqui](https://github.com/hexagonix/Distro/tree/main/Img).
