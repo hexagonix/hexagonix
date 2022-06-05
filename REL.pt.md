@@ -16,6 +16,20 @@ Abaixo você pode ter acesso direto a algumas versões que se tornaram marcos na
 
 Essa é a primeira versão amplamente testada e marcada como estável do sistema. O Hexagonix H1 também é a base do Andromeda H1. Muitas melhorias foram feitas desde as versões anteriores do sistema, que utilizavam séries de números para identificar as versões. A versão 1.2-beta, na numeração anterior, foi aprimorada e serviu de base para o desenvolvimento da versão mais estável até hoje, a versão H1, o lançamento público do sistema. Você pode obter essa versão [aqui](https://github.com/hexagonix/hexagonix/releases/tag/H1). Essa versão continuará sendo aprimorada e as alterações serão disponibilizadas continuamente.
 
-### Hexagonix H1 R1 (Caladan)
+#### Hexagonix H1 R1 (Caladan)
 
 O Hexagonix H1 R1 (codenome Caladan) é o primeiro pacote de correções para a versão H1 do Hexagonix. Muitas melhorias foram feitas em vários utilitários Unix do Hexagonix, bem como aprimoramentos e correções foram feitas no userland Andromeda. O Hexagon foi atualizado para a versão 9.3, com muitas correções de bugs, melhorias de estabilidade, maior desempenho e menor footprint de memória, bem como suporte corrigido à mouses PS/2 (e USB por emulação PS/2) e outros dispositivos. Vá até a área de [lançamentos](https://github.com/hexagonix/hexagonix/releases) e busque a versão H1 R1.
+
+#### Hexagonix H1 R2 (Caladan)
+
+Segundo pacote de atualizações para a versão H1 do Hexagonix/Andromeda, que inclui:
+
+- Kernel Hexagon v9.4A;
+- Melhorias em vários utilitários do Hexagonix;
+- Melhorias em vários utilitários Andromeda;
+
+Foram identificadas diversas falhas de execução em vários utilitários do Andromeda que foram corrigidas nessa versão. Atualizações também foram adicionadas ao Hexagon, diminuindo a pressão de memória e mirando erros identificados durante a execução do sistema. Os manuais do sistema também foram atualizados, bem como a nomenclatura usada em uma série de utilitários. A partir de agora, a próxima atualização da versão H1 irá focar em melhorias e adição de novos recursos.  Vá até a área de [lançamentos](https://github.com/hexagonix/hexagonix/releases) e busque a versão H1 R2.
+
+#### Hexagonix H1 R3 (Duna)
+
+Nova versão do sistema em desenvolvimento.
