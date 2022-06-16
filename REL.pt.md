@@ -32,4 +32,12 @@ Foram identificadas diversas falhas de execução em vários utilitários do And
 
 #### Hexagonix H1 R3 (Duna)
 
-Nova versão do sistema em desenvolvimento.
+Lançamento final da versão H1 do sistema. Esse é o lançamento análogo a uma versão 1.0 do software. Para tanto, os números de versão interno de diversos componentes do sistema foram alterados para celebrar esse marco. O Hexagon passa a se identificar como na versão 1.0, bem como outros componentes. A versão foi amplamente testada e está estável. O lançamento H1 R3 inclui:
+
+- Kernel Hexagon v1.0;
+- Correções gerais em vários utilitários Hexagonix e ANdromeda;
+- Melhorias nas bibliotecas do sistema;
+- Correções de estabilidade em vários utilitários;
+- Melhorias no Configuações do Andromeda;
+
+Vá até a área de [lançamentos](https://github.com/hexagonix/hexagonix/releases) e busque a versão H1 R3.
