@@ -1,6 +1,6 @@
 # Hexagonix/Andromeda Operating System
 
-# First of all - a short shortcut to get straight to the point
+# First of all - a shortcut to get straight to the point
 
 ### Download and test the system right now
 
