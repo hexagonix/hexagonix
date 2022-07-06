@@ -12,8 +12,8 @@
 
 # Instruções para construção/building instructions
 
-* [Português (Brasil)](https://github.com/hexagonix/build/README.pt.md)
-* [English](https://github.com/hexagonix/build/README.en.md) 
+* [Português (Brasil)](https://github.com/hexagonix/build/blob/main/README.pt.md)
+* [English](https://github.com/hexagonix/build/blob/main/README.en.md) 
 
 ## Documentação/documentation
 
