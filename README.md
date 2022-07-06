@@ -10,6 +10,11 @@
 * [Português (Brasil)](README.pt.md)
 * [English (under construction)](README.en.md) 
 
+# Instruções para construção/building instructions
+
+* [Português (Brasil)](https://github.com/hexagonix/build/README.pt.md)
+* [English](https://github.com/hexagonix/build/README.en.md) 
+
 ## Documentação/documentation
 
 * [Clique aqui para ir à documentação do Hexagonix](https://github.com/hexagonix/Doc)
@@ -20,6 +25,6 @@
 * [Português (Brasil)](REL.pt.md)
 * [English (under construction)](REL.en.md) 
 
-<!-- Versão do arquivo: 2.0 -->
+<!-- Versão do arquivo: 2.1 -->
 
 Copyright © 2015-2022 Felipe Miguel Nery Lunkes
