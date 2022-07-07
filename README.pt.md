@@ -557,7 +557,7 @@ Sinta-se a vontade de me contatar, reportar bugs ou se interessar em participar 
 
 ## Redes sociais
 
-* [Twitter](https://twitter.com/felipemnlunkes)
+* [Twitter](https://twitter.com/felipeldev)
 
 # Notas de direitos autorais
 
