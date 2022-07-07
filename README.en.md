@@ -546,7 +546,7 @@ In addition, other projects helped in the development of Hexagonix/Andromeda, ei
 
 # Author & contact
 
-* [Felipe Miguel Nery Lunkes](https://github.com/felipenlunkes)
+* [Felipe Miguel Nery Lunkes](https://github.com/felipeldev)
 
 Feel free to contact me, report bugs or be interested in participating in the project.
 
