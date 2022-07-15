@@ -461,8 +461,8 @@ Agora que você tem o qemu instalado em seu computador, você pode prosseguir co
 Para executar o sistema de maneira satisfatória, você deve fornecer ao menos 32 MB de RAM para a máquina virtual. Isso se deve a arquitetura de gerenciamento de memória do Hexagon, que exige 16 MB de RAM exclusiva para o kernel a ao menos 16 MB para alocar os aplicativos, utilitários e arquivos abertos. O Hexagon não admite menos que isso para ser executado. Caso mais memória seja fornecida, a memória adicional será sempre reservada, com prioridade, para ser disponibilizada aos processos do usuário. Normalmente, a linha de comando abaixo cumpre todos os requisitos para a execução do sistema:
 
 ```
-qemu-system-i386 -hda andromeda.img -m 32 -soundhw pcspk -serial file:"Serial.txt"
-qemu-system-i386 -hda hexagonix.img -m 32 -soundhw pcspk -serial file:"Serial.txt"
+qemu-system-i386 -hda andromeda.img -m 32 -soundhw pcspk --enable-kvm -serial file:"Serial.txt"
+qemu-system-i386 -hda hexagonix.img -m 32 -soundhw pcspk --enable-kvm -serial file:"Serial.txt"
 ```
 
 Você pode omitir po parâmetro -serial caso queira. Esse parâmetro garante que a saída de debug do Hexagon e aplicativos serão direcionados para um arquivo em seu computador, onde você poderá consultar o que foi enviado. Você também pode omitir o parâmetro -soundhw, responsável por direcionar a saída de som do sistema virtual para seu computador físico. Em alguns sistema Linux, a configuração acima pode entrar em conflito com o pulseaudio, e pode ser omitida. Lembre-se que ao omitir o parâmetro, os sons do sistema não serão emitidos para você.

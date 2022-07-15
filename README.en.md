@@ -340,8 +340,8 @@ Remember that images available in english may not always be up-to-date compared 
 You must provide at least 32 MB of RAM for the virtual machine. Typically, the command line below fulfills all requirements for running the system:
 
 ```
-qemu-system-i386 -hda andromeda.img -m 32 -soundhw pcspk -serial file:"Serial.txt"
-qemu-system-i386 -hda hexagonix.img -m 32 -soundhw pcspk -serial file:"Serial.txt"
+qemu-system-i386 -hda andromeda.img -m 32 -soundhw pcspk --enable-kvm -serial file:"Serial.txt"
+qemu-system-i386 -hda hexagonix.img -m 32 -soundhw pcspk --enable-kvm -serial file:"Serial.txt"
 ```
 
 You can omit the -serial parameter if you want. This parameter ensures that debug output from Hexagon and applications will be directed to a file on your computer, where you can see what was sent.
