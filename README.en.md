@@ -1,128 +1,148 @@
-<!-- Versão em inglês -->
-
 # Hexagonix/Andromeda Operating System
+
+# First of all - a shortcut to get straight to the point
+
+### Download and test the system right now
+
+At [end of this file](https://github.com/hexagonix/hexagonix/blob/main/README.pt.md#como-testar-o-hexagonix-ou-o-andromeda) you will find a tutorial to run the Hexagonix/Andromeda on your computer, either in a virtualized or native version. Remember that it is necessary to have an x86 architecture computer or an emulator, if you are using a device of another architecture for testing.
+
+You can go to the [releases](https://github.com/hexagonix/hexagonix/releases) session for stable system releases. You can access the Hexagonix/Andromeda [release announcement](REL.en.md) file. Whenever possible, get the latest release and download the available .img images or the complete package in zip format. The versions available directly in this repository are always development versions (beta and release candidate), which can also be run and are minimally functional. At the end of each development cycle, the final versions will be available in the [releases](https://github.com/hexagonix/hexagonix/releases) session.
+
+### System documentation
+
+* [System Documentation (under construction)](https://github.com/hexagonix/Doc)
+
+### Help with the development of Hexagonix/Andromeda
+
+If you have knowledge of writing x86 assembly code and would like to help develop the system, feel free to send me an email! See [here](https://github.com/hexagonix/hexagonix/blob/main/README.en.md#author--contact) how to contact me!
+
+### Report system errors
+
+You can report system errors [here](https://github.com/hexagonix/hexagonix/blob/main/README.en.md#reportar-errors).
+
+# About the system
 
 <p align="center">
 <img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix.png" width="250" height="250">
 </p>
 
-Welcome to the Hexagonix/Andromeda Operating System
-
-## Copyright Notes
-
-Hexagonix/Andromeda was developed from scratch by [Felipe Lunkes](https://github.com/felipenlunkes).
-
-Read the [License](LICENSE) for more information on copyright, code ownership and redistribution which apply only to files available in this repository (do not apply to the set of data and source code files that make up Hexagonix/Andromeda).
-
-* Hexagonix Operating System & Andromeda Operating System. Copyright © 2016-2022 Felipe Miguel Nery Lunkes. All rights reserved.
-* Hexagon kernel. Copyright © 2016-2022 Felipe Miguel Nery Lunkes. All rights reserved.
-* Saturn Boot Manager. Copyright © 2016-2022 Felipe Miguel Nery Lunkes. All rights reserved.
-* Hexagon Boot (HBoot). Copyright © 2020-2022 Felipe Miguel Nery Lunkes. All rights reserved.
-
-## First of all
-
-At the end of this file you will find a tutorial to run Hexagonix/Andromeda on your computer, both in a virtualized version and in a physical hardware. Remember that you must have a computer with x86 architecture or an emulator if you are using a device of another architecture for testing.
-
-* [System Documentation (under construction)](https://github.com/hexagonix/Doc)
-
-# About the system
-
 ## Development
 
-Hexagonix/Andromeda and all its components have been in development since 2015 and were written completely in Assembly language.
+Hexagonix/Andromeda and all its components have been developed since 2015 and were written completely in Assembly language.
 
 ## Why two names? Hexagonix and Andromeda, what are they?
 
-In the beginning, Andromeda was intended to be a complete operating system, consisting of the kernel, libraries, graphical and text interface and utilities. Later, with the passage of time and the change in approach to the system's architecture and objectives, the components were separated and became independent projects in terms of functioning, organization and development. As you can see below, the core of Andromeda was separated from the rest of the Andromeda code tree, becoming an independent project, even given a name, Hexagon. From then on, the idea of ​​making the composition of the system more flexible and allowing the development of distributions, as in GNU/Linux, arose. In this way, Hexagon distributions could be created, grouping the components necessary for the basic operation (Hexagonix) and allowing the extension of the system if necessary, with new components, modules and utilities, with the userland defined in each case. With the architecture change of the system itself, with the core approaching a Unix-like architecture, new utilities in Unix style and syntax were developed and kept separate, in another project. From the original Andromeda project we have Andromeda-specific graphical libraries and applications. A base system was then created, which by itself can be fully implemented, and became the base of Andromeda. This base system is called Hexagonix, and is composed of the HBoot boot loader, the Hexagon kernel, the shell, Unix environment libraries (here called Hexagonix environment) and Unix utilities. This system is fully functional, but lacks graphical resources and applications developed for the Andromeda environment. In this way, Andromeda stands out for being an extra layer built on the base of Hexagonix, with graphics resources, a graphics library and utilities that work on top of Hexagonix and extend its function. This built environment was named the Andromeda environment. To meet different needs, the two distributions will always be maintained. Both versions are functional and can be used depending on the desired end use. In summary, both Hexagonix and Andromeda are Hexagon kernel distributions, differing in the components included.
+In the beginning, Andromeda was intended to be a complete operating system, composed of the kernel, libraries, graphical and text interface and utilities. Later, with the passage of time and the change in approach to the architecture and objectives of the system, the components were separated and became independent projects in terms of functioning, organization and development. As you will see below, the Andromeda core was separated from the rest of the Andromeda code tree, becoming an independent project, even given a name, Hexagon. From then on, the idea arose of making the composition of the system more flexible and allowing the development of distributions, as in GNU/Linux. In this way, distributions of Hexagon could be created, grouping the necessary components for the basic functioning (Hexagonix) and allowing the extension of the system if necessary, with new components, modules and utilities, being the userland defined in each case. With the change of architecture of the system itself, with the core approaching a Unix-like architecture, new utilities in Unix style and syntax were developed and kept separate, in another project. From the original Andromeda project we have the Andromeda-specific applications and graphics libraries. A base system was then created, which by itself can already be fully executed, and became the base of Andromeda. This base system is called Hexagonix, and it consists of the HBoot boot loader, the Hexagon kernel, the shell, Unix environment libraries (here called Hexagonix environment) and Unix utilities. This system is fully functional, but lacks graphical resources and applications developed for the Andromeda environment. In this way, Andromeda stands out for being one more layer built on top of Hexagonix, with graphics resources, a graphics library and utilities that work on top of Hexagonix and extend its function. This built environment was named the Andromeda environment. To meet different needs, the two distributions will always be kept. Both versions are functional and can be used depending on the desired end use. In summary, both Hexagonix and Andromeda are distributions of the Hexagon kernel, differing in the components included.
 
-To better understand this distribution model, a suitable example would be what happens with macOS (Apple)[^5]. macOS is a Unix-like operating system built on top of Darwin, a free operating system composed of the XNU kernel, libraries and utilities, adding the Aqua GUI and other applications and utilities developed by Apple and other vendors on top of Darwin. The Darwin environment is easily accessed and observed through macOS, such as using the terminal, for example. Darwin is a complete and functional system, but it lacks some graphical features, for example, which are only distributed together with macOS. In this analogy, we have macOS as Andromeda and Darwin as Hexagonix.
+To better understand this distribution model, a suitable example would be what happens with macOS (Apple)[^1]. macOS is a Unix-like operating system built on top of Darwin, a free operating system composed of the XNU kernel, libraries and utilities, adding on top of Darwin the Aqua graphical interface and other applications and utilities developed by Apple and other vendors. The Darwin environment is easily accessed and observed through macOS, such as using the terminal, for example. Darwin is a complete and functional system, but it lacks some graphical resources, for example, which are only distributed together with macOS. In this analogy, we have macOS as Andromeda and Darwin as Hexagonix.
 
-[^5]: You can get more information about the relationship between Darwin and macOS [here](https://en.wikipedia.org/wiki/Darwin_(operating_system)).
+## What about the source code?
 
-## And the source code?
+The project's source code has now been made publicly available. The kernel code and Unix-like utilities and Andromeda applications are available, as well as the source package that makes up HBoot. Disk images with both Hexagonix and Andromeda are now available and free to distribute. Please note the [license](LICENSE) available in this repository for more information. It is worth mentioning that the license of each code package that makes up the system (Hexagon, HBoot, Hexagonix utilities, Andromeda utilities, fonts and other components) may vary. Each package can be released with a different license type (like GPL, MIT or BSD, for example). Keep an eye on each license in the respective repositories. Components that are not available in the official repository are still closed source, governed by a proprietary Hexagonix license, which can be found [here](https://github.com/hexagonix/Doc/blob/main/LICENSES/Hexagonix ).
 
-The project's source code is not yet publicly available, but there are plans to make it available in the future. However, distribution of disk images with both Hexagonix and Andromeda is free. Please note the [license](LICENSE) available in this repository for more information.
+## What is an operational system?
 
-## What is an operating system?
+The Hexagonix/Andromeda Operating System is a collection of pieces of software that manages the hardware of the computer where it is installed, allowing the loading and operation of applications and the communication between the various devices connected to the device. It is made up of several components, which act in the process of booting the computer, testing resources and loading the kernel (core) of the operating system, the kernel, a user interaction interface and a series of utilities.
+Both hexagonix and Andromeda are distributions that incorporate a Unix-like kernel, called Hexagon, support libraries, utilities developed exclusively for the Andromeda environment, and Unix-like command-line utilities (the latter and the Hexagon kernel itself already configure a base operating system, Hexagonix).
 
-The Hexagonix/Andromeda Operating System is a collection of software pieces that manage the hardware of the computer where it is installed, allowing the loading and operation of applications and communication between the different devices connected to the device. It is composed of several components, which act in the computer boot process, resource testing and loading of the operating system kernel (core), the kernel, a user interaction interface and a series of utilities.
-Both hexagonix and Andromeda are distributions that incorporate a Unix-like kernel, called Hexagon, support libraries, utilities developed exclusively for the Andromeda environment, and Unix-like command-line utilities (the latter and the Hexagon kernel itself are already there configure a base operating system, Hexagonix).
+## The Hexagonix/Andromeda story
 
-## The Hexagonix/Andromeda history:
+Andromeda started as an implementation in a structure similar to DOS-like systems, with an interpreter with built-in commands with names, syntax and results similar to a generic DOS. The command interpreter presented file manipulation and other commands internally, as in conventional DOS systems. Disk drives were also defined as letters. Later, there was a growing interest and fascination in the functioning of Unix systems and all the code was rewritten or adapted to make the System kernel a Unix-like kernel. All System components, as in DOS, were kept in a single tree until then. With Andromeda version 1.5, codenamed "Unix-like", the kernel has been heavily modified and rewritten to fit the Unix philosophy. Changes even included the way devices were handled, writing a hardware abstraction layer managing devices as files, and adding open(), close(), write() and to read(). The Unix-based utilities were also written, removing commands from the default interpreter, which was rewritten to make way for a Unix-like shell. The internal commands were moved to the utilities, which now have a Unix-style structure and syntax. The rest of the utilities, such as mount, were written already taking advantage of the open() call, which is also used to mount volume, in addition to opening ordinary files from the volume. The open() call is also used to start other peripherals such as serial and parallel ports. The write() call also works with devices and files, as well as close(). A VFS (Virtual File System) was also introduced, which will support multiple file systems in the future and make file management transparent to the System, programmers and users. Also included are new hardware management functions and many improvements and bug fixes. The System gains new Unix utilities until the present moment. After this change in the proposal and architecture, the components were separated and allocated to specific projects. The union of these components forms the operating system. In the case of Hexagonix, we have HBoot, Hexagon, shell, Unix libraries and applications, while Andromeda extends Hexagonix, incorporating other libraries and applications that use them.
 
-Andromeda started as a structured implementation similar to DOS-like systems, with an interpreter with built-in commands with names, syntaxes and results similar to a generic DOS. The command interpreter had file manipulation and other commands internally, as in conventional DOS systems. Disk drives were also defined as letters. Later, there was a growing interest and fascination in the functioning of Unix systems and all the code was rewritten or adapted to make the System kernel a Unix-like kernel. All System components, just like in DOS, were kept in a single tree until then. With version 1.5 of Andromeda, codenamed "Unix-like", the kernel has been heavily modified and rewritten to suit the Unix philosophy. Changes even included the way devices were handled, with writing a hardware abstraction layer with managing devices as files, as well as adding system calls open(), close(), write() and read(). The base Unix utilities were also written, with the removal of commands from the standard interpreter, which was rewritten to make way for a Unix-like shell. The internal commands were moved to the utilities, which now have a Unix-style structure and syntax. The rest of the utilities, such as mount, were written, already taking advantage of the open() call, which is also used to mount volume, in addition to opening ordinary files on the volume. The open() call is also used to start other peripherals such as serial and parallel ports. The write() call also works with devices and files as well as close(). A VFS (Virtual File System) was also introduced, which in the future will support various file systems and makes file management transparent to the System, programmers and users. Also included are new hardware management functions and many improvements and bug fixes. The System gains new Unix utilities to date. After this change in proposal and architecture, the components were separated and allocated to specific projects. The union of these components forms the operating system. In the case of Hexagonix, we have HBoot, Hexagon, shell, Unix libraries and applications, while Andromeda extends Hexagonix, incorporating other libraries and applications that use them.
+## Versionalization of Hexagonix/Andromeda:
 
-## Hexagonix/Andromeda versioning:
+The operating system has version numbering independent of the associated components. Every component, from the boot loader to a simple utility, is given an independent version number that reflects its state of development. A Hexagonix/Andromeda version number has three sets of numbers divided into three blocks separated by a period character ".". The first one represents the major version number and is based on the number one. The second number refers to the release, this is the number that varies from one Hexagonix/Andromeda release to another and distinguishes between the major versions of the System, in addition to being used as a version number that is checked by applications and utilities to verify whether the system version meets the minimum requirements for running the software. The third is the revision number of each major release and, if it is 0, it can be omitted, leaving the version with only two blocks of digits. An example would be versions "1.14.4", whose base version is always 1, so far, 14 indicates the release (this refers, in most cases, to the real version of the System. Think, for example, of the Apple numbering with Mac OS X/OS X/macOS up to version 11.0 Big Sur, which always starts with 10 and is followed by the release and revision number). Number 4 would be the revision within the major release, which concerns bug fixes and the addition of some functionality that does not profoundly change the System or its use.
 
-The operating system features version numbering independent of the associated components. Each component, from the boot loader to a simple utility, is given an independent version number that reflects its development status. A Hexagonix/Andromeda version number has three sets of numbers divided into three blocks separated by a period character ".". The first one represents the major version number and is based on number one. The second number refers to the release, this is the number that varies from one Hexagonix/Andromeda release to another and distinguishes between the major versions of the System, in addition to being used as a version number that is checked by applications and utilities to verify whether the system version meets the minimum requirements for running the software. The third is the revision number of each major release and, if it is 0, it can be omitted, leaving the version with only two digit blocks. An example would be versions "1.14.4", whose base version is always 1, so far, 14 indicates the release (this refers, most of the time, to the actual version of the System. Think, for example, of the system of numbering Apple with Mac OS X/OS X/macOS up to version 11.0 Big Sur, which always starts with 10 and is followed by the release and revision number). Number 4, on the other hand, would be the revision within the major release, which concerns fixing bugs and adding some functionality that does not profoundly change the System or its use.
-
-Normally, Hexagonix and Andromeda have the same major version numbering, but this is not necessarily mandatory. Version numbers may differ at some point, as well as the components of each distribution. The Hexagon version, for example, can be different even with identical version numbers, but this kind of divergence will always be avoided.
+Typically, Hexagonix and Andromeda have the same major version numbering, but this is not necessarily required. Version numbers may differ at some point, as well as the components of each distribution. The Hexagon version, for example, may differ even on identical version numbers, but this kind of divergence will always be avoided.
 
 # System components
 
 ## Saturno
 
-The first component of Hexagonix/Andromeda is Saturno. It is responsible for taking control of the boot process performed by the BIOS/UEFI and searching the volume for the second boot stage. For that, it implements a driver for reading a FAT16 file system. The second boot stage (see below) can implement drivers for other file systems and is responsible for finding Hexagon, loading HBoot modules or loading a DOS compatible system (BETA).
+The first component of Hexagonix/Andromeda is Saturno. It is responsible for taking control of the boot process performed by the BIOS/UEFI and looking in the volume for the second boot stage. For that, it implements a driver for reading a FAT16 file system. The second boot stage (see below) can implement drivers for other filesystems and is responsible for finding Hexagon, loading HBoot modules or loading a compatible DOS-like system (BETA version).
 
 ## Hexagon Boot (HBoot)
 
-Hexagon Boot (HBoot) is a component designed to allow booting of the Hexagon kernel. Until then, initialization was performed by just one stage, which defined a very basic environment, loaded the Hexagon into memory, and immediately passed control to it, providing a very small and limited set of parameters, since the code for that stage stays restricted to 512 bytes, which limits the performance of several tests and data processing. With HBoot, it was possible to expand the number of tasks performed before the Hexagon runs, as well as the possibility to provide more information regarding the machine and boot environment. This is particularly important to allow the creation of a device tree that Hexagon can use to decide how to handle each identified device. HBoot is able to check which disk drives are available on the machine, emit a boot tone, obtain the amount of available RAM memory installed and allow or disallow the boot process to proceed according to this information. If no user interaction is detected 3 seconds after all essential tests and activities to create a boot environment for Hexagon, the system will load and run Hexagon (present in a file in the volume named **HEXAGON.SIS**** ) being unloaded from memory. The interaction with HBoot is done by pressing the F8 key after the respective message appears on the screen.
+Hexagon Boot (HBoot) is a component designed to allow the Hexagon kernel to boot. Until then, initialization was performed by just one stage, which defined a very basic environment, loaded Hexagon into memory and immediately executed it, providing a very limited set of parameters. This is due to the fact that the code of this stage is restricted to 512 bytes, which limits the performance of several tests and data processing. With HBoot, it was possible to expand the number of tasks performed before running Hexagon, as well as the possibility to provide more information about the device and boot environment. This is particularly important to allow the creation of a device tree that Hexagon can use to decide how to handle each identified device. HBoot is able to check which disk drives are available on the machine, emit a boot tone, obtain the amount of available RAM memory installed and allow or not to proceed with the boot process according to this information. If no user interaction is detected (within 3 seconds after HBoot is started and messages are displayed to the user), HBoot will perform additional tests to verify the device's ability to run the system and will load and run Hexagon (present in a file on the volume named **HEXAGON.SIS**). After loading, HBoot transfers control to Hexagon, which is initialized and stores the data provided by HBoot in the kernel environment.
 
-### Other functions
+### How to interact with HBoot
 
-* HBoot allows loading modules in HBoot format, which may be useful in the future to allow for hardware tests such as memory and disk tests if the modules are available on disk. Modules can also be used to extend HBoot's functions. The format specification is now available and an example can be found below. These modules can be used to test specific devices, obtain hardware information, or load files into file systems not originally supported by HBoot.
-* In the context of Hexagonix development, HBoot can also load directly, from a currently built-in module (this function will be moved to a standalone module as soon as possible) the core of the FreeDOS open source operating system[^6] , so that established and robust utility tools that run in a DOS environment can run on the Hexagonix/Andromeda volume and files. FreeDOS was chosen because of its feature of a kernel composed of a single file, usually "KERNEL.SYS"[^7], in addition to its free and free distribution. On the other hand, other DOS, such as MS-DOS, prior to version 7.0, use two files that must be contiguous on the disk, and this is not possible here, since the installation of FreeDOS already takes place on a Hexagonix volume, with the kernel copy , command interpreter and other DOS utilities, the main operating system being Hexagonix/Andromeda, with optional launching of FreeDOS for some special activity[^8]. If the FreeDOS system components are not present on the disk (the copy of FreeDOS files is not part of the default image), booting into DOS compatibility mode will not occur.
+Interaction with HBoot takes place by pressing the F8 key after booting and displaying messages on the screen. HBoot waits for 3 seconds for any interaction and, if none has occurred, it continues executing the boot protocol. The interaction with HBoot can be interesting to load modules in the HBoot format, provide boot parameters to Hexagon, load a DOS-type system whose files are present on the same volume or even load HAPP images from other cores (if the developer wants to use the HBoot implementation in your project). Below, see some more details of additional and diagnostic functions that can be performed via interaction with HBoot before loading Hexagonix.
 
-[^6]: You can find the project page [here](https://www.freedos.org/).
-[^7]: Booting in DOS mode was possible after searching the FreeDOS documentation, especially the "SYS.C" file (which can be found [here](http://www.ibiblio.org/pub/micro/pc-stuff/freedos/files/dos/sys/2043/), which indicates in which segment the kernel expects to be loaded and which parameters are needed. Each DOS system has a preferred loading segment and this loading of other DOS editions can be implemented in the future with the help of HBoot modules. All code for core loading was developed from scratch and is not based on any existing ones.
-[^8]: Booting in DOS compatibility mode of HBoot can be useful for running volume error checking, volume defragmenting, partitioner and other diagnostic tools, as well as development tools such as non-compilers and assemblers. supported by Hexagonix/Andromeda (the 16-bit tools, for example).
+<p align="center">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/HBoot.png" width="600" height="500">
+</p>
 
-### HBoot Module Example
+### Other functions available (HBot and modDOS modules)
 
-Below you can find an example of HBoot module implementation:
+#### HBoot Modules
+
+HBoot allows loading modules in HBoot format, which may be useful in the future to allow hardware tests such as memory and disk tests if modules are available on disk. Modules can also be used to extend HBoot functions. The format specification is now available and an example can be found below. These modules can be used to test specific devices, obtain hardware information, or load files into file systems not originally supported by HBoot.
+
+##### HBoot modules already implemented
+
+HBoot modules have been developed to extend the functionality of HBoot. So far these are:
+
+* Spartan: model implementation of an HBoot module. Displays a message on the screen and prompts the user to press any key to restart the computer and launch Hexagonix.
+* x86-Detect: Computer hardware initialization and diagnostics module. This module detects available storage drives, checks for minimum computer requirements for running Hexagon (such as RAM and processor), detects and initializes serial and parallel ports, and displays to the user whether or not the device can run Hexagonix. In the future, it will be used to find other installed operating systems, perform RAM and disk performance tests, and find and configure PCI devices. A quickboot entry for x86-Detect can be permanently added to HBoot, for easier execution with fewer steps.
+
+<p align="center">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/x86-Detect.png" width="600" height="500">
+</p>
+
+#### Load a DOS-like operating system with modDOS
+
+In the context of Hexagonix development, HBoot can also load and run the FreeDOS[^2] open source operating system core, so that established and robust utility tools that run in a DOS environment can run on top of the volume and files. Hexagonix/Andromeda. This function is performed by an HBoot module (modDOS) which, until now, has been integrated into HBoot as a module library, already containing all the necessary structure to be an independent module. Going forward, the plan is for this library/module to be removed from HBoot and kept as a separate module, removing complexity and code from HBoot. For performance, at this point, modDOS is still kept in the HBoot source tree. FreeDOS was chosen because of several interesting features that facilitate the necessary implementation in modDOS. Firstly, the system kernel is contained in a single file, usually "KERNEL.SYS"[^3] (although in the context of modDOS, the filename is not important, as it will not be booted by the project initiator FreeDOS, which hopes to find a file with that name), in addition to its free distribution. On the other hand, other DOS-type systems, such as MS-DOS (especially in its version prior to 7.0), can use more than one file on the disk, as well as requiring these files to be in defined locations and to be contiguous on the disk. This defined location requirement cannot be satisfied here, as the installation of a copy of the DOS system takes place already on a Hexagonix partition. Installing a DOS system is optional and modDOS makes running this type of system easier, requiring only a copy of the kernel, command interpreter and other utilities desired on a Hexagonix partition. Furthermore, using a free distribution system removes any licensing issues. Installing a DOS system together with Hexagonix/Andromeda allows DOS tools to be used to perform specific tasks in this environment or to add functions and utilities that are not yet available or finished for use in Hexagonix, such as a disk partitioning utility, for example. example [^4]. If the FreeDOS system components are not present on the disk (copying the FreeDOS files is not part of the standard installation and image), booting in DOS compatibility mode will not occur.
+
+### HBoot module example
+
+Below you can find an example implementation of the HBoot module (HBoot module specification v2.0):
 
 ```assembly
-;;**************************************************** ***********************************
+;;*************************************************************************************
 ;;
 ;;
-;; HBoot Module
+;; HBoot module
 ;;
 ;; Hexagon® Boot - HBoot
 ;;
-;; Copyright © 2020-2021 Felipe Miguel Nery Lunkes
+;; Copyright © 2020-2022 Felipe Miguel Nery Lunkes
 ;; All rights reserved
 ;;
-;;**************************************************** ***********************************
+;;*************************************************************************************
 
 use16
 
 ;; The module must have a special HBoot image header
-;; There are 6 bytes, with signature (magic number) and target architecture
+;; It's 6 bytes, with signature (magic number) and target architecture
 
-HBootHeader:
+headerHBoot:
 
-.signature:    db "HBOOT" ;; Signature, 5 bytes
-.architecture: db 01h     ;; Architecture (i386), 1 byte
+.signature: db "HBOOT" ;; Signature, 5 bytes
+.architecture: db 01h ;; Architecture (i386), 1 byte
+.Modversion: db 01h ;; Version, with 1 byte
+.subverMod: db 00h ;; Subversion, with 1 byte
+.modname: db "NAME " ;; Module name, 8 bytes
 
 ;; Configure stack and pointer
 
-    cli;; Disable interrupts
+    cli ;; disable interrupts
     
     mov ax, 0x2000 ;; Define stack registers here
     mov ss, ax
     mov sp, 0
     
-    sti;; Enable interrupts
+    sti;; enable interrupts
      
     clc
 
     mov ax, 0x2000 ;; Define segment registers here
     mov ds, ax
-    mov es, ax
+    move es, ax
     
     sti;; Enable interrupts
 
-;; Your code here
+;; your code here
 
 ```
 
@@ -131,17 +151,17 @@ HBootHeader:
 * FAT16B
 * FAT12 (under development)
 
-New file systems will be implemented in the future.
+New file systems will be implemented in the future, including their support through HBoot modules.
 
 ### Report bugs
 
 HBoot has gained a lot of complexity since the beginning of its development in 2020. Due to this increase in code and the nature of its operation (16-bit), bugs can be found. They can be reported in the repository or by email, available at the end of this file.
 
-## Hexagon Kernel
+## Kernel Hexagon
 
-### What is it
+### Which is
 
-Hexagon is a monolithic kernel (the operating system core) running in 32-bit protected mode, developed with the PC architecture (x86) in mind. It is a kernel written from scratch, aiming for the speed and compatibility of modern hardware but also being able to run on older hardware. For the moment, it guarantees a single-user environment, despite the use of virtual terminals, and monotasking, despite the ability to load, keep in memory and control more than one process, in a chronologically-ordered execution stack. In the future, the kernel will be able to support the execution of multiple processes in preemptive multitasking. Hexagon is a Unix-like kernel and forms the basis of the Hexagonix/Andromeda Operating System, although independent of it. It runs executable images in HAPP format, developed for Hexagon. It implements a very sophisticated API accessible via a system call.
+Hexagon is a monolithic kernel running in 32-bit protected mode, designed with the PC architecture in mind (x86). It's a kernel written from scratch, aiming for the speed and compatibility of modern hardware but also being able to run on older hardware (like a Pentium III). At the moment, it guarantees a single-user environment, despite the use of virtual terminals, and single-tasking, despite the ability to load, keep in memory and control more than one process, in an execution stack. In the future, the kernel may support running multiple processes in preemptive multitasking. Hexagon is a Unix-like kernel and tries to implement POSIX compatibility, although far from it, and forms the basis of the Hexagonix/Andromeda Operating System, although independent of it. It runs executable images in the HAPP format, developed exclusively for Hexagon. Hexagon also implements a very sophisticated API accessible through a system call.
 
 <p align="center">
 <img src="https://github.com/hexagonix/Doc/blob/main/Img/LogoHexagon.png" width="250" height="250">
@@ -149,37 +169,39 @@ Hexagon is a monolithic kernel (the operating system core) running in 32-bit pro
 
 ### History
 
-The kernel was initially designed and written aiming at a structure and functioning similar to DOS (Disk Operating System) systems, such as MS-DOS, in the year 2015 to 2017. Therefore, many system calls and device names followed a syntax and names FROM. Over time, there was an interest in bringing the then core of Andromeda, which at that time did not have a name and was kept with the distribution code, to a structure and operation closer to Unix-like systems, such as BSD or Linux , for example. In this way, many parts of the kernel were redeployed with the new goal in mind. The core code was separated from the rest of the System and became independent, in terms of development as well as functioning, in addition to gaining a name, Hexagon. A hardware abstraction layer was written with the inclusion of system calls known in the Unix world, such as open(), close(), read() and write(). Devices were named and disk drives were changed from DOS naming to Unix device names. The kernel then goes through a known boot process, with the execution, with PID 1, of the user's first process, init, which then loads the rest of the components. Unix-like utilities were then written that used the kernel's Unix-like API, and several Unix-like tools have been written since then (2017 onwards).
+The kernel was initially designed and written aiming at a structure and operation close to DOS (Disk Operating System) systems, such as MS-DOS, in the years 2015 to 2017. Therefore, many system calls and device names followed a syntax and names FROM. Over time, there was an interest in bringing the then core of Andromeda, which at that time had no name and was kept together with the distribution's code, closer to a structure and functioning closer to Unix-like systems, such as BSD or Linux. , for example. In this way, many parts of the kernel were re-implemented with the new purpose in mind. The core code was separated from the rest of the System and became independent, both in terms of development and operation, in addition to gaining a name, Hexagon. A hardware abstraction layer was written with the inclusion of system calls known in the Unix world, such as open(), close(), read() and write()[^5]. Devices were named and disk drives changed from DOS naming to Unix device names. The kernel then proceeds to follow a known initialization process, executing, with PID 1, the first user process, init, which then loads the rest of the components. Unix-like utilities were then written that used the kernel's Unix-like API, and several Unix-like tools have been written since then (2017 onwards).
 
 ### The HAPP executable format
 
-The HAPP executable image format was developed for Hexagon to allow the development of images that can be verified and validated for architecture and minimum kernel versions necessary for correct execution. The header also stores important information, allowing the developer to directly add an entry point, regardless of where it is inside the image, something that would have been redirected earlier when the executable image was in pure binary format. The HAPP image also allows you to validate that the image to be loaded is really an executable image, thus preventing unsupported files from being executed, even if they are not even executable files. It also allows the system to check code dependencies, such as the aforementioned architecture, as well as Hexagon version numbers, which must be equal to or greater than the minimum specified by the header. All HAPP images must have this complete header, including reserved sessions, in order to function correctly in later versions of the System. HAPP images are always 32-bit.
+The HAPP executable image format was developed for Hexagon to allow the development of images that can be verified and validated for architecture and minimum kernel versions necessary for correct execution. The header also stores important information, allowing the developer to directly add an entry point, regardless of where it is inside the image, something that should have been redirected earlier when the executable image was in pure binary format. The HAPP image also allows you to validate that the image to be loaded is really an executable image, preventing unsupported files from being executed, even if they are not even executable files. It also allows the system to check code dependencies, such as the aforementioned architecture, as well as Hexagon version numbers, which must be equal to or greater than the minimum specified by the header. All HAPP images must have this full header, including reserved sessions, in order to function correctly in later versions of the System. HAPP images are always 32-bit. For 16-bit images, the system uses the HBoot header implementation (implementation found in system boot modules).
 
-In assembly language, the system development language, the header, in its 2.0 specification:
+In Assembly language, the system development language, the header, in its 2.0 specification:
 
 ```assembly
-APPHeader:
+headerAPP:
 
-.signature:          db "HAPP" ;; Signature
-.architecture:       db 01h ;; Architecture (i386 = 01h)
-.Minimum Version:    db 8 ;; Minimal version of Hexagon
+.signature: db "HAPP" ;; Signature
+.architecture: db 01h ;; Architecture (i386 = 01h)
+.MinimumVersion: db 8 ;; Minimal version of Hexagon
 .Minimum subversion: db 40 ;; Minimal Hexagon Subversion
-.entrypoint:         dd ;; Input point offset (reference to main function here)
-.ImageType:          db 01h ;; Executable image type (executable = 01h)
-.reserved0:          dd 0 ;; Reserved (Dword)
-.reserved1:          db 0 ;; Reserved (Byte)
-.reserved2:          db 0 ;; Reserved (Byte)
-.reserved3:          db 0 ;; Reserved (Byte)
-.reserved4:          dd 0 ;; Reserved (Dword)
-.reserved5:          dd 0 ;; Reserved (Dword)
-.reserved6:          dd 0 ;; Reserved (Dword)
-.reserved7:          db 0 ;; Reserved (Byte)
-.reserved8:          dw 0 ;; Reserved (Word)
-.reserved9:          dw 0 ;; Reserved (Word)
-.reserved10:         dw 0 ;; Reserved (Word)
+.inputpoint: dd ;; Input point offset (reference to main function here)
+.ImageType: db 01h ;; Executable image type (executable = 01h)
+.reserved0: dd 0 ;; Reserved (Dword)
+.reserved1: db 0 ;; Reserved (Byte)
+.reserved2: db 0 ;; Reserved (Byte)
+.reserved3: db 0 ;; Reserved (Byte)
+.reserved4: dd 0 ;; Reserved (Dword)
+.reserved5: dd 0 ;; Reserved (Dword)
+.reserved6: dd 0 ;; Reserved (Dword)
+.reserved7: db 0 ;; Reserved (Byte)
+.reserved8: dw 0 ;; Reserved (Word)
+.reserved9: dw 0 ;; Reserved (Word)
+.reserved10: dw 0 ;; Reserved (Word)
 ```
 
-Below is an implementation of a small application written as an example, which uses the Hexagon header and system calls, written in x86 assembly language in Intel syntax and assembled with the aid of a flat assembler (FASM). This app sends a message to the terminal and then exits.
+Applications for Hexagonix/Andromeda can be developed in Assembly, so far, using the assembler of your choice (provided it can generate x86 code). Libraries for application development, containing macros, functions and system calls, can be found [here (libasm)](https://github.com/hexagonix/libasm) and are designed to work with assemblers [fasm]( https://flatassembler.net/) and [nasm](https://www.nasm.us/). When accessing the **libasm** repository, you will have access to the libraries divided according to the support of a specific assembler. Support for more assemblers may be added in the future. A C library (libc) is also in the pipeline for the near future.
+
+Below, an implementation of a small application written as an example, which uses the Hexagon header and system calls, written in x86 assembly language in Intel syntax and assembled with the help of the flat assembler (FASM). Note that to request access to Hexagon calls, this application must import the **hexagon.s** file from libasm (depending on the chosen assembler. In this case, fasm/hexagon.s). This application sends a message to the terminal and then exits. You can get more information about the HAPP format specification in the HAPP library of [libasm for fasm](https://github.com/hexagonix/libasm/blob/main/fasm/HAPP.s) or [libasm for nasm]( https://github.com/hexagonix/libasm/blob/main/nasm/HAPP.s). Below you can get more information about system calls.
 
 ```assembly
 ;; This is a template for building a text mode app for
@@ -194,63 +216,76 @@ Below is an implementation of a small application written as an example, which u
 ;; or
 ;; fasmX tapp.asm tapp.app
 
+format binary as "app" ;; Defines the format and extension of the generated file
+
 use32
 
-APPHeader:
+;; Header can be set directly like this and filled in manually
+;; or through a macro available in the HAPP.s library, from libasm.
+;; Below is manual implementation (which should be discouraged as it
+;; API changes would lead to manual changes to all sources. That
+;; does not occur with the use of the library, which, when updated,
+;; to make all sources compatible, automating the process).
 
-.signature:          db "HAPP" ;; Signature
-.architecture:       db 01h ;; Architecture (i386 = 01h)
-.Minimum Version:    db 8 ;; Minimal version of Hexagon
-.Minimum subversion: db 40 ;; Minimal Hexagon Subversion
-.Entrypoint:         dd startAPP ;; Input point offset
-.ImageType:          db 01h ;; executable image
-.reserved0:          dd 0 ;; Reserved (Dword)
-.reserved1:          db 0 ;; Reserved (Byte)
-.reserved2:          db 0 ;; Reserved (Byte)
-.reserved3:          db 0 ;; Reserved (Byte)
-.reserved4:          dd 0 ;; Reserved (Dword)
-.reserved5:          dd 0 ;; Reserved (Dword)
-.reserved6:          dd 0 ;; Reserved (Dword)
-.reserved7:          db 0 ;; Reserved (Byte)
-.reserved8:          dw 0 ;; Reserved (Word)
-.reserved9:          dw 0 ;; Reserved (Word)
-.reserved10:         dw 0 ;; Reserved (Word)
+headerAPP:
 
-;;**************************************************** *************
+.signature: db "HAPP" ;; Signature
+.architecture: db 01h ;; Architecture (i386 = 01h)
+.MinimumVersion: db 1 ;; Minimal version of Hexagon
+.Minimum subversion: db 00 ;; Minimal Hexagon Subversion
+.EntryPoint: dd startAPP ;; entry point offset
+.ImageType: db 01h ;; executable image
+.reserved0: dd 0 ;; Reserved (Dword)
+.reserved1: db 0 ;; Reserved (Byte)
+.reserved2: db 0 ;; Reserved (Byte)
+.reserved3: db 0 ;; Reserved (Byte)
+.reserved4: dd 0 ;; Reserved (Dword)
+.reserved5: dd 0 ;; Reserved (Dword)
+.reserved6: dd 0 ;; Reserved (Dword)
+.reserved7: db 0 ;; Reserved (Byte)
+.reserved8: dw 0 ;; Reserved (Word)
+.reserved9: dw 0 ;; Reserved (Word)
+.reserved10: dw 0 ;; Reserved (Word)
 
-include "andrmda.s" ;; Include system calls
+;;*************************************************************
 
-;;**************************************************** *************
+include "hexagon.s" ;; Include system calls
+
+;;************************************************ *************
 
 ;; Variables and constants
 
 msg: db 10, 10, "This is a template with a simple HAPP application example!", 10, 0
 
-;;**************************************************** *************
+;;************************************************ *************
 
-;; entry point
+;; Entry point
 
 startAPP:
 
-    mov esi, msg
+    move esi msg
 
-    printString ;; Here we have a macro that configures and calls an API function.
+    printString ;; Here we have a macro that configures and calls an API function
 
-    Andromeda terminateProcess ;; Another macro that asks which call to make
+    Hexagonix terminateProcess ;; Another macro that asks which call to make
 ```
 
-More detailed Hexagon documentation will be made available in the future.
+More detailed Hexagon documentation is in the pipeline and is being released as ready.
 
-## Hexagonix environment:
+### System calls
 
-Hexagonix implements, together with Hexagon, a series of Unix-like utilities, with functionality and syntax similar to UNIX and Unix-like systems. **Utilities such as init, login, sh, top, ps, cp, rm, cat, clear, man, and more are included in the standard Hexagonix distribution**. These utilities make up the base Hexagonix utility package. The login and user mode environment startup tools are in this package, as well as several configuration files for this environment. These utilities generally don't have a graphical interface, just a command line interface (CLI). However, they can be requested by applications that have a graphical interface. This environment is available in both the [Hexagonix](en.hexagonix.img) distribution and the [Andromeda](en.andromeda.img) distribution.
+System calls are BSD-style, with the function number present on the stack and the parameters/arguments next to the registers. For a complete list of system calls available in the current version of the system, have a look at the Hexagon library at [libasm for fasm](https://github.com/hexagonix/libasm/blob/main/fasm/hexagon.s ) or [libasm to nasm](https://github.com/hexagonix/libasm/blob/main/nasm/hexagon.s).
+
+## Hexagonix environment
+
+Hexagonix implements, together with Hexagon, a series of Unix-like utilities, with functionality and syntax similar to UNIX and Unix-like systems. **Utilities such as init, login, sh, top, ps, cp, rm, cat, clear, man, among others, are included in the standard distribution of Hexagonix**. These utilities make up the Hexagonix base utilities package. The login and user-mode environment startup tools are in this package, as well as several configuration files for this environment. These utilities generally do not have a graphical interface, only a command-line interface (CLI). However, they can be requested by applications that have a graphical interface. This environment is available in both the [Hexagonix](hexagonix.img) distribution and the [Andromeda](andromeda.img) distribution.
 
 ### Some applications and utilities in the Hexagonix environment
 
-Hexagonix includes many of the Unix utilities that you may already be familiar with, for example:
+Hexagonix includes many of the Unix utilities you may already be familiar with, such as:
 
 * init
-* Login
+* login
 * ls
 * cat
 * cp
@@ -260,29 +295,41 @@ Hexagonix includes many of the Unix utilities that you may already be familiar w
 * ps
 * man
 * su
-* sh (default shell)
+* sh (shell padrão)
 * uname
 * whoami, among others.
 
-### Third Party Applications Available for Hexagonix
+Some applications and utilities were developed exclusively for Hexagonix, such as:
+
+* atop (alternate version of top)
+* power (computer state control)
+* fnt (Hexagonix graphic font change utility)
+* hash (alternate shell)
+* log (used to get internal Hexagon logs, but now deprecated)
+* lshapp (gets and displays information from HAPP images)
+* lshmod (gets and displays information from HBoot modules and HBoot itself)
+
+It is worth remembering that Hexagonix utilities try to implement a POSIX interface as far as possible, similar in syntax to Unix utilities (FreeBSD and Linux used as a template).
+
+### Third party applications available for Hexagonix
 
 * [Flat Assembler (fasm)](https://flatassembler.net/index.php)
 
-Hexagonix received an assembler port [Fasm](https://flatassembler.net/index.php), which was adapted for Hexagonix, allowing the user to develop applications directly on the system. Changes added to the code, as well as the software license, can be found in the [fasm repository for Hexagonix](https://github.com/hexagonix/fasm). This repository is a fork of the [original repository](https://github.com/tgrysztar/fasm). Added code is based on modifications made to the original code and copyright additions. This modified/authored code can be found in the repository, [by clicking here](https://github.com/hexagonix/fasm/tree/master/SOURCE/HEXAGONIX).
+Hexagonix received a port of the [fasm](https://flatassembler.net/index.php) assembler, which was adapted for Hexagonix, allowing the user to develop applications directly on the system. This port is called fasmX. Changes added to the code, as well as the software license, can be found in the [fasm repository for Hexagonix](https://github.com/hexagonix/fasm). This repository is a fork of [original repository](https://github.com/tgrysztar/fasm). Added code is based on modifications made to the original code and authorial additions. This modified/authored code can be found in the repository, [clicking here](https://github.com/hexagonix/fasm/tree/master/SOURCE/HEXAGONIX). fasmX, the fasm port for Hexagonix, is always updated when new features are added to the fasm repository. To indicate that it is a stable and tested version, the fasmX version number always inherits the fasm numbering, followed by a character x (for example, the version based on fasm 1.73.30, after testing, receives the numbering 1.73 .30x). You can report bugs or code generation or optimization issues in the Hexagonix version [here](https://github.com/hexagonix/fasm/issues). To report general fasm bugs, use the [official](https://github.com/tgrysztar/fasm) repository.
 
-## Andromeda Environment:
+## Andromeda environment
 
-The Andromeda environment is built on the solid foundation provided by Hexagonix, including applications and utilities that either don't implement the Unix philosophy or have quite different syntax and usage than you'd expect from a Unix environment. As such, they are separated as **Andromeda apps**, and are not part of the standard Hexagonix distribution. Here are the System settings app, calculator, font manager, text editors and the IDE developed for Andromeda. These utilities may or may not have a graphical interface. Together with them, the Andromeda environment comprises libraries developed to allow the development of applications, such as the **Stellar** library. This environment is only available in the [Andromeda](en.andromeda.img) distribution.
+The Andromeda environment is built on the solid foundation provided by Hexagonix, including applications and utilities that do not implement the Unix philosophy or have a very different syntax and usage than you would expect from a Unix environment. In this way, they are separated as **Andromeda apps**, and are not part of the standard distribution of Hexagonix. Here are the System settings app, calculator, font manager, text editors and the IDE developed for Andromeda. These utilities may or may not have a graphical interface. Together with them, the Andromeda environment comprises libraries developed to allow the development of applications, such as the **Estelar** library. This environment is only available in the [Andromeda](andromeda.img) distribution.
 
-### Some apps and utilities from the Andromeda environment
+### Some Andromeda applications and utilities
 
-* System Settings (Config)
-* Quartz text editor
+* System Settings (config)
+* Quartzo text editor
 * Lyoko IDE for application development
-* Virtual Piano "return Piano";
+* Electronic piano return Piano;
 * Serial communication utility
 * Andromeda Shell (ASH) - A new shell for Andromeda
-* Andromeda Calculator
+* Andromeda calculator
 * Font change utility
 * Andromeda shutdown utility
 
@@ -290,102 +337,176 @@ The Andromeda environment is built on the solid foundation provided by Hexagonix
 
 There are no third-party applications available for the Andromeda environment yet. If interested, you can build the first one!
 
-## Hexagonix fonts:
+## Hexagonix fonts
 
-The default Hexagonix installation also provides a number of fonts that can be loaded by the settings application or font utility (font manager). These files are used to change the graphic mode display font of Hexagonix and Andromeda.
+The default installation of Hexagonix also provides a number of fonts that can be loaded by the settings application or the font utility (font manager). These files are used to change the graphical display font for Hexagonix and Andromeda.
 
-# System development libraries:
+Graphics mode fonts for Hexagon are developed as a bitmap in Assembly which, when compiled, generate a binary image of the font with representations of each character. The standard Hexagonix fonts have now been released as open source and are available in the [Hexagonix font repository](https://github.com/hexagonix/Fontes).
 
-Hexagonix/Andromeda also provides functions that must be used to interact with the system environment itself. Libraries are used to access functions implemented by Hexagon or by the libraries themselves, allowing easy development of applications and utilities for both the Hexagonix and Andromeda environments. Libraries implement functions for displaying text, math calculations, sending messages, opening files and devices, and much more. The base library (andrmda.s or hexagonix.s) provides accessible functions for both possible distribution environments, while other libraries may be unique to the Andromeda environment. These libraries include graphical functions to build interfaces in graphical mode (Andromeda), as well as functions to check the version of the system currently running (Hexagonix and Andromeda). The Hexagonix base utilities perform a Hexagon version check to see if they can be run using the Unix uname utility or directly via a Hexagon system call.
+### How to create your own graphic font
 
-# A little bit about system startup:
+Feel free to download the font [model](https://github.com/hexagonix/Fontes/blob/main/modelo.asm), which is already structured but with blank characters, and draw the your own graphic font! For that, you need to know some technical information about them:
 
-After booting the firmware, the [BIOS](https://en.wikipedia.org/wiki/BIOS) or other firmware, such as [UEFI](https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface) in legacy mode, performs fetches a volume/disk marked bootable and, when found, loads the first sector to address 0x7C00. In the case of a Hexagon volume, the component named Saturn is located in the first sector of the volume. Saturn is the MBR boot manager of a Hexagon volume and acts as the first stage in the System load chain. It performs the search, in the volume, of the second stage, much more robust, the Hexagon Boot (HBoot). HBoot does not have the same limitations as the previous component, as it is not restricted to 512-byte size. When starting, HBoot performs a series of machine tests and diagnostics, checking which disks/volumes are available on the machine, how much RAM memory is installed and initializing some peripherals, such as serial ports, in addition to checking the installed processor for its ability to run Hexagon. If the amount of RAM memory installed is less than the minimum, the processor is not supported or an error occurs in an essential peripheral, the initialization protocol is canceled. If the tests are successful, the volume is searched for the file containing the Hexagon kernel, with its loading, construction of a parameter structure, configuration of registers with basic hardware information and subsequent execution. HBoot is also capable of loading and executing modules in the HBoot format, as well as booting a DOS-like system whose files are present on the Hexagon volume (so far, only FreeDOS is supported). It is also capable of performing some hardware tests on demand, such as sound and graphics. After loading the Hexagon, the kernel takes control of the device and performs peripheral configuration, builds internal control structures and starts the first user process, with PID 1, usually the System Initiator, or init. init will read the configuration file "INIT.UNX" from the volume and start the services described there, usually the Login and User Manager, or simply login. This, in turn, fetches the information in "USER.UNX" and compares it with the user's entries, and if the credentials are valid, starts the first shell or utility described in the user's entry. Afterwards, Hexagon goes into administrative mode and manages requests from applications and peripherals, exposing the API for building and executing the other components of the System (for more information, see the header file "ANDRMDA.S", which already documents the API).
+* Fonts have a height of 16 and a width of 8 pixels. This information is necessary to ensure that your font does not experience problems during use.
+* You can freely divide the placeholders for accents and other graphic features of each character, such as cedilla or portions that fall below the character line, such as y, comma, etc.
+* Fonts are drawn in bitmap format. Therefore, each character is a pixel map composed of 0s and 1s. The 0s symbolize undisplayed areas of the character, while the 1s represent the pixels of the character that will be displayed to the user. You must change each character array in the template font by adding the 1s where you want the pixels to appear to form the character. Below you will see an example of a blank character and the same representation of this character ready for the font.
 
-# How to test Hexagonix or Andromeda:
+The code below shows the bitmap representation of the hash sign (#) in the font [model](https://github.com/hexagonix/Fontes/blob/main/modelo.asm) and the implementation in the font [hint](https: //github.com/hexagonix/Fontes/blob/main/hint.asm).
+
+```assembly
+;; Blank representation of the hash (#) character in the template
+
+.quill:
+
+db 00000000b ;; Two pixels high for characters above the letter
+db 00000000b
+
+db 00000000b
+db 00000000b
+db 00000000b
+db 00000000b
+db 00000000b
+db 00000000b
+db 00000000b
+db 00000000b
+db 00000000b
+
+db 00000000b ;; Five pixels tall for characters above the letter
+db 00000000b
+db 00000000b
+db 00000000b
+db 00000000b
+
+;; Blank representation of the hash character (#), in hint font
+
+.quill:
+
+db 00000000b
+db 00000000b
+
+db 00000000b
+db 00000000b
+db 00100010b
+db 00100010b
+db 01111111b
+db 00100010b
+db 01111111b
+db 00100010b
+db 00100010b
+
+db 00000000b
+db 00000000b
+db 00000000b
+db 00000000b
+db 00000000b
+
+```
+
+You should already be able to see, inside the matrix, the hash mark, marked by the presence of 1s.
+
+You can develop as many fonts as you like and play around with different and innovative designs, as well as extend the available characters (using the ASCII reference).
+
+# System development libraries
+
+Hexagonix/Andromeda also provides functions that must be used to interact with the system environment itself. Libraries are used to access functions implemented by Hexagon or by the libraries themselves, allowing easy development of applications and utilities for both the Hexagonix and Andromeda environments. The libraries implement functions for displaying text, mathematical calculations, sending messages, opening files and devices, and much more. The core library (hexagon.s) provides functions accessible to both possible distribution environments, while other libraries may be unique to the Andromeda environment. These libraries include graphical functions to build interfaces in graphical mode (Andromeda), as well as functions to check the currently running system version (Hexagonix and Andromeda). The Hexagonix base utilities perform the Hexagon version check to see if they can be run, using the Unix utility uname or directly via a Hexagon system call.
+
+To learn more and check each function available in the system development libraries, see the [libasm] repository (https://github.com/hexagonix/libasm).
+
+# A little about system boot
+
+After firmware initialization, [BIOS](https://pt.wikipedia.org/wiki/BIOS) or other firmware such as [UEFI](https://pt.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface) in legacy, searches for a volume/disk marked as bootable and, when found, loads the first sector to address 0x7C00. In the case of a Hexagon volume, the component named Saturn is located in the first sector of the volume. Saturn is the MBR boot loader of a Hexagon volume and acts as the first stage in the System load chain. It searches the volume for the much more robust second stage, the Hexagon Boot (HBoot). HBoot does not have the same limitations as the previous component, as it is not restricted to a size of 512-bytes. When starting, HBoot performs a series of tests and diagnostics of the machine, checking which disks/volumes are available in the machine, how much RAM memory is installed and initializing some peripherals, such as serial ports, in addition to checking the installed processor for its ability to run Hexagon. If the amount of RAM memory installed is less than the minimum, the processor is not supported or an error occurs in some essential peripheral, the initialization protocol is cancelled. If the tests are successful, the file containing the Hexagon kernel is searched on the volume, with its loading, construction of a parameter structure, configuration of registers with basic hardware information and subsequent execution. HBoot is also capable of loading and running modules in HBoot format, as well as booting a DOS-like system whose files are present on the Hexagon volume (only FreeDOS is supported so far). It is also capable of performing some on-demand hardware tests such as sound and graphics. After Hexagon is loaded, the kernel takes control of the device and configures the peripherals, builds internal control structures, and starts the first user process, with PID 1, usually the System Launcher, or init. init will read the configuration file "INIT.UNX" on the volume and start the services described there, usually the Login and Users Manager, or simply login. This, in turn, fetches the information from "USUARIO.UNX" and compares it to the user's input, and, if the credentials are valid, starts the first shell or utility described in the user input. Afterwards, Hexagon enters administrative mode and manages requests from applications and peripherals, exposing the API for building and executing the other components of the System (for more information, see the header file "HEXAGON.S", which already documents the API) .
+
+# How to test Hexagonix or Andromeda
 
 ## System requirements
+
+Below is a list of minimum and recommended requirements for testing Hexagonix/Andromeda on a virtual machine or physical machine.
 
 ### Minimum requirements
 
 * Processor: Pentium III (1999) with SSE and MMX support or newer;
-* RAM memory: 32 Mb minimum (a minimum installation with 32 Mb is usually sufficient in most cases);
+* RAM memory: 32 Mb minimum (a minimum installation with 32 Mb is usually enough, in most cases);
 * Hard disk: IDE or SATA hard disk with a minimum of 50 Mb;
 * Necessary peripherals:
-  - Serial port (1-4);
-  - Parallel port (1-4);
-  - PS/2 or USB keyboard;
-  - VGA video card with 2 Mb video memory (with color support).
+  * Serial port (1-4);
+  * Parallel port (1-4);
+  * PS/2 or USB keyboard;
+  * VGA video card with 2 Mb of video memory (with color support).
 
 ### Recommended
 
 * Processor: Pentium D or newer;
 * RAM memory: 50 Mb;
 * Optional peripherals:
-  - PS/2 or USB mouse;
-  - Video card with > 2 Mb of video memory.
+  * PS/2 or USB mouse;
+  * Video card with > 2 Mb of video memory.
 
-## Get disk images with system installation
+## Get the disk images with the system instalation
 
-To test Hexagonix or Andromeda, you will need one of the disk images available in this repository, as well as the [qemu](https://www.qemu.org) tool installed on your computer. The image can also be used for writing to a physical disk on a real machine.
+To test Hexagonix or Andromeda, you will need one of the disk images available in this repository, as well as the [qemu](https://www.qemu.org) tool installed on your computer, if you want to test the system in an environment virtualized. The image can also be used for writing to a physical disk on a real machine.
 
-To test Hexagonix, get the ['en.hexagonix.img'](en.hexagonix.img) file from this repository.
-To test Andromeda, get the ['en.andromeda.img'](en.andromeda.img) file from this repository.
+To test Hexagonix, get the ['hexagonix.img'](hexagonix.img) file from this repository.
+To test Andromeda, get the ['andromeda.img'](andromeda.img) file from this repository.
 
+## For testing in virtualized environment
 
-Remember that images available in english may not always be up-to-date compared to those in portuguese.
+First, you must install the qemu tool, which will manage the virtual machine. To do so, you can install qemu using official Linux distribution repositories or by accessing [here](https://www.qemu.org) to get installation files for Windows and macOS. For Ubuntu, the following line will install qemu and all its dependencies (root privileges required):
 
-## For testing in a virtualized environment
+```
+sudo apt install qemu qemu-system-i386
+```
 
-You must provide at least 32 MB of RAM for the virtual machine. Typically, the command line below fulfills all requirements for running the system:
+Now that you have qemu installed on your computer, you can proceed with running the system.
+
+To run the system satisfactorily, you must provide at least 32 MB of RAM for the virtual machine. This is due to Hexagon's memory management architecture, which requires 16 MB of RAM dedicated to the kernel and at least 16 MB for allocating applications, utilities and open files. Hexagon doesn't allow less than that to run. If more memory is provided, the additional memory will always be reserved, with priority, to be made available to user processes. Normally, the command line below fulfills all requirements for running the system:
 
 ```
 qemu-system-i386 -hda andromeda.img -m 32 -soundhw pcspk --enable-kvm -serial file:"Serial.txt"
 qemu-system-i386 -hda hexagonix.img -m 32 -soundhw pcspk --enable-kvm -serial file:"Serial.txt"
 ```
 
-You can omit the -serial parameter if you want. This parameter ensures that debug output from Hexagon and applications will be directed to a file on your computer, where you can see what was sent.
+You can omit the -serial parameter if you want. This parameter ensures that debug output from Hexagon and applications will be directed to a file on your computer, where you can see what was sent. You can also omit the -soundhw parameter, which is responsible for directing the sound output from the virtual system to your physical computer. On some Linux systems, the above configuration may conflict with pulseaudio, and may be omitted. Remember that by omitting the parameter, system sounds will not be output to you.
 
-Remembering that you must use a qemu version/edition that can run software written for the x86 architecture. To download and install qemu, click [here](https://www.qemu.org/download/).
+Remembering that you must use a version/edition of qemu that can run software written for the x86 architecture (i386 or x86_64). To download and install qemu, click [here](https://www.qemu.org/download/).
 
-## For physical machine testing
+## For testing on physical machine
 
-You must use Linux/macOS or some Windows tool that allows you to burn this image to disk.
+You must use Linux/macOS or some tool available for Windows that allows you to burn this image to disk.
 
 On Linux/macOS/Unix, use the line below:
 
 ```
-dd if=en.andromeda.img of=/dev/unit
+dd if=andromeda.img of=/dev/unity
 ```
-where drive equates to the desired device (usually sdb or sdc for USB and hda devices, hdb, sda or sdb for hard disk/solid state drives). Restart your computer and test the system. Keep in mind that secure boot mode is not supported, and booting is only supported in BIOS or UEFI BIOS legacy mode.
+where drive is the desired device (usually sdb or sdc for USB devices and hda, hdb, sda or sdb for hard/solid state drives). Restart your computer and test the system. It is worth remembering that secure boot mode is not supported, and booting is only supported in BIOS or UEFI legacy BIOS mode.
 
-It is noteworthy that system performance may vary depending on the machine tested. Added to this is the fact that the latest versions of the system have not been or are being tested directly on the physical hardware. If any problem occurs when running Hexagonix/Andromeda on a physical hardware, please report the detailed error [here](https://github.com/hexagonix/Distro/issues), in Portuguese or English, stating data of the device, like processor, amount of RAM memory, graphics card (if available), and connected peripherals, as well as the device used to install the system (internal disk drive or USB removable media).
+Note that system performance may vary depending on the machine being tested. Added to this is the fact that the latest versions of the system have not been or are being tested directly on the physical machine, as the main operating system. If any problem occurs when running Hexagonix/Andromeda on a physical machine, please report the detailed error [here](https://github.com/hexagonix/Distro/issues), in Portuguese or English, informing data such as device, processor, amount of RAM memory, video card (if available) and peripherals connected, as well as the device used to install the system (internal disk drive or USB removable media).
 
 ## First use
 
-When starting the system, you will be asked to enter a username and password. For first use, use
+When starting the system, you will be asked to enter a username and password. For the first use, use
 
 ```
-Username: root
+User: root
 Password: root
 ```
 
-You can add another user by changing the 'USUARIO.UNX' file in the root of the disk. Remember not to remove the root user. This can make the system permanently inoperable.
+You can add another user by changing the 'USUARIO.UNX' file at the root of the disk. Remember not to remove the root user. This can make the system permanently inoperable.
 
-# Report bugs
+# report errors
 
-You can report bugs and help develop the system. To do this, open an error notification [here](https://github.com/hexagonix/Distro/issues), reporting the error as detailed as possible (such as device brand, processor, amount of RAM memory, card video and connected peripherals, as well as the device used to install the system, such as an internal disk drive or USB removable media). Remember to inform in which application the error occurred, in case the error occurs with the system already in operation. If the problem occurs in the boot process, inform what was displayed/the observed behavior of the machine.
+You can report bugs and help develop the system. To do this, open an error notification [here](https://github.com/hexagonix/Distro/issues), informing the error as detailed as possible (such as device brand, processor, amount of RAM, video and connected peripherals, as well as the device used to install the system, such as an internal disk drive or USB removable media). Remember to inform which application the error occurred in, if the error occurs while the system is already in operation. If the problem occurs in the boot process, please report what was displayed/observed behavior of the machine.
 
 # System screenshots
 
-## Hexagonix
+## hexagon
 
 <p align="center">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix1.png" width="400" height="300">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix2.png" width="400" height="300">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix3.png" width="400" height="300">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix4.png" width="400" height="300">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix5.png" width="400" height="300">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix1.png" width="500" height="400">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix2.png" width="500" height="400">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix3.png" width="500" height="400">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix4.png" width="500" height="400">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix5.png" width="500" height="400">
 </p>
 
 You can see more [here](https://github.com/hexagonix/Distro/tree/main/Img).
@@ -393,22 +514,22 @@ You can see more [here](https://github.com/hexagonix/Distro/tree/main/Img).
 ## Andromeda
 
 <p align="center">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda1.png" width="400" height="300">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda2.png" width="400" height="300">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda3.png" width="400" height="300">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda4.png" width="400" height="300">
-<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda5.png" width="400" height="300">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda1.png" width="500" height="400">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda2.png" width="500" height="400">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda3.png" width="500" height="400">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda4.png" width="500" height="400">
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda5.png" width="500" height="400">
 </p>
 
 You can see more [here](https://github.com/hexagonix/Distro/tree/main/Img).
 
 # Languages
 
-At the moment, both the system and the documentation are only available in Portuguese. Documentation in English will be available soon, and there are plans to support English as a primary language possibility in addition to Portuguese (much of the work has already been done).
+At this moment, both the system and the documentation are only available in Portuguese. Documentation in English will be available soon, and there are plans to support English as a primary language possibility in addition to Portuguese (most of the work has already been done).
 
 # Inspiration
 
-This project was possible and today it can see the light of day thanks to many others who have come before and contributed with design ideas and teaching how an operating system, even a simple one, should work. Are they:
+This project was possible and today it can see the light of day thanks to many others who have come before and contributed with design ideas and teaching how an operating system should work, even if simple. Are they:
 
 * MS-DOS, with code available [here](https://github.com/microsoft/MS-DOS)
 * [MikeOS](http://mikeos.sourceforge.net/)
@@ -418,24 +539,45 @@ This project was possible and today it can see the light of day thanks to many o
 * [LittleKernel](https://github.com/littlekernel/lk)
 * [Google Fuchsia](https://fuchsia.googlesource.com/fuchsia/)
 
-In addition, other projects have helped in the development of Hexagonix/Andromeda, either by providing new design ideas that go beyond the traditional organization of an operating system, or by providing well-documented code that allows us to understand the functioning of certain parts of an operating system, or by contributing with code examples that later came to inspire functions that were written exclusively for Hexagonix/Andromeda (mainly kernel code). Despite not having been copied, the code of these projects made it possible for the functioning of certain computer components to be understood, opening doors for author codes to be written based on the study of the code of these projects. Are they:
+In addition, other projects helped in the development of Hexagonix/Andromeda, either by providing new design ideas that go beyond the traditional organization of an operating system, or providing well-documented code that allowed us to understand how certain parts of an operating system work, or contributing with code examples that later came to inspire functions that were written exclusively for Hexagonix/Andromeda (mainly the kernel code). Despite not having been copied and reused in the system, the code of these public domain projects made it possible to understand the operation of certain computer components, opening doors for copyright codes to be written based on the study of the code of these projects. It is worth mentioning that the projects below were released by their original developers in the public domain. Are they:
 
-* [Snowdrop OS](http://www.sebastianmihai.com/snowdrop/), which supported 16-bit functions available on HBoot
-* [Alotware](https://github.com/0x5CE/alotware), which inspired me to create the process management functions in early versions of Hexagon (now rewritten countless times)
+* [Snowdrop OS](http://www.sebastianmihai.com/snowdrop/), which inspired me to write various hardware control routines and other 16-bit functions available in HBoot. The code for this system has been released into the public domain.
+* [Alotware](https://github.com/0x5CE/alotware), which inspired me to create the process management functions in early versions of Hexagon (now rewritten numerous times). The code for this system has been released into the public domain.
 
-# Author & Contact
+# Author & contact
 
-* [Felipe Miguel Nery Lunkes](https://github.com/felipenlunkes)
+* [Felipe Miguel Nery Lunkes](https://github.com/felipeldev)
 
 Feel free to contact me, report bugs or be interested in participating in the project.
 
-## Email:
+## Email
 
 * hexagonixdev@gmail.com (PT/EN)
 * felipemiguel_nery@hotmail.com (PT/EN)
 
-## Social networks:
+## Social networks
 
-* [Twitter](https://twitter.com/redLipes)
+* [Twitter](https://twitter.com/felipemnlunkes)
 
-Copyright © 2021 Felipe Miguel Nery Lunkes
+# Copyright notes
+
+Hexagonix/Andromeda was developed from scratch by [Felipe Lunkes](https://github.com/felipenlunkes).
+
+Read the [license](LICENSE) for more information on copyright, code ownership, and redistribution that apply only to files available in this repository (does not apply to the set of data and source code files that make up Hexagonix/Andromeda) . It is worth mentioning that the code of the system components is being released little by little and that each package can be released with a different license. Always keep an eye on the 'LICENSE' file available in each repository to be aware of legal rights and obligations.
+
+* Hexagonix Operating System and Andromeda Operating System. Copyright © 2016-2022 Felipe Miguel Nery Lunkes. All rights reserved.
+* Hexagon kernel. Copyright © 2016-2022 Felipe Miguel Nery Lunkes. All rights reserved.
+* Saturn Boot Manager. Copyright © 2016-2022 Felipe Miguel Nery Lunkes. All rights reserved.
+* Hexagon Boot (HBoot). Copyright © 2020-2022 Felipe Miguel Nery Lunkes. All rights reserved.
+
+Version of this file: 4.5
+
+Copyright © 2021-2022 Felipe Miguel Nery Lunkes
+<br>
+All rights reserved.
+
+[^1]: You can get more information about the relationship between Darwin and macOS [here](https://en.wikipedia.org/wiki/Darwin_(operating_system)).
+[^2]: You can find the project page [here](https://www.freedos.org/).
+[^3]: Booting in DOS mode was possible after searching the FreeDOS documentation, especially the "SYS.C" file (which can be found [here](http://www.ibiblio.org/pub/micro/pc-stuff/freedos/files/dos/sys/2043/), which indicates in which thread the kernel expects to be loaded and which parameters are needed to boot the kernel correctly. Each DOS system has a preferred loading segment and this loading of other DOS editions can be implemented in the future with the help of new HBoot modules (in case of a proprietary system, the user must have a license). All the code for loading the kernel was developed from scratch and not based on any existing ones (the implementation of HBoot and modDOS, which are original, is done in Assembly, while the FreeDOS loading code is developed in C). The original implementation of modDOS code and other modules for DOS systems also frees the implementation from any legal problems.
+[^4]: HBoot's DOS compatibility mode (modDOS) boot can be useful for running volume error checking, volume defrag, partitioning and other diagnostic as well as development tools such as compilers and assemblers which are not supported by Hexagonix/Andromeda (the 16-bit tools for example).
+[^5]: Supports open(), close(), read() and write() calls, at least in concept. System calls are always BSD-style, with a function number on the stack and parameters in the registers.

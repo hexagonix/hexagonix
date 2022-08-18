@@ -35,9 +35,28 @@ Foram identificadas diversas falhas de execução em vários utilitários do And
 Lançamento final da versão H1 do sistema. Esse é o lançamento análogo a uma versão 1.0 do software. Para tanto, os números de versão interno de diversos componentes do sistema foram alterados para celebrar esse marco. O Hexagon passa a se identificar como na versão 1.0, bem como outros componentes. A versão foi amplamente testada e está estável. O lançamento H1 R3 inclui:
 
 - Kernel Hexagon v1.0;
-- Correções gerais em vários utilitários Hexagonix e ANdromeda;
+- Correções gerais em vários utilitários Hexagonix e Andromeda;
 - Melhorias nas bibliotecas do sistema;
 - Correções de estabilidade em vários utilitários;
 - Melhorias no Configuações do Andromeda;
 
 Vá até a área de [lançamentos](https://github.com/hexagonix/hexagonix/releases) e busque a versão H1 R3.
+
+#### Hexagonix H1 R4 (Vega)
+
+Melhorias e correção de bugs em todo o sistema.
+
+- Correções gerais em vários utilitários Hexagonix e Andromeda;
+- Melhorias nas bibliotecas do sistema;
+- Correções de estabilidade em vários utilitários;
+- Melhorias no Configuações do Andromeda;
+
+#### Hexagonix H1 R5 (Orion)
+
+Essa atualização do sistema conserta vários bugs no sistema, incluindo problemas encontrados ao iniciar em máquinas físicas e em ambientes virtualizados no HBoot e no Hexagon.
+
+- Kernel Hexagon v1.1;
+- Correções gerais em vários utilitários Hexagonix e Andromeda;
+- Melhorias nas bibliotecas do sistema;
+- Correções de estabilidade em vários utilitários;
+- Melhorias no Configuações do Andromeda;
