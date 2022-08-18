@@ -43,6 +43,8 @@
 [![Andromeda-Apps](https://github-readme-stats.vercel.app/api/pin/?username=Hexagonix&repo=andromeda-apps&theme=dark)](https://github.com/hexagonix/andromeda-apps)
 [![lib](https://github-readme-stats.vercel.app/api/pin/?username=Hexagonix&repo=lib&theme=dark)](https://github.com/hexagonix/lib)
 [![fasmX](https://github-readme-stats.vercel.app/api/pin/?username=Hexagonix&repo=fasmx&theme=dark)](https://github.com/hexagonix/fasmx)
+[![hexagonix](https://github-readme-stats.vercel.app/api/pin/?username=Hexagonix&repo=hexagonix&theme=dark)](https://github.com/hexagonix/hexagonix)
+[![build](https://github-readme-stats.vercel.app/api/pin/?username=Hexagonix&repo=build&theme=dark)](https://github.com/hexagonix/build)
 
 <!-- Versão do arquivo: 2.2 -->
 
