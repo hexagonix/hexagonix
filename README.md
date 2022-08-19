@@ -9,8 +9,8 @@
 
 # Pegue um atalho/take a shortcut
 
-* [Português (Brasil)](https://github.com/hexagonix/.github/blob/main/profile/README.pt.md)
-* [English](https://github.com/hexagonix/.github/blob/main/profile/README.en.md) 
+* [Português (Brasil)](README.pt.md)
+* [English](README.en.md) 
 
 <hr>
 
@@ -30,8 +30,8 @@
 
 ## Lançamentos/releases
 
-* [Português (Brasil)](https://github.com/hexagonix/.github/blob/main/profile/REL.pt.md)
-* [English (under construction)](https://github.com/hexagonix/.github/blob/main/profile/REL.en.md) 
+* [Português (Brasil)](REL.pt.md)
+* [English (under construction)](REL.en.md) 
 
 <hr>
 
