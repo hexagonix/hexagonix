@@ -1,6 +1,50 @@
+<!--
+
+Version of this file: 5.0
+
+-->
+
 # Hexagonix/Andromeda Operating System
 
 # First of all - a shortcut to get straight to the point
+
+<details title="License" align='left'>
+<br>
+<summary align='left'><strong>License</strong></summary>
+
+Hexagonix Operating System
+
+BSD 3-Clause License
+
+Copyright (c) 2015-2022, Felipe Miguel Nery Lunkes
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its
+   contributors may be used to endorse or promote products derived from
+   this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+</details>
 
 <details title="Download and test the system right now" align='left'>
 <br>
@@ -637,12 +681,6 @@ In addition, other projects helped in the development of Hexagonix/Andromeda, ei
 
 </details>
 
-<details title="License" align='left'>
-<br>
-<summary align='left'><strong>License</strong></summary>
-
-</details>
-
 <details title="Author, contributors and contact" align='left'>
 <br>
 <summary align='left'><strong>Author, contributors and contact</strong></summary>
@@ -677,8 +715,6 @@ Hexagonix/Andromeda was developed from scratch by [Felipe Lunkes](https://github
 Read the [license](LICENSE) for more information on copyright, code ownership, and redistribution that apply only to files available in this repository (does not apply to the set of data and source code files that make up Hexagonix/Andromeda) . It is worth mentioning that the code of the system components is being released little by little and that each package can be released with a different license. Always keep an eye on the 'LICENSE' file available in each repository to be aware of legal rights and obligations.
 
 </details>
-
-Version of this file: 5.0
 
 Copyright © 2021-2022 Felipe Miguel Nery Lunkes
 <br>

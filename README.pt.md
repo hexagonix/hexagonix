@@ -1,6 +1,51 @@
+<!--
+
+Versão deste arquivo: 5.0
+
+-->
+
 # Sistema Operacional Hexagonix/Andromeda
 
 # Antes de mais nada - um breve atalho para ir direto ao ponto
+
+
+<details title="Licença" align='left'>
+<br>
+<summary align='left'><strong>Licença</strong></summary>
+
+Hexagonix Operating System
+
+BSD 3-Clause License
+
+Copyright (c) 2015-2022, Felipe Miguel Nery Lunkes
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its
+   contributors may be used to endorse or promote products derived from
+   this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+</details>
 
 <details title="Fazer download e testar o sistema agora mesmo" align='left'>
 <br>
@@ -641,12 +686,6 @@ Além disso, outros projetos auxiliaram no desenvolvimento do Hexagonix/Andromed
 
 </details>
 
-<details title="Licença" align='left'>
-<br>
-<summary align='left'><strong>Licença</strong></summary>
-
-</details>
-
 <details title="Autor, contribuidores e contatos" align='left'>
 <br>
 <summary align='left'><strong>Autor, contribuidores e contatos</strong></summary>
@@ -678,8 +717,6 @@ O Hexagonix/Andromeda foi desenvolvido do zero por [Felipe Lunkes](https://githu
 Leia a [licença](LICENSE) para mais informações sobre direitos autorais, propriedade de código e redistribuição que se aplicam apenas aos arquivos disponíveis neste repositório (não se aplicam ao conjunto de arquivos de dados e de código fonte que compõem o Hexagonix/Andromeda). Vale ressaltar que o código dos componentes do sistema estão sendo liberados aos poucos e que cada pacote pode ser liberado com uma licença diferente. Sempre fique atento ao arquivo 'LICENSE' disponível em casa repositório para estar ciente dos direitos e obrigações legais.
 
 </details>
-
-Versão deste arquivo: 5.0
 
 Copyright © 2021-2022 Felipe Miguel Nery Lunkes
 <br>
