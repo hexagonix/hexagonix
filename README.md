@@ -9,8 +9,8 @@
 
 # Escolha seu idioma/choose your language
 
-* [Português (Brasil)](README.pt.md)
-* [English](README.en.md) 
+* [Português (Brasil)](https://github.com/hexagonix/Doc/blob/main/Hexagonix/README.pt.md)
+* [English](https://github.com/hexagonix/Doc/blob/main/Hexagonix/README.en.md) 
 
 <details title="Documentação/documentation" align='left'>
 <br>
@@ -25,8 +25,8 @@
 <br>
 <summary align='left'><strong>Lançamentos/releases</strong></summary>
 
-* [Português (Brasil)](REL.pt.md)
-* [English (under construction)](REL.en.md) 
+* [Português (Brasil)](https://github.com/hexagonix/Doc/blob/main/Hexagonix/REL.pt.md)
+* [English (under construction)](https://github.com/hexagonix/Doc/blob/main/Hexagonix/REL.en.md) 
 
 </details>
 
@@ -43,6 +43,8 @@
 [![hexagonix](https://github-readme-stats.vercel.app/api/pin/?username=Hexagonix&repo=hexagonix&theme=dark)](https://github.com/hexagonix/hexagonix)
 [![build](https://github-readme-stats.vercel.app/api/pin/?username=Hexagonix&repo=build&theme=dark)](https://github.com/hexagonix/build)
 
-<!-- Versão do arquivo: 2.2 -->
+<!-- Versão do arquivo: 2.2
 
 Copyright © 2015-2022 Felipe Miguel Nery Lunkes
+
+-->
