@@ -543,7 +543,7 @@ You must use Linux/macOS or some tool available for Windows that allows you to b
 On Linux/macOS/Unix, use the line below:
 
 ```
-dd if=andromeda.img of=/dev/unity
+dd if=andromeda.img of=/dev/device
 ```
 where drive is the desired device (usually sdb or sdc for USB devices and hda, hdb, sda or sdb for hard/solid state drives). Restart your computer and test the system. It is worth remembering that secure boot mode is not supported, and booting is only supported in BIOS or UEFI legacy BIOS mode.
 
