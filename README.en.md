@@ -570,6 +570,8 @@ You can report bugs and help develop the system. To do this, open an error notif
 
 <hr>
 
+# Screenshots
+
 <details title="Screenshots" align='left'>
 <br>
 <summary align='left'><strong>Screenshots</strong></summary>

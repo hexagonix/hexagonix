@@ -574,6 +574,8 @@ Você pode reportar erros e ajudar a desenvolver o sistema. Para isso, abra uma 
 
 <hr>
 
+# Capturas de tela
+
 <details title="Capturas de tela" align='left'>
 <br>
 <summary align='left'><strong>Capturas de tela</strong></summary>
