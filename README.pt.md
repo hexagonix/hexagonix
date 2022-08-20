@@ -77,15 +77,23 @@ O código-fonte do projeto já foi disponibilizado publicamente. O código do ke
 
 O Andromeda começou como uma implementação em estrutura similar a sistemas do tipo DOS, com um interpretador com comandos internos com nomes, sintaxes e resultados semelhantes a um DOS genérico. O interpretador de comandos apresentava comandos de manipulação de arquivos e outros internamente, como em sistemas DOS convencionais. As unidades de disco também eram definidas como letras. Mais tarde, surgiu um interesse crescente e fascínio no funcionamento de sistemas Unix e todo o código foi reescrito ou adaptado para tornar o kernel do Sistema um kernel Unix-like. Todos os componentes do Sistema, assim como no DOS, eram mantidos em uma única árvore até então. Com a versão 1.5 do Andromeda, com nome de código "Unix-like", o kernel foi bastante modificado e reescrito para se adequar à filosofia Unix. As mudanças incluíram até mesmo a forma como os dispositivos eram tratados, com a escrita de uma camada de abstração de hardware com o gerenciamento de dispositivos como arquivos, além da adição das chamadas de sistema abrir(), fechar(), escrever() e ler(). Também foram escritos os utilitários base Unix, com a retirada de comandos do interpretador padrão, que foi reescrito para dar lugar a um shell Unix-like. Os camandos internos foram movidos para os utilitários, que passaram a contar com estrutura e sintaxe no estilo Unix. O restante dos utilitários, como mount, foi escrita, já tirando proveito da chamada abrir(), que também é utilizada para montar volume, além de abrir arquivos ordinários do volume. A chamada abrir() também é utilizada para iniciar outros periféricos, como portas seriais e paralelas. A chamada escrever() também funciona com dispositivos e arquivos, bem como fechar(). Foi também introduzido um VFS (Virtual File System), que suportará no futuro vários sistemas de arquivos e que torna transparente para o Sistema, programadores e usuários o gerenciamento de arquivos. Também foram incluídas novas funções de gerenciamento de hardware e muitos aprimoramentos e correções de bugs. O Sistema ganha novos utilitários Unix até o presente momento. Após essa alteração da proposta e arquitetura, os componentes foram separados e alocados em projetos específicos. A união destes componentes forma o sistema operacional. No caso do Hexagonix, temos o HBoot, Hexagon, shell, bibliotecas e aplicativos Unix, enquanto o Andromeda estende o Hexagonix, incorporando outras bibliotecas e aplicativos que as utilizam.
 
+</details>
+
 <hr>
 
 # Componentes do sistema
 
-## Saturno
+<details title="Saturno" align='left'>
+<br>
+<summary align='left'><strong>Saturno</strong></summary>
 
 O primeiro componente do Hexagonix/Andromeda é o Saturno. Ele é responsável por receber o controle do processo de inicialização realizado pelo BIOS/UEFI e procurar no volume o segundo estágio de inicialização. Para isso, ele implementa um driver para leitura de um sistema de arquivos FAT16. O segundo estágio de inicialização (ver adiante) pode implementar drivers para outros sistemas de arquivos e é responsável por encontrar o Hexagon, carregar módulos HBoot ou carregar um sistema do tipo DOS compatível (versão BETA).
 
-## Hexagon Boot (HBoot)
+</details>
+
+<details title="Hexagon Boot (HBoot)" align='left'>
+<br>
+<summary align='left'><strong>Hexagon Boot (HBoot)</strong></summary>
 
 O Hexagon Boot (HBoot) é um componente desenvolvido para permitir a inicialização do kernel Hexagon. Até então, a inicialização era realizada por apenas um estágio, que definia um ambiente bem básico, carregava o Hexagon na memória e imediatamente o executava, fornecendo um conjunto bem limitado de parâmetros. Isso se deve ao fato de que o código desse estágio fica restrito a 512 bytes, o que limita a realização de diversos testes e processamento de dados. Como o HBoot, foi possível expandir o número de tarefas realizadas antes da execução do Hexagon, além da possibilidade de fornecer mais informações a respeito do ambiente do dispositivo e de inicialização. Isso é particularmente importante para permitir a criação de uma árvore de dispositivos que pode ser utilizada pelo Hexagon para decidir como manipular cada dispositivo identificado. O HBoot é capaz de verificar quais unidades de disco estão disponíveis na máquina, emitir um tom de inicialização, obter a quantidade de memória RAM disponível instalada e permitir ou não o prosseguimento do processo de boot de acordo com essa informação. Caso nenhuma interação do usuário seja detectada (em um tempo de 3 segundos após a inicialização do HBoot e exibição de mensagens ao usuário), o HBoot irá realizar testes adicionais para verificar a capacidade do dispositivo em executar o sistema e irá carregar e executar o Hexagon (presente em um arquivo no volume nomeado de **HEXAGON.SIS**). Após o carregamento, o HBoot transfere o controle para o Hexagon, que é inicializado e armazena no ambiente do kernel os dados fornecidos pelo HBoot.
 
@@ -182,7 +190,11 @@ Novos sistemas de arquivos serão implementados no futuro, incluindo o suporte d
 
 O HBoot ganhou muita complexidade desde o início de seu desenvolvimento, em 2020. Devido a esse aumento de código e a natureza de sua operação (16-bit), bugs podem ser encontrados. Os mesmos podem ser reportados no repositório ou por email, disponível no final deste arquivo.
 
-## Kernel Hexagon
+</details>
+
+<details title="Kernel Hexagon" align='left'>
+<br>
+<summary align='left'><strong>Kernel Hexagon</strong></summary>
 
 ### O que é
 
@@ -301,7 +313,11 @@ Uma documentação mais detalhada do Hexagon está em preparação e está sendo
 
 As chamadas de sistema são realizadas no estilo BSD, com o número da função presente na pilha e os parâmetros/argumentos junto aos registradores. Para uma lista completa de chamadas de sistema disponíveis na versão atual do sistema, dê uma olhada na biblioteca do Hexagon na [libasm para fasm](https://github.com/hexagonix/libasm/blob/main/fasm/hexagon.s) ou [libasm para nasm](https://github.com/hexagonix/libasm/blob/main/nasm/hexagon.s).
 
-## Ambiente Hexagonix
+</details>
+
+<details title="Ambiente Hexagonix" align='left'>
+<br>
+<summary align='left'><strong>Ambiente Hexagonix</strong></summary>
 
 O Hexagonix implementa, junto ao Hexagon, uma série de utilitários Unix-like, com funcionalidade e sintaxe de uso semelhante à sistemas UNIX e Unix-like. **Utilitários como init, login, sh, top, ps, cp, rm, cat, clear, man, dentre outros, estão inclusos na distribuição padrão do Hexagonix**. Estes utilitários compõem o pacote de utilitários base do Hexagonix. As ferramentas de inicialização de ambiente de modo usuário e login estão neste pacote, bem como vários arquivos de configuração deste ambiente. Estes utilitários não apresentam, no geral, uma interface gráfica, apenas uma interface em linha de comando (CLI). Entretanto, podem ser solicitados por aplicativos que apresentem interface gráfica. Este ambiente está disponível tanto na distribuição do [Hexagonix](hexagonix.img) quanto na distribuição [Andromeda](andromeda.img).
 
@@ -341,7 +357,11 @@ Vale lembrar que os utilitários do Hexagonix tentam implementar uma interface P
 
 O Hexagonix recebeu um port do montador [Fasm](https://flatassembler.net/index.php), que foi adaptado para o Hexagonix, permitindo ao usuário desenvolver aplicativos diretamente no sistema. Este port é chamado de fasmX. As alterações adicionadas ao código, assim como licença do software, podem ser encontradas no [repositório do fasm para o Hexagonix](https://github.com/hexagonix/fasm). Este repositório é um fork do [repositório original](https://github.com/tgrysztar/fasm). O código adicionado é baseado em modificações realizadas do código original e adições autorais. Esse código modificado/autoral pode ser encontrado no repositório, [clicando aqui](https://github.com/hexagonix/fasm/tree/master/SOURCE/HEXAGONIX). O fasmX, port do fasm para Hexagonix, sempre é atualizado quando novidades são adicionadas no repositório do fasm. Para indicar que se trata de uma versão estável e testada, o número de versão do fasmX sempre herda a numeração do fasm, sucedido por um caractere x (como exemplo, a versão baseada no fasm 1.73.30, após teste, recebe a numeração 1.73.30x). Você pode reportar bugs ou problemas de geração ou otimização de código na versão para Hexagonix [aqui](https://github.com/hexagonix/fasm/issues). Para reportar erros gerais do fasm, utilize o repositório [oficial](https://github.com/tgrysztar/fasm).
 
-## Ambiente Andromeda
+</details>
+
+<details title="Ambiente Andromeda" align='left'>
+<br>
+<summary align='left'><strong>Ambiente Andromeda</strong></summary>
 
 O ambiente Andromeda é construído sobre a base sólida fornecida pelo Hexagonix, incluindo aplicativos e utilitários que não implementam a filosofia Unix ou apresentam sintaxe e forma de uso bastante diferentes do que se esperaria de um ambiente Unix. Desta forma, eles são separados como **aplicativos Andromeda**, e não fazem parte da distribuição padrão do Hexagonix. Aqui estão o aplicativo de configurações do Sistema, calculadora, gerenciador de fontes, editores de texto e a IDE desenvolvida para o Andromeda. Estes utilitários podem ou não apresentar uma interface gráfica. Juntamente a eles, compõem o ambiente Andromeda bibliotecas desenvolvidas para permitir o desenvolvimento de aplicativos, como a biblioteca **Estelar**. Esse ambiente só está disponível na distribuição [Andromeda](andromeda.img).
 
@@ -361,7 +381,11 @@ O ambiente Andromeda é construído sobre a base sólida fornecida pelo Hexagoni
 
 Ainda não existem aplicativos de terceiros disponíveis para o ambiente Andromeda. Caso esteja interessado, você pode construir o primeiro!
 
-## Fontes do Hexagonix
+</details>
+
+<details title="Fontes gráficas do Hexagonix" align='left'>
+<br>
+<summary align='left'><strong>Fontes gráficas do Hexagonix</strong></summary>
 
 A instalação padrão do Hexagonix também fornece uma série de fontes que podem ser carregadas pelo aplicativo de configurações ou utilitário de fontes (gerenciador de fontes). Esses arquivos são utilizados para alterar a fonte de exibição em modo gráfico do Hexagonix e Andromeda.
 
@@ -430,15 +454,20 @@ Você já deve conseguir visualizar, dentro da matriz, a cerquilha, marcada pela
 
 Você pode desenvolver quantas fontes quiser e brincar com designs diferentes e inovadores, bem como estender os caracteres disponíveis (utilizando a referência ASCII).
 
-# Bibliotecas de desenvolvimento do sistema
+</details>
+
+<details title="Bibliotecas de desenvolvimento do sistema" align='left'>
+<br>
+<summary align='left'><strong>Bibliotecas de desenvolvimento do sistema</strong></summary>
+
 
 O Hexagonix/Andromeda também fornece funções que devem ser utilizadas para interagir com o próprio ambiente do sistema. As bibliotecas são utilizadas para acessar funções implementadas pelo Hexagon ou pelas próprias bibliotecas, permitindo o desenvolvimento facilitado de aplicativos e utilitários tanto para o ambiente Hexagonix quanto para o Andromeda. As bibliotecas implementam funções para exibição de texto, cálculos matemáticos, envio de mensagens, abertura de arquivos e dispositivos e muito mais. A biblioteca básica (hexagon.s) fornece funções acessíveis para ambos os ambientes possíveis de distribuição, enquanto outras bibliotecas podem ser exclusivas do ambiente Andromeda. Essas bibliotecas incluem funções gráficas para montar interfaces em modo gráfico (Andromeda), bem como funções para verificar a versão do sistema atualmente em execução (Hexagonix e Andromeda). Os utilitários base Hexagonix realizam a checagem da versão do Hexagon para verificar se podem ser executados, utilizando o utilitário Unix uname ou diretamente por uma chamada de sistema do Hexagon.
 
 Para saber mais e verificar cada função disponível nas bibliotecas de desenvolvimento do sistema, veja o repositório da [libasm](https://github.com/hexagonix/libasm).
 
-# Um pouco sobre a inicialização do sistema
+</details>
 
-Após a inicialização do firmware, o [BIOS](https://pt.wikipedia.org/wiki/BIOS) ou outro firmware, como [UEFI](https://pt.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface) em modo legado, realiza a busca de um volume/disco marcado como inicializável e, ao encontrar, carrega o primeiro setor para o endereço 0x7C00. No caso de um volume Hexagon, no primeiro setor do volume está localizado o componente denominado Saturno. Saturno é o gerenciador de inicialização MBR de um volume Hexagon e atua como primeiro estágio na cadeia de carregamento do Sistema. Ele realiza a procura, no volume, do segundo estágio, bem mais robusto, o Hexagon Boot (HBoot). O HBoot não apresenta as mesmas limitações do componente anterior, uma vez que não está restrito ao tamanho de 512-bytes. Ao iniciar, o HBoot realiza uma série de testes e diagnósticos da máquina, verificando quais discos/volumes estão disponíveis na máquina, qual a quantidade de memória RAM instalada e inicializando alguns periféricos, como portas seriais, além de verificar o processador instalado quanto a sua capacidade de executar o Hexagon. Caso a quantidade de memória RAM instalada seja menor que o mínimo, o processador não seja suportado ou ocorra algum erro em algum periférico essencial, a protocolo de inicialização é cancelado. Caso os testes sejam bem sucedidos, ocorre a procura, no volume, do arquivo que contêm o kernel Hexagon, com seu carragamento, construção de uma estrutura de parâmetros, configuração de registradores com informações básicas de hardware e posterior execução. O HBoot também é capaz de carregar e executar módulos no formato HBoot, bem como iniciar um sistema do tipo DOS cujos arquivos estejam presentes no volume Hexagon (até o momento, apenas o FreeDOS é suportado). Também é capaz de realizar alguns testes de hardware sob demanda, como som e gráficos. Após o carregamento do Hexagon, o kernel recebe o controle do dispositivo e realiza a configuração dos periféricos, constrói estruturas internas de controle e inicia o primeiro processo de usuário, com PID 1, normalmente o Inicializador do Sistema, ou init. O init irá ler o arquivo de configuração "INIT.UNX" no volume e iniciar os serviços lá descritos, geralmente o Gerenciador de Login e Usuários, ou simplemente login. Este, por sua vez, busca as informações em "USUARIO.UNX" e as compara com as entradas do usuário, e, caso as credenciais sejam válidas, inicia o primeiro shell ou utilitário descrito na entrada de usuário. Após, o Hexagon entra em modo administrativo e gerencia requisições dos aplicativos e periféricos, expondo a API para construção e execução dos demais componentes do Sistema (para mais informações, consulte o arquivo de cabeçalho "HEXAGON.S", que já documenta a API).
+<hr>
 
 # Como testar o Hexagonix ou o Andromeda
 
@@ -446,7 +475,9 @@ Após a inicialização do firmware, o [BIOS](https://pt.wikipedia.org/wiki/BIOS
 
 Abaixo, uma lista de requisitos mínimos e recomendados para testar o Hexagonix/Andromeda em uma máquina virtual ou máquina física.
 
-### Requisitos mínimos
+<details title="Requisitos mínimos" align='left'>
+<br>
+<summary align='left'><strong>Requisitos mínimos</strong></summary>
 
 * Processador: Pentium III (1999) com suporte a SSE e MMX ou mais recente;
 * Memória RAM: 32 Mb mínimo (uma instalação mínima com 32 Mb costuma ser suficiente, na maioria dos casos);
@@ -457,6 +488,12 @@ Abaixo, uma lista de requisitos mínimos e recomendados para testar o Hexagonix/
   * Teclado PS/2 ou USB;
   * Placa de vídeo VGA com 2 Mb de memória de vídeo (com suporte a cores).
 
+</details>
+
+<details title="Recomendado" align='left'>
+<br>
+<summary align='left'><strong>Recomendado</strong></summary>
+
 ### Recomendado
 
 * Processador: Pentium D ou mais recente;
@@ -464,6 +501,8 @@ Abaixo, uma lista de requisitos mínimos e recomendados para testar o Hexagonix/
 * Periféricos opcionais:
   * Mouse PS/2 ou USB;
   * Placa de vídeo com > 2 Mb de memória de vídeo.
+
+</details>
 
 ## Obter as imagens de disco com a instação do sistema
 
@@ -474,11 +513,19 @@ Para testar o Andromeda, obtenha o arquivo ['andromeda.img'](andromeda.img) nest
 
 ## Para o teste em ambiente virtualizado
 
-Primeiramente, você deve instalar a ferramenta qemu, que irá gerenciar a máquina virtual. Para isso, você pode instalar o qemu utilizando repositórios oficiais de distribuições Linuz ou acessando [aqui](https://www.qemu.org) para obter os arquivos de instalação para Windows e macOS. Para o Ubuntu, a linha a seguir irá instalar o qemu e todas as suas dependências (privilégios de superusuário necessários):
+Primeiramente, você deve instalar a ferramenta qemu, que irá gerenciar a máquina virtual. Para isso, você pode instalar o qemu utilizando repositórios oficiais de distribuições Linux ou acessando [aqui](https://www.qemu.org) para obter os arquivos de instalação para Windows e macOS.
+
+<details title="Instalar no Debian, Ubuntu, Pop_OS! e derivados" align='left'>
+<br>
+<summary align='left'><strong>Instalar no Debian, Ubuntu, Pop_OS! e derivados</strong></summary>
+
+Para o Ubuntu, a linha a seguir irá instalar o qemu e todas as suas dependências (privilégios de superusuário necessários):
 
 ```
 sudo apt install qemu qemu-system-i386
 ```
+
+</details>
 
 Agora que você tem o qemu instalado em seu computador, você pode prosseguir com a execução do sistema.
 
@@ -517,9 +564,14 @@ Senha: root
 
 Você pode adicionar outro usuário alterando o arquivo 'USUARIO.UNX' na raiz do disco. Lembre-se de não remover o usuário raiz (root). Isso pode tornar o sistema inoperante de forma permanente.
 
-# Reportar erros
+<details title="Reportar erros" align='left'>
+<br>
+<summary align='left'><strong>Reportar erros</strong></summary>
+
 
 Você pode reportar erros e ajudar a desenvolver o sistema. Para isso, abra uma notificação de erro [aqui](https://github.com/hexagonix/Distro/issues), informando o erro da forma mais detalhada possível (como marca do dispositivo, processador, quantidade de memória RAM, placa de vídeo e periféricos conectados, bem como o dispositivo utilizado para instalar o sistema, como unidade de disco interna ou mídia removível USB). Lembre-se de informar em qual aplicativo ocorreu o erro, caso o erro ocorra já com o sistema em operação. Caso o problema se dê no processo de inicialização, informe o que foi exibido/o comportamento observado da máquina.
+
+<hr>
 
 # Capturas de tela do sistema
 
@@ -547,11 +599,21 @@ Você pode ver mais [aqui](https://github.com/hexagonix/Distro/tree/main/Img).
 
 Você pode ver mais [aqui](https://github.com/hexagonix/Distro/tree/main/Img).
 
-# Idiomas
+<hr>
+
+# Outras informações
+
+<details title="Idiomas" align='left'>
+<br>
+<summary align='left'><strong>Idiomas</strong></summary>
 
 Neste momento, tanto o sistema quanto a documentação estão disponíveis apenas em português. O documentação em inglês estará disponível em breve, e há planos para suporte ao inglês como possibilidade de idioma principal, além do português (grande parte do trabalho já foi feita).
 
-# Inspiração
+</details>
+
+<details title="Inspirações" align='left'>
+<br>
+<summary align='left'><strong>Insipirações</strong></summary>
 
 Este projeto foi possível e hoje consegue ver a luz do dia graças a muitos outros que já vieram antes e contribuiram com ideias de design e ensinando como deve funcionar um sistema operacional, mesmo que simples. São eles:
 
@@ -568,11 +630,21 @@ Além disso, outros projetos auxiliaram no desenvolvimento do Hexagonix/Andromed
 * [Snowdrop OS](http://www.sebastianmihai.com/snowdrop/), que me inspirou a escrever várias rotinas de controle de hardware e outras funções 16-bit disponíveis no HBoot. O código deste sistema foi liberado em domínio público.
 * [Alotware](https://github.com/0x5CE/alotware), que me inspirou a criar as funções de gerenciamento de processos nas versões iniciais do Hexagon (hoje, já reescritas inúmeras vezes). O código deste sistema foi liberado em domínio público.
 
-# Autor & contato
+</details>
+
+<details title="Licença" align='left'>
+<br>
+<summary align='left'><strong>Licença</strong></summary>
+
+</details>
+
+<details title="Autor, contribuidores e contatos" align='left'>
+<br>
+<summary align='left'><strong>Autor, contribuidores e contatos</strong></summary>
+
+## Contribuidores
 
 * [Felipe Miguel Nery Lunkes](https://github.com/felipenlunkes)
-
-Sinta-se a vontade de me contatar, reportar bugs ou se interessar em participar do projeto.
 
 ## E-mail
 
@@ -583,18 +655,15 @@ Sinta-se a vontade de me contatar, reportar bugs ou se interessar em participar 
 
 * [Twitter](https://twitter.com/felipeldev)
 
+</details>
+
 # Notas de direitos autorais
 
 O Hexagonix/Andromeda foi desenvolvido do zero por [Felipe Lunkes](https://github.com/felipenlunkes).
 
 Leia a [licença](LICENSE) para mais informações sobre direitos autorais, propriedade de código e redistribuição que se aplicam apenas aos arquivos disponíveis neste repositório (não se aplicam ao conjunto de arquivos de dados e de código fonte que compõem o Hexagonix/Andromeda). Vale ressaltar que o código dos componentes do sistema estão sendo liberados aos poucos e que cada pacote pode ser liberado com uma licença diferente. Sempre fique atento ao arquivo 'LICENSE' disponível em casa repositório para estar ciente dos direitos e obrigações legais.
 
-* Sistema Operacional Hexagonix e Sistema Operacional Andromeda. Copyright © 2016-2022 Felipe Miguel Nery Lunkes. Todos os direitos reservados.
-* Kernel Hexagon. Copyright © 2016-2022 Felipe Miguel Nery Lunkes. Todos os direitos reservados.
-* Gerenciador de Boot Saturno. Copyright © 2016-2022 Felipe Miguel Nery Lunkes. Todos os direitos reservados.
-* Hexagon Boot (HBoot). Copyright © 2020-2022 Felipe Miguel Nery Lunkes. Todos os direitos reservados.
-
-Versão deste arquivo: 4.5
+Versão deste arquivo: 5.0
 
 Copyright © 2021-2022 Felipe Miguel Nery Lunkes
 <br>
