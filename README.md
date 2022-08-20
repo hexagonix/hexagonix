@@ -23,7 +23,7 @@
 
 <details title="Lançamentos/releases" align='left'>
 <br>
-<summary align='left'><strong>Recomendado</strong></summary>
+<summary align='left'><strong>Lançamentos/releases</strong></summary>
 
 * [Português (Brasil)](REL.pt.md)
 * [English (under construction)](REL.en.md) 
