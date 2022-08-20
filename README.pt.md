@@ -568,14 +568,15 @@ Você pode adicionar outro usuário alterando o arquivo 'USUARIO.UNX' na raiz do
 <br>
 <summary align='left'><strong>Reportar erros</strong></summary>
 
-
 Você pode reportar erros e ajudar a desenvolver o sistema. Para isso, abra uma notificação de erro [aqui](https://github.com/hexagonix/Distro/issues), informando o erro da forma mais detalhada possível (como marca do dispositivo, processador, quantidade de memória RAM, placa de vídeo e periféricos conectados, bem como o dispositivo utilizado para instalar o sistema, como unidade de disco interna ou mídia removível USB). Lembre-se de informar em qual aplicativo ocorreu o erro, caso o erro ocorra já com o sistema em operação. Caso o problema se dê no processo de inicialização, informe o que foi exibido/o comportamento observado da máquina.
 
 </details>
 
 <hr>
 
-# Capturas de tela do sistema
+<details title="Capturas de tela" align='left'>
+<br>
+<summary align='left'><strong>Caprturas de tela</strong></summary>
 
 ## Hexagonix
 
@@ -600,6 +601,8 @@ Você pode ver mais [aqui](https://github.com/hexagonix/Distro/tree/main/Img).
 </p>
 
 Você pode ver mais [aqui](https://github.com/hexagonix/Distro/tree/main/Img).
+
+</details>
 
 <hr>
 
@@ -644,6 +647,9 @@ Além disso, outros projetos auxiliaram no desenvolvimento do Hexagonix/Andromed
 <br>
 <summary align='left'><strong>Autor, contribuidores e contatos</strong></summary>
 
+## Autor
+
+* [Felipe Miguel Nery Lunkes](https://github.com/felipenlunkes)
 ## Contribuidores
 
 * [Felipe Miguel Nery Lunkes](https://github.com/felipenlunkes)
