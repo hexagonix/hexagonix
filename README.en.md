@@ -2,6 +2,9 @@
 
 Version of this file: 5.0
 
+Copyright © 2021-2022 Felipe Miguel Nery Lunkes
+All rights reserved.
+
 -->
 
 # Hexagonix/Andromeda Operating System
@@ -715,10 +718,6 @@ Hexagonix/Andromeda was developed from scratch by [Felipe Lunkes](https://github
 Read the [license](LICENSE) for more information on copyright, code ownership, and redistribution that apply only to files available in this repository (does not apply to the set of data and source code files that make up Hexagonix/Andromeda) . It is worth mentioning that the code of the system components is being released little by little and that each package can be released with a different license. Always keep an eye on the 'LICENSE' file available in each repository to be aware of legal rights and obligations.
 
 </details>
-
-Copyright © 2021-2022 Felipe Miguel Nery Lunkes
-<br>
-All rights reserved.
 
 [^1]: You can get more information about the relationship between Darwin and macOS [here](https://en.wikipedia.org/wiki/Darwin_(operating_system)).
 [^2]: You can find the project page [here](https://www.freedos.org/).

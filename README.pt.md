@@ -2,6 +2,9 @@
 
 Versão deste arquivo: 5.0
 
+Copyright © 2021-2022 Felipe Miguel Nery Lunkes
+Todos os direitos reservados.
+
 -->
 
 # Sistema Operacional Hexagonix/Andromeda
@@ -715,10 +718,6 @@ O Hexagonix/Andromeda foi desenvolvido do zero por [Felipe Lunkes](https://githu
 Leia a [licença](LICENSE) para mais informações sobre direitos autorais, propriedade de código e redistribuição que se aplicam apenas aos arquivos disponíveis neste repositório (não se aplicam ao conjunto de arquivos de dados e de código fonte que compõem o Hexagonix/Andromeda). Vale ressaltar que o código dos componentes do sistema estão sendo liberados aos poucos e que cada pacote pode ser liberado com uma licença diferente. Sempre fique atento ao arquivo 'LICENSE' disponível em casa repositório para estar ciente dos direitos e obrigações legais.
 
 </details>
-
-Copyright © 2021-2022 Felipe Miguel Nery Lunkes
-<br>
-Todos os direitos reservados.
 
 [^1]: Você pode obter mais informações sobre a relação entre o Darwin e o macOS [aqui](https://pt.wikipedia.org/wiki/Darwin_(sistema_operacional)).
 [^2]: Você pode encontrar a página do projeto [aqui](https://www.freedos.org/).
