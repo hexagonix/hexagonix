@@ -576,11 +576,9 @@ Você pode reportar erros e ajudar a desenvolver o sistema. Para isso, abra uma 
 
 # Capturas de tela
 
-<details title="Capturas de tela" align='left'>
+<details title="Hexagonix" align='left'>
 <br>
-<summary align='left'><strong>Capturas de tela</strong></summary>
-
-## Hexagonix
+<summary align='left'><strong>Hexagonix</strong></summary>
 
 <p align="center">
 <img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix1.png" width="500" height="400">
@@ -592,7 +590,11 @@ Você pode reportar erros e ajudar a desenvolver o sistema. Para isso, abra uma 
 
 Você pode ver mais [aqui](https://github.com/hexagonix/Distro/tree/main/Img).
 
-## Andromeda
+</details>
+
+<details title="Andromeda" align='left'>
+<br>
+<summary align='left'><strong>Andromeda</strong></summary>
 
 <p align="center">
 <img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda1.png" width="500" height="400">

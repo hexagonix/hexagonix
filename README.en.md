@@ -511,9 +511,9 @@ To test Andromeda, get the ['andromeda.img'](andromeda.img) file from this repos
 
 First, you must install the qemu tool, which will manage the virtual machine. To do so, you can install qemu using official Linux distribution repositories or by accessing [here](https://www.qemu.org) to get installation files for Windows and macOS. 
 
-<details title="Install on Debian, Ubuntu and Pop!_OS" align='left'>
+<details title="Install on Debian, Ubuntu and Pop!_OS and derivatives" align='left'>
 <br>
-<summary align='left'><strong>Why two names? Hexagonix and Andromeda, what are they?</strong></summary>
+<summary align='left'><strong>Install on Debian, Ubuntu and Pop!_OS and derivatives</strong></summary>
 
 For Ubuntu, the following line will install qemu and all its dependencies (root privileges required):
 
@@ -572,11 +572,9 @@ You can report bugs and help develop the system. To do this, open an error notif
 
 # Screenshots
 
-<details title="Screenshots" align='left'>
+<details title="Hexagonix" align='left'>
 <br>
-<summary align='left'><strong>Screenshots</strong></summary>
-
-## Hexagon
+<summary align='left'><strong>Hexagonix</strong></summary>
 
 <p align="center">
 <img src="https://github.com/hexagonix/Doc/blob/main/Img/Hexagonix1.png" width="500" height="400">
@@ -588,7 +586,11 @@ You can report bugs and help develop the system. To do this, open an error notif
 
 You can see more [here](https://github.com/hexagonix/Distro/tree/main/Img).
 
-## Andromeda
+</details>
+
+<details title="Andromeda" align='left'>
+<br>
+<summary align='left'><strong>Andromeda</strong></summary>
 
 <p align="center">
 <img src="https://github.com/hexagonix/Doc/blob/main/Img/Andromeda1.png" width="500" height="400">
@@ -645,13 +647,13 @@ In addition, other projects helped in the development of Hexagonix/Andromeda, ei
 <br>
 <summary align='left'><strong>Author, contributors and contact</strong></summary>
 
-# Author
+## Author
 
 * [Felipe Miguel Nery Lunkes](https://github.com/felipeldev)
 
 Feel free to contact me, report bugs or be interested in participating in the project.
 
-# Contributors
+## Contributors
 
 * [Felipe Miguel Nery Lunkes](https://github.com/felipeldev)
 
