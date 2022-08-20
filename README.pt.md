@@ -2,23 +2,40 @@
 
 # Antes de mais nada - um breve atalho para ir direto ao ponto
 
-### Fazer download e testar o sistema agora mesmo
+<details title="Fazer download e testar o sistema agora mesmo" align='left'>
+    <br>
+    <summary align='left'><strong>Fazer download e testar o sistema agora mesmo</strong></summary>
 
 No [final deste arquivo](https://github.com/hexagonix/hexagonix/blob/main/README.pt.md#como-testar-o-hexagonix-ou-o-andromeda) você encontra um tutorial para executar o Hexagonix/Andromeda em seu computador, tanto em uma versão virtualizada como de forma nativa. Lembre-se que é necessário possuir um computador de arquitetura x86 ou um emulador, caso esteja utilizando um dispositivo de outra arquitetura para testes.
 
 Você pode ir até a sessão de [lançamentos](https://github.com/hexagonix/hexagonix/releases) para obter as versões estáveis do sistema. Você pode acessar o arquivo de [anúncio de versões](REL.pt.md) do Hexagonix/Andromeda. Sempre que possível, obtenha o último lançamento e realize o download das imagens .img disponíveis ou do pacote completo em formato zip. As versões disponíveis diretamente neste repositório são sempre versões de desenvolvimento (beta e release candidate), que também podem ser executadas e estão minimamente funcionais. Ao final de cada ciclo de desenvolvimento, as versões finais estarão disponíveis na sessão [lançamentos](https://github.com/hexagonix/hexagonix/releases).
 
-### Documentação do sistema 
+</details>
+
+<details title="Documentação do sistema" align='left'>
+    <br>
+    <summary align='left'><strong>Documentação do sistema</strong></summary>
+
 
 * [Documentação do sistema (em construção)](https://github.com/hexagonix/Doc)
 
-### Ajude no desenvolvimento do Hexagonix/Andromeda
+</details>
+
+<details title="Ajude no desenvolvimento do Hexagonix/Andromeda" align='left'>
+    <br>
+    <summary align='left'><strong>Ajude no desenvolvimento do Hexagonix/Andromeda</strong></summary>
 
 Se você tem conhecimento em criar código em assembly x86 e gostaria de ajudar no desenvolvimento do sistema, sinta-se a vontade em me enviar um email! Veja [aqui](https://github.com/hexagonix/hexagonix/blob/main/README.pt.md#autor--contato) como entrar em contato comigo!
 
-### Reporte erros no sistema
+</details>
+
+<details title="Reporte erros no sistema" align='left'>
+    <br>
+    <summary align='left'><strong>Reporte erros no sistema</strong></summary>
 
 Você pode reportar erros do sistema [aqui](https://github.com/hexagonix/hexagonix/blob/main/README.pt.md#reportar-erros).
+
+</details>
 
 # Sobre o sistema
 
