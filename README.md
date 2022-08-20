@@ -7,31 +7,28 @@
 
 <hr>
 
-# Pegue um atalho/take a shortcut
+# Escolha seu idioma/choose your language
 
 * [Português (Brasil)](README.pt.md)
 * [English](README.en.md) 
 
-<hr>
-
-# Instruções para construção/building instructions
-
-* [Português (Brasil)](https://github.com/hexagonix/build/blob/main/README.pt.md)
-* [English](https://github.com/hexagonix/build/blob/main/README.en.md) 
-
-<hr>
-
-## Documentação/documentation
+<details title="Documentação/documentation" align='left'>
+<br>
+<summary align='left'><strong>Documentação/documentation</strong></summary>
 
 * [Clique aqui para ir à documentação do Hexagonix (em construção)](https://github.com/hexagonix/Doc)
 * [Click here to go to the Hexagonix documentation (under construction)](https://github.com/hexagonix/Doc)
 
-<hr>
+</details>
 
-## Lançamentos/releases
+<details title="Lançamentos/releases" align='left'>
+<br>
+<summary align='left'><strong>Recomendado</strong></summary>
 
 * [Português (Brasil)](REL.pt.md)
 * [English (under construction)](REL.en.md) 
+
+</details>
 
 <hr>
 
