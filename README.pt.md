@@ -539,8 +539,6 @@ Abaixo, uma lista de requisitos mínimos e recomendados para testar o Hexagonix/
 <br>
 <summary align='left'><strong>Recomendado</strong></summary>
 
-### Recomendado
-
 * Processador: Pentium D ou mais recente;
 * Memória RAM: 50 Mb;
 * Periféricos opcionais:
