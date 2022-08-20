@@ -515,7 +515,7 @@ Para testar o Andromeda, obtenha o arquivo ['andromeda.img'](andromeda.img) nest
 
 Primeiramente, você deve instalar a ferramenta qemu, que irá gerenciar a máquina virtual. Para isso, você pode instalar o qemu utilizando repositórios oficiais de distribuições Linux ou acessando [aqui](https://www.qemu.org) para obter os arquivos de instalação para Windows e macOS.
 
-<details title="Instalar no Debian, Ubuntu, Pop_OS! e derivados" align='left'>
+<details title="Instalar no Debian, Ubuntu, Pop!_OS e derivados" align='left'>
 <br>
 <summary align='left'><strong>Instalar no Debian, Ubuntu, Pop_OS! e derivados</strong></summary>
 
@@ -576,7 +576,7 @@ Você pode reportar erros e ajudar a desenvolver o sistema. Para isso, abra uma 
 
 <details title="Capturas de tela" align='left'>
 <br>
-<summary align='left'><strong>Caprturas de tela</strong></summary>
+<summary align='left'><strong>Capturas de tela</strong></summary>
 
 ## Hexagonix
 
@@ -661,15 +661,19 @@ Além disso, outros projetos auxiliaram no desenvolvimento do Hexagonix/Andromed
 
 ## Redes sociais
 
-* [Twitter](https://twitter.com/felipeldev)
+* [Twitter](https://twitter.com/felipeldev) (Felipe Miguel Nery Lunkes)
 
 </details>
 
-# Notas de direitos autorais
+<details title="Notas de direitos autorais" align='left'>
+<br>
+<summary align='left'><strong>Notas de direitos autorais</strong></summary>
 
 O Hexagonix/Andromeda foi desenvolvido do zero por [Felipe Lunkes](https://github.com/felipenlunkes).
 
 Leia a [licença](LICENSE) para mais informações sobre direitos autorais, propriedade de código e redistribuição que se aplicam apenas aos arquivos disponíveis neste repositório (não se aplicam ao conjunto de arquivos de dados e de código fonte que compõem o Hexagonix/Andromeda). Vale ressaltar que o código dos componentes do sistema estão sendo liberados aos poucos e que cada pacote pode ser liberado com uma licença diferente. Sempre fique atento ao arquivo 'LICENSE' disponível em casa repositório para estar ciente dos direitos e obrigações legais.
+
+</details>
 
 Versão deste arquivo: 5.0
 
