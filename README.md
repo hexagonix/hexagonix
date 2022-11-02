@@ -18,7 +18,18 @@
 
 </div>
 
-<hr>
+<!-- Vai funcionar como <hr> -->
+
+<img src="https://github.com/hexagonix/Doc/blob/main/Img/hr.png" width="100%" height="2px" />
+
+<details title="Sobre o Hexagonix/About Hexagonix" align='left'>
+<br>
+<summary align='left'>❤ Sobre o Hexagonix/About Hexagonix</summary>
+
+* [Português (Brasil)](https://github.com/hexagonix/Doc/blob/main/Hexagonix/Hexagonix.pt.md)
+* [English](https://github.com/hexagonix/Doc/blob/main/Hexagonix/Hexagonix.en.md) 
+
+</details>
 
 <details title="Obter o Hexagonix/Get Hexagonix" align='left'>
 <br>
