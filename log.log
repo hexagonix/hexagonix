@@ -1,0 +1,270 @@
+Hexagonix Operating System build and statistics report
+-------------------------------------------------------
+
+Hexagonix Operating System
+Copyright (C) 2015-2023 Felipe Miguel Nery Lunkes. All rights reserved.
+
+Hexagonix is licenced under BSD-3-Clause and comes with no warranty.
+
+-------------------------------------------------------
+
+In this file, you have access to the complete log of the build process of
+Hexagonix components. You can also use it to identify the environment used in
+construction, as well as errors found in the process.
+
+hx version: 13.13.4.1
+
+Information about the current build of Hexagonix:
+ > Hexagonix version: Project Raava
+ > Software revision: CURRENT
+ > Release name: Raava
+ > Disk image location: hexagonix/
+
+Information about the current build environment:
+ > Date and time of this report (build time): sáb 08 abr 2023 17:01:18 -03
+ > User currently logged in: root
+ > Operating system details: Linux 5.19.0-38-generic x86_64 x86_64 x86_64
+ > fasm version: flat assembler  version 1.73.30
+ > GNU bash version: GNU bash, versão 5.2.2(1)-release (x86_64-pc-linux-gnu)
+ > qemu version (only for running a vm): QEMU emulator version 7.0.0 (Debian 1:7.0+dfsg-7ubuntu2.2)
+
+----------------------------------------------------------------------
+
+Building Hexagon® startup components... {
+
+ > Hexagon® bootloader - Saturno (1st stage)...
+
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+3 passes, 512 bytes.
+
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+2 passes, 512 bytes.
+
+ > Building Hexagon Boot - HBoot (2nd stage)...
+
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+4 passes, 9557 bytes.
+
+ > Building HBoot® compatible module Spartan.mod...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+2 passes, 171 bytes.
+
+ > Building HBoot® compatible module x86.mod...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+2 passes, 1723 bytes.
+
+} Successfully built Hexagon® startup components.
+
+----------------------------------------------------------------------
+
+Building the Hexagon® kernel... {
+
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+4 passes, 25664 bytes.
+
+} Hexagon® kernel built successfully.
+
+----------------------------------------------------------------------
+
+Building Hexagonix® Unix based applications... {
+
+ > Building Hexagonix® Unix utility arch...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+2 passes, 435 bytes.
+
+ > Building Hexagonix® Unix utility cat...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+2 passes, 396 bytes.
+
+ > Building Hexagonix® Unix utility clear...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+2 passes, 375 bytes.
+
+ > Building Hexagonix® Unix utility cowsay...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+3 passes, 1189 bytes.
+
+ > Building Hexagonix® Unix utility cp...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+3 passes, 1205 bytes.
+
+ > Building Hexagonix® Unix utility date...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+3 passes, 829 bytes.
+
+ > Building Hexagonix® Unix utility echo...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+2 passes, 322 bytes.
+
+ > Building Hexagonix® Unix utility file...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+4 passes, 1818 bytes.
+
+ > Building Hexagonix® Unix utility fnt...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+3 passes, 1179 bytes.
+
+ > Building Hexagonix® Unix utility free...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+3 passes, 541 bytes.
+
+ > Building Hexagonix® Unix utility hash...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+3 passes, 1063 bytes.
+
+ > Building Hexagonix® Unix utility hostname...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+2 passes, 423 bytes.
+
+ > Building Hexagonix® Unix utility htop...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+3 passes, 1009 bytes.
+
+ > Building Hexagonix® Unix utility init...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+2 passes, 811 bytes.
+
+ > Building Hexagonix® Unix utility login...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+3 passes, 1897 bytes.
+
+ > Building Hexagonix® Unix utility logind...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+3 passes, 1571 bytes.
+
+ > Building Hexagonix® Unix utility ls...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+4 passes, 1495 bytes.
+
+ > Building Hexagonix® Unix utility lshapp...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+3 passes, 1562 bytes.
+
+ > Building Hexagonix® Unix utility lshmod...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+3 passes, 1313 bytes.
+
+ > Building Hexagonix® Unix utility man...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+3 passes, 834 bytes.
+
+ > Building Hexagonix® Unix utility mount...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+3 passes, 1403 bytes.
+
+ > Building Hexagonix® Unix utility ps...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+3 passes, 925 bytes.
+
+ > Building Hexagonix® Unix utility rm...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+3 passes, 903 bytes.
+
+ > Building Hexagonix® Unix utility sh...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+3 passes, 1410 bytes.
+
+ > Building Hexagonix® Unix utility shutdown...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+4 passes, 1727 bytes.
+
+ > Building Hexagonix® Unix utility su...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+3 passes, 1510 bytes.
+
+ > Building Hexagonix® Unix utility syslogd...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+2 passes, 388 bytes.
+
+ > Building Hexagonix® Unix utility top...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+3 passes, 952 bytes.
+
+ > Building Hexagonix® Unix utility uname...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+5 passes, 2488 bytes.
+
+ > Building Hexagonix® Unix utility whoami...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+3 passes, 631 bytes.
+
+
+} Hexagonix utilities built successfully.
+
+----------------------------------------------------------------------
+
+Building Hexagonix® graphical applications... {
+
+ > Building Hexagonix® graphical application ash...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+3 passes, 3067 bytes.
+
+ > Building Hexagonix® graphical application calc...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+3 passes, 1342 bytes.
+
+ > Building Hexagonix® graphical application config...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+4 passes, 12436 bytes.
+
+ > Building Hexagonix® graphical application DOSsh...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+3 passes, 2266 bytes.
+
+ > Building Hexagonix® graphical application gfont...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+2 passes, 1616 bytes.
+
+ > Building Hexagonix® graphical application Lyoko...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+4 passes, 7214 bytes.
+
+ > Building Hexagonix® graphical application oobe...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+2 passes, 5715 bytes.
+
+ > Building Hexagonix® graphical application piano...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+3 passes, 2331 bytes.
+
+ > Building Hexagonix® graphical application poweroff...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+2 passes, 1747 bytes.
+
+ > Building Hexagonix® graphical application quartzo...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+4 passes, 3758 bytes.
+
+ > Building Hexagonix® graphical application serial...
+flat assembler  version 1.73.30  (16384 kilobytes memory)
+3 passes, 1236 bytes.
+
+
+} Hexagonix graphical applications built successfully.
+
+----------------------------------------------------------------------
+
+> Building temporary image for file manipulation...
+
+> Building image that will receive system files...
+
+> Copying bootloader (Saturno) to image...
+> Mounting the image...
+> Copying system files to the image...
+
+> Checking if there are graphic fonts to copy... [Yes]
+
+> Unmounting the image...
+> Mounting the final image...
+  * Copying temporary image to final image...
+  * Copying MBR and partition table to image...
+> Removing temporary files and folders, as well as binaries that are no longer needed...
+
+> Disk image 'hexagonix.img' and VM disk image 'hexagonix.vdi' generated successfully.
+
+Use './hx -v hx' to test running the system on the generated image or copy
+the image to the installer 'Inst' directory to generate an Linux-based install
+image for transfer to physical disk.
+
+----------------------------------------------------------------------
+
