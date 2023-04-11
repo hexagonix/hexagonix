@@ -21,7 +21,7 @@ Information about the current build of Hexagonix:
  > Disk image location: hexagonix/
 
 Information about the current build environment:
- > Date and time of this report (build time): seg 10 abr 2023 18:40:33 -03
+ > Date and time of this report (build time): ter 11 abr 2023 01:09:25 -03
  > User currently logged in: root
  > Operating system details: Linux 5.19.0-38-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.30
@@ -150,7 +150,7 @@ flat assembler  version 1.73.30  (16384 kilobytes memory)
 
  > Building Hexagonix® Unix utility mount...
 flat assembler  version 1.73.30  (16384 kilobytes memory)
-3 passes, 1403 bytes.
+3 passes, 1372 bytes.
 
  > Building Hexagonix® Unix utility ps...
 flat assembler  version 1.73.30  (16384 kilobytes memory)
