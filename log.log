@@ -21,7 +21,7 @@ Information about the current build of Hexagonix:
  > Disk image location: hexagonix/
 
 Information about the current build environment:
- > Date and time of this report (build time): dom 16 abr 2023 01:23:01 -03
+ > Date and time of this report (build time): dom 16 abr 2023 03:23:40 -03
  > User currently logged in: root
  > Operating system details: Linux 6.2.0-20-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.30
@@ -60,7 +60,7 @@ flat assembler  version 1.73.30  (16384 kilobytes memory)
 Building the Hexagon® kernel... {
 
 flat assembler  version 1.73.30  (16384 kilobytes memory)
-4 passes, 25664 bytes.
+4 passes, 25598 bytes.
 
 } Hexagon® kernel built successfully.
 
@@ -130,7 +130,7 @@ flat assembler  version 1.73.30  (16384 kilobytes memory)
 
  > Building Hexagonix® Unix utility logind...
 flat assembler  version 1.73.30  (16384 kilobytes memory)
-3 passes, 1571 bytes.
+3 passes, 1570 bytes.
 
  > Building Hexagonix® Unix utility ls...
 flat assembler  version 1.73.30  (16384 kilobytes memory)
