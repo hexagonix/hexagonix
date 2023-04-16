@@ -21,7 +21,7 @@ Information about the current build of Hexagonix:
  > Disk image location: hexagonix/
 
 Information about the current build environment:
- > Date and time of this report (build time): dom 16 abr 2023 03:23:40 -03
+ > Date and time of this report (build time): dom 16 abr 2023 19:03:30 -03
  > User currently logged in: root
  > Operating system details: Linux 6.2.0-20-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.30
