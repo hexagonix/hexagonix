@@ -12,21 +12,25 @@ In this file, you have access to the complete log of the build process of
 Hexagonix components. You can also use it to identify the environment used in
 construction, as well as errors found in the process.
 
-hx version: 13.13.4.1
+hx version: 13.13.4.2
 
 Information about the current build of Hexagonix:
  > Hexagonix version: Project Raava
  > Software revision: CURRENT
  > Release name: Raava
  > Disk image location: hexagonix/
+ > Branch (git): main
 
 Information about the current build environment:
- > Date and time of this report (build time): ter 25 abr 2023 08:43:55 -03
+ > Date and time of this report (build time): ter 25 abr 2023 09:18:59 -03
  > User currently logged in: root
  > Operating system details: Linux 6.2.0-20-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.30
  > GNU bash version: GNU bash, versão 5.2.15(1)-release (x86_64-pc-linux-gnu)
- > qemu version (only for running a vm): QEMU emulator version 7.2.0 (Debian 1:7.2+dfsg-5ubuntu2)
+ > qemu version: QEMU emulator version 7.2.0 (Debian 1:7.2+dfsg-5ubuntu2)
+ > nasm version: NASM version 2.16.01
+ > VirtualBox version: 7.0.6_Ubuntur155176
+ > vscode version: 1.77.3
 
 ----------------------------------------------------------------------
 
