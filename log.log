@@ -12,7 +12,7 @@ In this file, you have access to the complete log of the build process of
 Hexagonix components. You can also use it to identify the environment used in
 construction, as well as errors found in the process.
 
-hx version: 13.13.5.0
+hx version: 13.13.5.1
 
 Information about the current build of Hexagonix:
  > Hexagonix version: Project Raava
@@ -22,7 +22,7 @@ Information about the current build of Hexagonix:
  > Branch (git): main
 
 Information about the current build environment:
- > Date and time of this report (build time): qui 27 abr 2023 02:28:18 -03
+ > Date and time of this report (build time): qui 27 abr 2023 14:37:21 -03
  > User currently logged in: root
  > Operating system details: Linux 6.2.0-20-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.30
@@ -264,11 +264,13 @@ Configuring and copying Hexagonix static files... {
 
 ----------------------------------------------------------------------
 
-Building additional (external) packages... {
+Building additional (contrib) packages... {
 
 > There are additional packages for construction.
 
-} Success processing additional packages.
+ > Generating additional (contrib) application fasmX... [Ok]
+
+} Success processing additional (contrib) packages.
 
 ----------------------------------------------------------------------
 
@@ -301,6 +303,10 @@ Build a Hexagonix disk image... {
 Use './hx -v hx' to test running the system on the generated image or copy
 the image to the installer 'Inst' directory to generate an Linux-based install
 image for transfer to physical disk.
+
+----------------------------------------------------------------------
+
+Closing date of this log: qui 27 abr 2023 14:37:24 -03
 
 ----------------------------------------------------------------------
 
