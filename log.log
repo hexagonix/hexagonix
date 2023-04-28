@@ -22,13 +22,14 @@ Information about the current build of Hexagonix:
  > Branch (git): main
 
 Information about the current build environment:
- > Date and time of this report (build time): sex 28 abr 2023 12:40:32 -03
+ > Date and time of this report (build time): sex 28 abr 2023 13:23:35 -03
  > User currently logged in: root
  > Operating system details: Linux 6.2.0-20-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.30
  > GNU bash version: GNU bash, versão 5.2.15(1)-release (x86_64-pc-linux-gnu)
  > qemu version: QEMU emulator version 7.2.0 (Debian 1:7.2+dfsg-5ubuntu2)
  > nasm version: NASM version 2.16.01
+ > VirtualBox version: 7.0.6_Ubuntur155176
  > vscode version: 1.77.3
 
 ----------------------------------------------------------------------
@@ -305,7 +306,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-Finalization date of this log: sex 28 abr 2023 12:40:38 -03
+Finalization date of this log: sex 28 abr 2023 13:23:38 -03
 
 ----------------------------------------------------------------------
 
