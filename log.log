@@ -22,7 +22,7 @@ Information about the current build of Hexagonix:
  > Branch (git): main
 
 Information about the current build environment:
- > Date and time of this report (build time): seg 15 mai 2023 22:39:41 -03
+ > Date and time of this report (build time): ter 16 mai 2023 18:38:47 -03
  > User currently logged in: root
  > Operating system details: Linux 6.2.0-20-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.30
@@ -47,7 +47,7 @@ flat assembler  version 1.73.30  (16384 kilobytes memory)
  > Building Hexagon Boot - HBoot (2nd stage)...
 
 flat assembler  version 1.73.30  (16384 kilobytes memory)
-4 passes, 0.2 seconds, 9557 bytes.
+4 passes, 9557 bytes.
 
  > Building HBoot® compatible module Spartan.mod...
 flat assembler  version 1.73.30  (16384 kilobytes memory)
@@ -64,7 +64,7 @@ flat assembler  version 1.73.30  (16384 kilobytes memory)
 Building the Hexagon® kernel... {
 
 flat assembler  version 1.73.30  (16384 kilobytes memory)
-4 passes, 0.5 seconds, 25609 bytes.
+4 passes, 25609 bytes.
 
 } Hexagon® kernel built successfully.
 
@@ -213,7 +213,7 @@ flat assembler  version 1.73.30  (16384 kilobytes memory)
 
  > Building Hexagonix® graphical application DOSsh...
 flat assembler  version 1.73.30  (16384 kilobytes memory)
-3 passes, 0.1 seconds, 2266 bytes.
+3 passes, 2266 bytes.
 
  > Building Hexagonix® graphical application gfont...
 flat assembler  version 1.73.30  (16384 kilobytes memory)
@@ -306,7 +306,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-Finalization date of this log: seg 15 mai 2023 22:39:50 -03
+Finalization date of this log: ter 16 mai 2023 18:38:52 -03
 
 ----------------------------------------------------------------------
 
