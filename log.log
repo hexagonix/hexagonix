@@ -12,7 +12,7 @@ In this file, you have access to the complete log of the build process of
 Hexagonix components. You can also use it to identify the environment used in
 construction, as well as errors found in the process.
 
-hx version: 13.13.5.2
+hx version: 13.13.5.3
 
 Information about the current build of Hexagonix:
  > Hexagonix version: Project Raava
@@ -22,7 +22,7 @@ Information about the current build of Hexagonix:
  > Branch (git): main
 
 Information about the current build environment:
- > Date and time of this report (build time): ter 16 mai 2023 18:38:47 -03
+ > Date and time of this report (build time): qua 17 mai 2023 15:04:32 -03
  > User currently logged in: root
  > Operating system details: Linux 6.2.0-20-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.30
@@ -306,7 +306,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-Finalization date of this log: ter 16 mai 2023 18:38:52 -03
+Finalization date of this log: qua 17 mai 2023 15:04:36 -03
 
 ----------------------------------------------------------------------
 
