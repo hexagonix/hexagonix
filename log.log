@@ -22,7 +22,7 @@ Information about the current build of Hexagonix:
  > Branch (git): main
 
 Information about the current build environment:
- > Date and time of this report (build time): qua 17 mai 2023 21:31:01 -03
+ > Date and time of this report (build time): qui 18 mai 2023 17:20:31 -03
  > User currently logged in: root
  > Operating system details: Linux 6.2.0-20-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.30
@@ -64,7 +64,7 @@ flat assembler  version 1.73.30  (16384 kilobytes memory)
 Building the Hexagon® kernel... {
 
 flat assembler  version 1.73.30  (16384 kilobytes memory)
-4 passes, 0.3 seconds, 25609 bytes.
+4 passes, 25609 bytes.
 
 } Hexagon® kernel built successfully.
 
@@ -150,7 +150,7 @@ flat assembler  version 1.73.30  (16384 kilobytes memory)
 
  > Building Hexagonix® Unix utility man...
 flat assembler  version 1.73.30  (16384 kilobytes memory)
-3 passes, 834 bytes.
+3 passes, 840 bytes.
 
  > Building Hexagonix® Unix utility mount...
 flat assembler  version 1.73.30  (16384 kilobytes memory)
@@ -201,7 +201,7 @@ Building Hexagonix® graphical applications... {
 
  > Building Hexagonix® graphical application ash...
 flat assembler  version 1.73.30  (16384 kilobytes memory)
-3 passes, 3067 bytes.
+3 passes, 3073 bytes.
 
  > Building Hexagonix® graphical application calc...
 flat assembler  version 1.73.30  (16384 kilobytes memory)
@@ -213,7 +213,7 @@ flat assembler  version 1.73.30  (16384 kilobytes memory)
 
  > Building Hexagonix® graphical application DOSsh...
 flat assembler  version 1.73.30  (16384 kilobytes memory)
-3 passes, 2266 bytes.
+3 passes, 2269 bytes.
 
  > Building Hexagonix® graphical application gfont...
 flat assembler  version 1.73.30  (16384 kilobytes memory)
@@ -306,7 +306,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-Finalization date of this log: qua 17 mai 2023 21:31:11 -03
+Finalization date of this log: qui 18 mai 2023 17:20:37 -03
 
 ----------------------------------------------------------------------
 
