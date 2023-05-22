@@ -22,7 +22,7 @@ Information about the current build of Hexagonix:
  > Branch (git): main
 
 Information about the current build environment:
- > Date and time of this report (build time): sáb 20 mai 2023 23:31:19 -03
+ > Date and time of this report (build time): seg 22 mai 2023 02:17:16 -03
  > User currently logged in: root
  > Operating system details: Linux 6.2.0-20-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.30
@@ -47,7 +47,7 @@ flat assembler  version 1.73.30  (16384 kilobytes memory)
  > Building Hexagon Boot - HBoot (2nd stage)...
 
 flat assembler  version 1.73.30  (16384 kilobytes memory)
-4 passes, 9560 bytes.
+4 passes, 0.7 seconds, 9560 bytes.
 
  > Building HBoot® compatible module Spartan.mod...
 flat assembler  version 1.73.30  (16384 kilobytes memory)
@@ -64,7 +64,7 @@ flat assembler  version 1.73.30  (16384 kilobytes memory)
 Building the Hexagon® kernel... {
 
 flat assembler  version 1.73.30  (16384 kilobytes memory)
-4 passes, 25609 bytes.
+4 passes, 0.4 seconds, 25609 bytes.
 
 } Hexagon® kernel built successfully.
 
@@ -74,7 +74,7 @@ Building Hexagonix® Unix based applications... {
 
  > Building Hexagonix® Unix utility arch...
 flat assembler  version 1.73.30  (16384 kilobytes memory)
-2 passes, 435 bytes.
+2 passes, 0.2 seconds, 435 bytes.
 
  > Building Hexagonix® Unix utility cat...
 flat assembler  version 1.73.30  (16384 kilobytes memory)
@@ -126,7 +126,7 @@ flat assembler  version 1.73.30  (16384 kilobytes memory)
 
  > Building Hexagonix® Unix utility init...
 flat assembler  version 1.73.30  (16384 kilobytes memory)
-2 passes, 811 bytes.
+2 passes, 0.1 seconds, 811 bytes.
 
  > Building Hexagonix® Unix utility login...
 flat assembler  version 1.73.30  (16384 kilobytes memory)
@@ -209,7 +209,7 @@ flat assembler  version 1.73.30  (16384 kilobytes memory)
 
  > Building Hexagonix® graphical application config...
 flat assembler  version 1.73.30  (16384 kilobytes memory)
-4 passes, 12436 bytes.
+4 passes, 0.1 seconds, 12436 bytes.
 
  > Building Hexagonix® graphical application DOSsh...
 flat assembler  version 1.73.30  (16384 kilobytes memory)
@@ -306,7 +306,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-Finalization date of this log: sáb 20 mai 2023 23:31:22 -03
+Finalization date of this log: seg 22 mai 2023 02:17:29 -03
 
 ----------------------------------------------------------------------
 
