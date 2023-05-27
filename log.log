@@ -12,7 +12,7 @@ In this file, you have access to the complete log of the build process of
 Hexagonix components. You can also use it to identify the environment used in
 construction, as well as errors found in the process.
 
-hx version: 13.14.0.0
+hx version: 13.14.1.0
 
 Information about the current build of Hexagonix:
  > Hexagonix version: Project Raava
@@ -22,7 +22,7 @@ Information about the current build of Hexagonix:
  > Branch (git): main
 
 Information about the current build environment:
- > Date and time of this report (build time): qui 25 mai 2023 21:23:58 -03
+ > Date and time of this report (build time): sáb 27 mai 2023 01:54:29 -03
  > User currently logged in: root
  > Operating system details: Linux 6.2.0-20-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.30
@@ -39,7 +39,7 @@ Building Hexagon® startup components... {
  > Hexagon® bootloader - Saturno (1st stage)...
 
 flat assembler  version 1.73.30  (16384 kilobytes memory)
-3 passes, 512 bytes.
+3 passes, 0.1 seconds, 512 bytes.
 
 flat assembler  version 1.73.30  (16384 kilobytes memory)
 2 passes, 512 bytes.
@@ -64,7 +64,7 @@ flat assembler  version 1.73.30  (16384 kilobytes memory)
 Building the Hexagon® kernel... {
 
 flat assembler  version 1.73.30  (16384 kilobytes memory)
-4 passes, 25609 bytes.
+4 passes, 0.1 seconds, 25609 bytes.
 
 } Hexagon® kernel built successfully.
 
@@ -306,7 +306,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-Finalization date of this log: qui 25 mai 2023 21:24:04 -03
+Finalization date of this log: sáb 27 mai 2023 01:54:39 -03
 
 ----------------------------------------------------------------------
 
