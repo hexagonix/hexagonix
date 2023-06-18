@@ -22,12 +22,13 @@ Information about the current build of Hexagonix:
  > Branch (git): main
 
 Information about the current build environment:
- > Date and time of this report (build time): dom 11 jun 2023 00:18:15 -03
+ > Date and time of this report (build time): dom 18 jun 2023 17:35:22 -03
  > User currently logged in: root
  > Operating system details: Linux 6.2.0-20-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.30
  > GNU bash version: GNU bash, versão 5.2.15(1)-release (x86_64-pc-linux-gnu)
- > qemu version: QEMU emulator version 7.2.0 (Debian 1:7.2+dfsg-5ubuntu2)
+ > qemu version: QEMU emulator version 7.2.0 (Debian 1:7.2+dfsg-5ubuntu2.1)
+ > vscode version: 1.79.2
 
 ----------------------------------------------------------------------
 
@@ -44,7 +45,7 @@ flat assembler  version 1.73.30  (16384 kilobytes memory)
  > Building Hexagon Boot - HBoot (2nd stage)...
 
 flat assembler  version 1.73.30  (16384 kilobytes memory)
-4 passes, 9560 bytes.
+4 passes, 0.1 seconds, 9560 bytes.
 
  > Building HBoot® compatible module Spartan.mod...
 flat assembler  version 1.73.30  (16384 kilobytes memory)
@@ -303,7 +304,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-Finalization date of this log: dom 11 jun 2023 00:18:20 -03
+Finalization date of this log: dom 18 jun 2023 17:35:27 -03
 
 ----------------------------------------------------------------------
 
