@@ -25,7 +25,7 @@
 
 <details title="Sobre o Hexagonix/About Hexagonix" align='left'>
 <br>
-<summary align='left'>❤ Sobre o Hexagonix/About Hexagonix</summary>
+<summary align='left'>:heart: Sobre o Hexagonix/About Hexagonix</summary>
 
 * :brazil: [Português (Brasil)](https://github.com/hexagonix/Doc/blob/main/Hexagonix/Hexagonix.pt.md)
 * :uk: [English](https://github.com/hexagonix/Doc/blob/main/Hexagonix/Hexagonix.en.md) 
