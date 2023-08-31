@@ -22,7 +22,7 @@ Information about the current build of Hexagonix:
  > Branch (git): main
 
 Information about the current build environment:
- > Date and time of this report (build time): qua 30 ago 2023 17:26:53 -03
+ > Date and time of this report (build time): qui 31 ago 2023 18:42:01 -03
  > User currently logged in: root
  > Operating system details: Linux 6.2.0-31-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.30
@@ -203,7 +203,7 @@ flat assembler  version 1.73.30  (16384 kilobytes memory)
 
  > Building Hexagonix graphical application calc...
 flat assembler  version 1.73.30  (16384 kilobytes memory)
-3 passes, 1338 bytes.
+3 passes, 1275 bytes.
 
  > Building Hexagonix graphical application config...
 flat assembler  version 1.73.30  (16384 kilobytes memory)
@@ -215,7 +215,7 @@ flat assembler  version 1.73.30  (16384 kilobytes memory)
 
  > Building Hexagonix graphical application gfont...
 flat assembler  version 1.73.30  (16384 kilobytes memory)
-2 passes, 1600 bytes.
+2 passes, 1541 bytes.
 
  > Building Hexagonix graphical application Lyoko...
 flat assembler  version 1.73.30  (16384 kilobytes memory)
@@ -231,7 +231,7 @@ flat assembler  version 1.73.30  (16384 kilobytes memory)
 
  > Building Hexagonix graphical application poweroff...
 flat assembler  version 1.73.30  (16384 kilobytes memory)
-2 passes, 1737 bytes.
+2 passes, 1678 bytes.
 
  > Building Hexagonix graphical application quartzo...
 flat assembler  version 1.73.30  (16384 kilobytes memory)
@@ -239,7 +239,7 @@ flat assembler  version 1.73.30  (16384 kilobytes memory)
 
  > Building Hexagonix graphical application serial...
 flat assembler  version 1.73.30  (16384 kilobytes memory)
-3 passes, 1232 bytes.
+3 passes, 1173 bytes.
 
 
 } Hexagonix graphical applications built successfully.
@@ -304,7 +304,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-Finalization date of this log: qua 30 ago 2023 17:26:59 -03
+Finalization date of this log: qui 31 ago 2023 18:42:07 -03
 
 ----------------------------------------------------------------------
 
