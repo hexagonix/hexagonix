@@ -22,7 +22,7 @@ Information about the current build of Hexagonix:
  > Branch (git): main
 
 Information about the current build environment:
- > Date and time of this report (build time): seg 04 set 2023 21:32:23 -03
+ > Date and time of this report (build time): seg 04 set 2023 22:46:39 -03
  > User currently logged in: root
  > Operating system details: Linux 6.2.0-31-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.30
@@ -184,7 +184,7 @@ flat assembler  version 1.73.30  (16384 kilobytes memory)
 
  > Building Hexagonix Unix utility uname...
 flat assembler  version 1.73.30  (16384 kilobytes memory)
-5 passes, 2488 bytes.
+5 passes, 2510 bytes.
 
  > Building Hexagonix Unix utility whoami...
 flat assembler  version 1.73.30  (16384 kilobytes memory)
@@ -304,7 +304,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-Finalization date of this log: seg 04 set 2023 21:32:26 -03
+Finalization date of this log: seg 04 set 2023 22:46:42 -03
 
 ----------------------------------------------------------------------
 
