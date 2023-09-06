@@ -12,7 +12,7 @@ In this file, you have access to the complete log of the build process of
 Hexagonix components. You can also use it to identify the environment used in
 construction, as well as errors found in the process.
 
-hx version: 13.15.2.1
+hx version: 13.15.3.3
 
 Information about the current build of Hexagonix:
  > Hexagonix version: Project Raava
@@ -22,7 +22,7 @@ Information about the current build of Hexagonix:
  > Branch (git): main
 
 Information about the current build environment:
- > Date and time of this report (build time): ter 05 set 2023 21:26:00 -03
+ > Date and time of this report (build time): qua 06 set 2023 18:44:13 -03
  > User currently logged in: root
  > Operating system details: Linux 6.2.0-32-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.30
@@ -128,7 +128,7 @@ flat assembler  version 1.73.30  (16384 kilobytes memory)
 
  > Building Hexagonix Unix utility login...
 flat assembler  version 1.73.30  (16384 kilobytes memory)
-3 passes, 1887 bytes.
+3 passes, 1864 bytes.
 
  > Building Hexagonix Unix utility logind...
 flat assembler  version 1.73.30  (16384 kilobytes memory)
@@ -172,7 +172,7 @@ flat assembler  version 1.73.30  (16384 kilobytes memory)
 
  > Building Hexagonix Unix utility su...
 flat assembler  version 1.73.30  (16384 kilobytes memory)
-3 passes, 1517 bytes.
+3 passes, 1492 bytes.
 
  > Building Hexagonix Unix utility syslogd...
 flat assembler  version 1.73.30  (16384 kilobytes memory)
@@ -304,7 +304,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-Finalization date of this log: ter 05 set 2023 21:26:03 -03
+Finalization date of this log: qua 06 set 2023 18:44:21 -03
 
 ----------------------------------------------------------------------
 
