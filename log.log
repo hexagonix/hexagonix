@@ -22,7 +22,7 @@ Information about the current build of Hexagonix:
  > Branch (git): main
 
 Information about the current build environment:
- > Date and time of this report (build time): sáb 09 set 2023 02:01:20 -03
+ > Date and time of this report (build time): dom 10 set 2023 00:49:08 -03
  > User currently logged in: root
  > Operating system details: Linux 6.2.0-32-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.30
@@ -308,7 +308,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-Finalization date of this log: sáb 09 set 2023 02:01:23 -03
+Finalization date of this log: dom 10 set 2023 00:49:11 -03
 
 ----------------------------------------------------------------------
 
