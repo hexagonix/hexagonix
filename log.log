@@ -12,7 +12,7 @@ In this file, you have access to the complete log of the build process of
 Hexagonix components. You can also use it to identify the environment used in
 construction, as well as errors found in the process.
 
-hx version: 13.15.4.1
+hx version: 13.15.4.2
 
 Information about the current build of Hexagonix:
  > Hexagonix version: Project Raava
@@ -22,7 +22,7 @@ Information about the current build of Hexagonix:
  > Branch (git): main
 
 Information about the current build environment:
- > Date and time of this report (build time): qua 27 set 2023 21:02:48 -03
+ > Date and time of this report (build time): sex 29 set 2023 18:15:09 -03
  > User currently logged in: root
  > Operating system details: Linux 6.5.0-5-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.31
@@ -72,11 +72,11 @@ Building Hexagonix Unix based applications... {
 
  > Building Hexagonix Unix utility arch...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
-2 passes, 448 bytes.
+2 passes, 442 bytes.
 
  > Building Hexagonix Unix utility cat...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
-2 passes, 407 bytes.
+2 passes, 401 bytes.
 
  > Building Hexagonix Unix utility clear...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
@@ -148,7 +148,7 @@ flat assembler  version 1.73.31  (16384 kilobytes memory)
 
  > Building Hexagonix Unix utility man...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
-3 passes, 726 bytes.
+3 passes, 730 bytes.
 
  > Building Hexagonix Unix utility mount...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
@@ -180,7 +180,7 @@ flat assembler  version 1.73.31  (16384 kilobytes memory)
 
  > Building Hexagonix Unix utility top...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
-3 passes, 889 bytes.
+3 passes, 885 bytes.
 
  > Building Hexagonix Unix utility uname...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
@@ -306,7 +306,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-Finalization date of this log: qua 27 set 2023 21:02:54 -03
+Finalization date of this log: sex 29 set 2023 18:15:18 -03
 
 ----------------------------------------------------------------------
 
