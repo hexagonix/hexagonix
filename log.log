@@ -22,9 +22,9 @@ Information about the current build of Hexagonix:
  > Branch (git): main
 
 Information about the current build environment:
- > Date and time of this report (build time): dom 08 out 2023 02:36:20 -03
+ > Date and time of this report (build time): ter 10 out 2023 00:21:04 -03
  > User currently logged in: root
- > Operating system details: Linux 6.5.0-7-generic x86_64 x86_64 x86_64
+ > Operating system details: Linux 6.5.0-9-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.31
  > GNU bash version: GNU bash, versão 5.2.15(1)-release (x86_64-pc-linux-gnu)
  > qemu version: QEMU emulator version 8.0.4 (Debian 1:8.0.4+dfsg-1ubuntu3)
@@ -37,7 +37,7 @@ Building Hexagon startup components... {
  > Hexagon bootloader - Saturno (1st stage)...
 
 flat assembler  version 1.73.31  (16384 kilobytes memory)
-3 passes, 512 bytes.
+3 passes, 0.1 seconds, 512 bytes.
 
 flat assembler  version 1.73.31  (16384 kilobytes memory)
 2 passes, 512 bytes.
@@ -62,7 +62,7 @@ flat assembler  version 1.73.31  (16384 kilobytes memory)
 Building the Hexagon kernel... {
 
 flat assembler  version 1.73.31  (16384 kilobytes memory)
-4 passes, 25648 bytes.
+4 passes, 25643 bytes.
 
 } Hexagon kernel built successfully.
 
@@ -306,7 +306,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-Finalization date of this log: dom 08 out 2023 02:36:23 -03
+Finalization date of this log: ter 10 out 2023 00:21:12 -03
 
 ----------------------------------------------------------------------
 
