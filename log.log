@@ -22,7 +22,7 @@ Information about the current build of Hexagonix:
  > Branch (git): main
 
 Information about the current build environment:
- > Date and time of this report (build time): ter 10 out 2023 00:21:04 -03
+ > Date and time of this report (build time): ter 10 out 2023 03:34:44 -03
  > User currently logged in: root
  > Operating system details: Linux 6.5.0-9-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.31
@@ -37,7 +37,7 @@ Building Hexagon startup components... {
  > Hexagon bootloader - Saturno (1st stage)...
 
 flat assembler  version 1.73.31  (16384 kilobytes memory)
-3 passes, 0.1 seconds, 512 bytes.
+3 passes, 512 bytes.
 
 flat assembler  version 1.73.31  (16384 kilobytes memory)
 2 passes, 512 bytes.
@@ -62,7 +62,7 @@ flat assembler  version 1.73.31  (16384 kilobytes memory)
 Building the Hexagon kernel... {
 
 flat assembler  version 1.73.31  (16384 kilobytes memory)
-4 passes, 25643 bytes.
+4 passes, 25739 bytes.
 
 } Hexagon kernel built successfully.
 
@@ -128,7 +128,7 @@ flat assembler  version 1.73.31  (16384 kilobytes memory)
 
  > Building Hexagonix Unix utility login...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
-3 passes, 1856 bytes.
+3 passes, 1869 bytes.
 
  > Building Hexagonix Unix utility logind...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
@@ -223,7 +223,7 @@ flat assembler  version 1.73.31  (16384 kilobytes memory)
 
  > Building Hexagonix graphical application oobe...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
-2 passes, 5815 bytes.
+2 passes, 5752 bytes.
 
  > Building Hexagonix graphical application piano...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
@@ -306,7 +306,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-Finalization date of this log: ter 10 out 2023 00:21:12 -03
+Finalization date of this log: ter 10 out 2023 03:34:47 -03
 
 ----------------------------------------------------------------------
 
