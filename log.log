@@ -12,19 +12,29 @@ In this file, you have access to the complete log of the build process of
 Hexagonix components. You can also use it to identify the environment used in
 construction, as well as errors found in the process.
 
-hx version: 13.15.5.1
+hx version: 13.15.6.0
 
-Build task id: bbeefb36-68ca-11ee-b531-07c5cb5b9d60
+Build task id: 18c76bc2-698e-11ee-892a-77d6afde2779
 
 Information about the current build of Hexagonix:
  > Hexagonix version: Project Raava
  > Software revision: CURRENT
  > Release name: Raava
  > Disk image location: hexagonix/hexagonix.img
- > Branch (git): main
+ > Main system branch (git): main
+   > Andromeda-Apps branch: main
+   > Unix-Apps branch: main
+   > HBoot branch: main
+   > Saturno branch: main
+   > etc branch: main
+   > man branch: main
+   > Fonts branch: main
+   > Hexagon branch: main
+   > libasm branch: main
+   > HX/Scripts branch: main
 
 Information about the current build environment:
- > Date and time of this report (build time): qui 12 out 2023 03:44:04 -03
+ > Date and time of this report (build time): sex 13 out 2023 03:02:33 -03
  > User currently logged in: root
  > Operating system details: Linux 6.5.0-9-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.31
@@ -64,7 +74,7 @@ flat assembler  version 1.73.31  (16384 kilobytes memory)
 Building the Hexagon kernel... {
 
 flat assembler  version 1.73.31  (16384 kilobytes memory)
-4 passes, 25852 bytes.
+4 passes, 25847 bytes.
 
 } Hexagon kernel built successfully.
 
@@ -150,7 +160,7 @@ flat assembler  version 1.73.31  (16384 kilobytes memory)
 
  > Building Hexagonix Unix utility man...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
-3 passes, 730 bytes.
+3 passes, 726 bytes.
 
  > Building Hexagonix Unix utility mount...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
@@ -312,7 +322,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-End date/time of this log: qui 12 out 2023 03:44:08 -03
+End date/time of this log: sex 13 out 2023 03:02:35 -03
 
 ----------------------------------------------------------------------
 
