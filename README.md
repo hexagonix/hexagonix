@@ -119,6 +119,21 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 </details>
 
+<details title="Repositórios principais/main repositories" align='left'>
+<br>
+<summary align='left'>:package: Repositórios principais/main repositories</summary>
+
+[![Hexagon Kernel](https://github-readme-stats.vercel.app/api/pin/?username=Hexagonix&repo=Hexagon&theme=dark)](https://github.com/hexagonix/Hexagon)
+[![HBoot](https://github-readme-stats.vercel.app/api/pin/?username=Hexagonix&repo=HBoot&theme=dark)](https://github.com/hexagonix/Hboot)
+[![Unix-Apps](https://github-readme-stats.vercel.app/api/pin/?username=Hexagonix&repo=unix-apps&theme=dark)](https://github.com/hexagonix/unix-apps)
+[![Andromeda-Apps](https://github-readme-stats.vercel.app/api/pin/?username=Hexagonix&repo=andromeda-apps&theme=dark)](https://github.com/hexagonix/andromeda-apps)
+[![lib](https://github-readme-stats.vercel.app/api/pin/?username=Hexagonix&repo=lib&theme=dark)](https://github.com/hexagonix/lib)
+[![fasmX](https://github-readme-stats.vercel.app/api/pin/?username=Hexagonix&repo=fasmx&theme=dark)](https://github.com/hexagonix/fasmx)
+[![hexagonix](https://github-readme-stats.vercel.app/api/pin/?username=Hexagonix&repo=hexagonix&theme=dark)](https://github.com/hexagonix/hexagonix)
+[![build](https://github-readme-stats.vercel.app/api/pin/?username=Hexagonix&repo=build&theme=dark)](https://github.com/hexagonix/build)
+
+</details>
+
 <!-- Versão do arquivo: 1.0
 
 Copyright © 2022 Felipe Miguel Nery Lunkes
