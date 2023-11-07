@@ -14,7 +14,7 @@ construction, as well as errors found in the process.
 
 hx version: 13.15.6.1
 
-Build task id: 59fd11d8-d7de-446a-b78f-7f4f1e6d6e07
+Build task id: 5de509b6-4b4e-4e80-993a-c8f4bed230aa
 
 Information about the current build of Hexagonix:
  > Hexagonix version: Project Raava
@@ -34,7 +34,7 @@ Information about the current build of Hexagonix:
    > HX/Scripts branch: main
 
 Information about the current build environment:
- > Date and time of this report (build time): sex 27 out 2023 16:20:57 -03
+ > Date and time of this report (build time): ter 07 nov 2023 13:18:59 -03
  > User currently logged in: root
  > Operating system details: Linux 6.5.0-10-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.31
@@ -74,7 +74,7 @@ flat assembler  version 1.73.31  (16384 kilobytes memory)
 Building the Hexagon kernel... {
 
 flat assembler  version 1.73.31  (16384 kilobytes memory)
-5 passes, 24955 bytes.
+5 passes, 24939 bytes.
 
 } Hexagon kernel built successfully.
 
@@ -116,7 +116,7 @@ flat assembler  version 1.73.31  (16384 kilobytes memory)
 
  > Building Hexagonix Unix utility fnt...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
-3 passes, 902 bytes.
+3 passes, 894 bytes.
 
  > Building Hexagonix Unix utility free...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
@@ -136,7 +136,7 @@ flat assembler  version 1.73.31  (16384 kilobytes memory)
 
  > Building Hexagonix Unix utility login...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
-3 passes, 1920 bytes.
+3 passes, 1918 bytes.
 
  > Building Hexagonix Unix utility logind...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
@@ -219,7 +219,7 @@ flat assembler  version 1.73.31  (16384 kilobytes memory)
 
  > Building Hexagonix graphical application config...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
-4 passes, 12141 bytes.
+4 passes, 12143 bytes.
 
  > Building Hexagonix graphical application DOSsh...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
@@ -227,7 +227,7 @@ flat assembler  version 1.73.31  (16384 kilobytes memory)
 
  > Building Hexagonix graphical application gfont...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
-2 passes, 1328 bytes.
+2 passes, 1320 bytes.
 
  > Building Hexagonix graphical application Lyoko...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
@@ -318,7 +318,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-End date/time of this log: sex 27 out 2023 16:21:00 -03
+End date/time of this log: ter 07 nov 2023 13:19:03 -03
 
 ----------------------------------------------------------------------
 
