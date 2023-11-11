@@ -14,7 +14,7 @@ construction, as well as errors found in the process.
 
 hx version: 13.15.6.1
 
-Build task id: 5de509b6-4b4e-4e80-993a-c8f4bed230aa
+Build task id: 92dc09c8-797f-4fe0-ac3e-6ed38ef1892c
 
 Information about the current build of Hexagonix:
  > Hexagonix version: Project Raava
@@ -34,13 +34,13 @@ Information about the current build of Hexagonix:
    > HX/Scripts branch: main
 
 Information about the current build environment:
- > Date and time of this report (build time): ter 07 nov 2023 13:18:59 -03
+ > Date and time of this report (build time): sáb 11 nov 2023 14:24:39 -03
  > User currently logged in: root
  > Operating system details: Linux 6.5.0-10-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.31
  > GNU bash version: GNU bash, versão 5.2.15(1)-release (x86_64-pc-linux-gnu)
  > qemu version: QEMU emulator version 8.0.4 (Debian 1:8.0.4+dfsg-1ubuntu3)
- > vscode version: 1.83.1
+ > vscode version: 1.84.1
 
 ----------------------------------------------------------------------
 
@@ -211,7 +211,7 @@ Building Hexagonix graphical applications... {
 
  > Building Hexagonix graphical application ash...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
-3 passes, 2981 bytes.
+3 passes, 2980 bytes.
 
  > Building Hexagonix graphical application calc...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
@@ -318,7 +318,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-End date/time of this log: ter 07 nov 2023 13:19:03 -03
+End date/time of this log: sáb 11 nov 2023 14:24:43 -03
 
 ----------------------------------------------------------------------
 
