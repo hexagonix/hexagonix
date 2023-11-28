@@ -14,7 +14,7 @@ construction, as well as errors found in the process.
 
 hx version: 13.15.7.4
 
-Build task id: 1036e0b9-183c-40b6-85df-baee012bf331
+Build task id: 242e1f32-4566-496d-8ee3-9ad732443e52
 
 Information about the current build of Hexagonix:
  > Hexagonix version: System I
@@ -35,7 +35,7 @@ Information about the current build of Hexagonix:
  > Server: https://github.com/hexagonix
 
 Information about the current build environment:
- > Date and time of this report (build time): sáb 25 nov 2023 14:23:27 -03
+ > Date and time of this report (build time): seg 27 nov 2023 22:14:34 -03
  > User logged in: root
  > Operating system version: Linux 6.5.0-13-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.31
@@ -319,7 +319,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-End date/time of this log: sáb 25 nov 2023 14:23:30 -03
+End date/time of this log: seg 27 nov 2023 22:14:40 -03
 
 ----------------------------------------------------------------------
 
