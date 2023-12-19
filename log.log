@@ -14,7 +14,7 @@ construction, as well as errors found in the process.
 
 hx version: 13.15.7.4
 
-Build task id: 50062411-b121-4224-8142-38a4cd9acb80
+Build task id: d853a6f2-6d66-493f-81cc-97501829cb2a
 
 Information about the current build of Hexagonix:
  > Hexagonix version: System I
@@ -35,13 +35,13 @@ Information about the current build of Hexagonix:
  > Server: https://github.com/hexagonix
 
 Information about the current build environment:
- > Date and time of this report (build time): qua 13 dez 2023 23:35:01 -03
+ > Date and time of this report (build time): ter 19 dez 2023 11:41:00 -03
  > User logged in: root
  > Operating system version: Linux 6.5.0-14-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.31
  > GNU bash version: GNU bash, versão 5.2.15(1)-release (x86_64-pc-linux-gnu)
- > qemu version: QEMU emulator version 8.0.4 (Debian 1:8.0.4+dfsg-1ubuntu3)
- > vscode version: 1.84.2
+ > qemu version: QEMU emulator version 8.0.4 (Debian 1:8.0.4+dfsg-1ubuntu3.23.10.1)
+ > vscode version: 1.85.1
 
 ----------------------------------------------------------------------
 
@@ -75,7 +75,7 @@ flat assembler  version 1.73.31  (16384 kilobytes memory)
 Building the Hexagon kernel... {
 
 flat assembler  version 1.73.31  (16384 kilobytes memory)
-5 passes, 24964 bytes.
+5 passes, 24972 bytes.
 
 } Hexagon kernel built successfully.
 
@@ -137,7 +137,7 @@ flat assembler  version 1.73.31  (16384 kilobytes memory)
 
  > Building Hexagonix Unix utility login...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
-3 passes, 1896 bytes.
+3 passes, 1898 bytes.
 
  > Building Hexagonix Unix utility logind...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
@@ -145,7 +145,7 @@ flat assembler  version 1.73.31  (16384 kilobytes memory)
 
  > Building Hexagonix Unix utility ls...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
-4 passes, 1497 bytes.
+4 passes, 1493 bytes.
 
  > Building Hexagonix Unix utility lshapp...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
@@ -157,7 +157,7 @@ flat assembler  version 1.73.31  (16384 kilobytes memory)
 
  > Building Hexagonix Unix utility man...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
-3 passes, 726 bytes.
+3 passes, 724 bytes.
 
  > Building Hexagonix Unix utility mount...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
@@ -165,15 +165,15 @@ flat assembler  version 1.73.31  (16384 kilobytes memory)
 
  > Building Hexagonix Unix utility mv...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
-3 passes, 826 bytes.
+3 passes, 772 bytes.
 
  > Building Hexagonix Unix utility ps...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
-3 passes, 935 bytes.
+3 passes, 933 bytes.
 
  > Building Hexagonix Unix utility rm...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
-3 passes, 877 bytes.
+3 passes, 875 bytes.
 
  > Building Hexagonix Unix utility sh...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
@@ -201,7 +201,7 @@ flat assembler  version 1.73.31  (16384 kilobytes memory)
 
  > Building Hexagonix Unix utility whoami...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
-3 passes, 645 bytes.
+3 passes, 641 bytes.
 
 
 } Hexagonix utilities built successfully.
@@ -319,7 +319,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-End date/time of this log: qua 13 dez 2023 23:35:05 -03
+End date/time of this log: ter 19 dez 2023 11:41:03 -03
 
 ----------------------------------------------------------------------
 
