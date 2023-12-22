@@ -14,7 +14,7 @@ construction, as well as errors found in the process.
 
 hx version: 13.15.7.4
 
-Build task id: d853a6f2-6d66-493f-81cc-97501829cb2a
+Build task id: 5c7b71fa-0f90-4320-99d0-d15fa9fa6230
 
 Information about the current build of Hexagonix:
  > Hexagonix version: System I
@@ -35,7 +35,7 @@ Information about the current build of Hexagonix:
  > Server: https://github.com/hexagonix
 
 Information about the current build environment:
- > Date and time of this report (build time): ter 19 dez 2023 11:41:00 -03
+ > Date and time of this report (build time): sex 22 dez 2023 09:47:06 -03
  > User logged in: root
  > Operating system version: Linux 6.5.0-14-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.31
@@ -193,7 +193,7 @@ flat assembler  version 1.73.31  (16384 kilobytes memory)
 
  > Building Hexagonix Unix utility top...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
-3 passes, 1000 bytes.
+3 passes, 996 bytes.
 
  > Building Hexagonix Unix utility uname...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
@@ -319,7 +319,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-End date/time of this log: ter 19 dez 2023 11:41:03 -03
+End date/time of this log: sex 22 dez 2023 09:47:10 -03
 
 ----------------------------------------------------------------------
 
