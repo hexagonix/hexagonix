@@ -14,7 +14,7 @@ construction, as well as errors found in the process.
 
 hx version: 13.15.7.4
 
-Build task id: 9ada037a-7d8a-4bc6-89b1-8d523c042d57
+Build task id: da58e260-e630-4dd9-8ce0-cf4909730fb2
 
 Information about the current build of Hexagonix:
  > Hexagonix version: System I
@@ -35,7 +35,7 @@ Information about the current build of Hexagonix:
  > Server: https://github.com/hexagonix
 
 Information about the current build environment:
- > Date and time of this report (build time): qui 04 jan 2024 03:07:35 -03
+ > Date and time of this report (build time): sáb 06 jan 2024 00:39:06 -03
  > User logged in: root
  > Operating system version: Linux 6.5.0-14-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.31
@@ -189,7 +189,7 @@ flat assembler  version 1.73.31  (16384 kilobytes memory)
 
  > Building Hexagonix Unix utility syslogd...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
-2 passes, 362 bytes.
+2 passes, 364 bytes.
 
  > Building Hexagonix Unix utility top...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
@@ -216,11 +216,11 @@ flat assembler  version 1.73.31  (16384 kilobytes memory)
 
  > Building Hexagonix graphical application calc...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
-3 passes, 1240 bytes.
+3 passes, 1241 bytes.
 
  > Building Hexagonix graphical application config...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
-4 passes, 12099 bytes.
+4 passes, 12072 bytes.
 
  > Building Hexagonix graphical application DOSsh...
 flat assembler  version 1.73.31  (16384 kilobytes memory)
@@ -319,7 +319,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-End date/time of this log: qui 04 jan 2024 03:07:39 -03
+End date/time of this log: sáb 06 jan 2024 00:39:08 -03
 
 ----------------------------------------------------------------------
 
