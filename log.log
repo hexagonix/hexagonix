@@ -10,11 +10,11 @@ Hexagonix is licenced under BSD-3-Clause and comes with no warranty.
 
 In this file, you have access to the complete log of the build process of
 Hexagonix components. You can also use it to identify the environment used in
-construction, as well as errors found in the process.
+build, as well as errors found in the process.
 
-hx version: 13.15.8.0
+hx version: 13.15.15.0
 
-Build task id: dfc67ff4-a238-4ffe-bead-c5862b043168
+Build task id: 5417c075-5ed2-4982-b9fc-0d66922f1c16
 
 Information about the current build of Hexagonix:
  > Hexagonix version: System I
@@ -35,7 +35,7 @@ Information about the current build of Hexagonix:
  > Server: https://github.com/hexagonix
 
 Information about the current build environment:
- > Date and time of this report (build time): ter 23 jan 2024 22:59:28 -03
+ > Date and time of this report (build time): qui 25 jan 2024 00:01:47 -03
  > User logged in: root
  > Operating system version: Linux 6.5.0-14-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.31
@@ -319,7 +319,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-End date/time of this log: ter 23 jan 2024 22:59:30 -03
+End date/time of this log: qui 25 jan 2024 00:01:51 -03
 
 ----------------------------------------------------------------------
 
