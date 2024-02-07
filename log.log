@@ -12,9 +12,9 @@ In this file, you have access to the complete log of the build process of
 Hexagonix components. You can also use it to identify the environment used in
 build, as well as errors found in the process.
 
-hx version: 13.16.1
+hx version: 13.16.2
 
-Build task id: 082f67b3-82f5-4f01-b6b5-4eb2376dc1d1
+Build task id: 4f98a667-fee5-442a-b728-58800b4dc10f
 
 Information about the current build of Hexagonix:
  > Hexagonix version: System I
@@ -35,7 +35,7 @@ Information about the current build of Hexagonix:
  > Server: https://github.com/hexagonix
 
 Information about the current build environment:
- > Date and time of this report (build time): seg 05 fev 2024 19:22:03 -03
+ > Date and time of this report (build time): ter 06 fev 2024 23:40:46 -03
  > User logged in: root
  > Operating system version: Linux 6.5.0-15-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.31
@@ -324,7 +324,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-End date/time of this log: seg 05 fev 2024 19:22:06 -03
+End date/time of this log: ter 06 fev 2024 23:40:49 -03
 
 ----------------------------------------------------------------------
 
