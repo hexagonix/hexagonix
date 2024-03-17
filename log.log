@@ -13,9 +13,9 @@ In this file, you have access to the complete log of the build process of
 Hexagonix components. You can also use it to identify the environment used in
 build, as well as errors found in the process.
 
-hx version: 13.17.5
+hx version: 13.19.0
 
-Build task id: 582602a4-bbd7-48da-82c5-fb687e12ae40
+Build task id: aa1b5c29-65f1-4dea-aa39-b2039ea416fd
 
 Information about the current build of Hexagonix:
  > Hexagonix version: System I
@@ -33,10 +33,10 @@ Information about the current build of Hexagonix:
    > Hexagon branch: main
    > libasm branch: main
    > hx/Scripts branch: main
- > Server: https://github.com/hexagonix
+ > Remote host: https://github.com/hexagonix
 
 Information about the current build environment:
- > Date and time of this report (build time): sáb 16 mar 2024 16:48:32 -03
+ > Date and time of this report (build time): dom 17 mar 2024 02:30:25 -03
  > User logged in: root
  > Operating system version: Linux 6.5.0-25-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.31
@@ -47,7 +47,7 @@ Information about the current build environment:
  > Build flags:
    > HBoot build flags: SOUND_THEME=Hexagonix
    > Hexagon build flags: VERBOSE=YES
-   > Common userland build flags: VERBOSE=YES -d LOGIN_STYLE=Hexagonix
+   > Common userland build flags: VERBOSE=YES LOGIN_STYLE=Hexagonix
 
 ----------------------------------------------------------------------
 
@@ -325,7 +325,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-End date/time of this log: sáb 16 mar 2024 16:48:35 -03
+End date/time of this log: dom 17 mar 2024 02:30:31 -03
 
 ----------------------------------------------------------------------
 
