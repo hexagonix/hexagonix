@@ -13,9 +13,9 @@ In this file, you have access to the complete log of the build process of
 Hexagonix components. You can also use it to identify the environment used in
 build, as well as errors found in the process.
 
-hx version: 13.19.2
+hx version: 14.0.0-ALPHA2
 
-Build task id: ffb2a4c2-d97d-4d00-ac71-e7566054af42
+Build task id: e6dbbf98-c145-43e7-9422-f9843128bf5e
 
 Information about the current build of Hexagonix:
  > Hexagonix version: Zonai
@@ -36,13 +36,13 @@ Information about the current build of Hexagonix:
  > Remote host: https://github.com/hexagonix
 
 Information about the current build environment:
- > Date and time of this report (build time): sáb 08 jun 2024 01:05:06 -03
+ > Date and time of this report (build time): qui 27 jun 2024 02:09:01 -03
  > User logged in: root
  > Operating system version: Linux 6.5.0-41-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.31
  > GNU bash version: GNU bash, versão 5.2.15(1)-release (x86_64-pc-linux-gnu)
  > qemu version: QEMU emulator version 8.0.4 (Debian 1:8.0.4+dfsg-1ubuntu3.23.10.5)
- > vscode version: 1.90.0
+ > vscode version: 1.90.2
 
  > Build flags:
    > HBoot build flags: SOUND_THEME=Hexagonix
@@ -51,15 +51,30 @@ Information about the current build environment:
 
 ----------------------------------------------------------------------
 
-Building Hexagon startup components... {
+Starting Hexagonix disk builder mod version 0.1...
 
- > Hexagon bootloader - Saturno (1st stage)...
+Starting Hexagonix system builder mod version 0.1...
+
+Starting Saturno/MBR builder mod version 0.1...
+
+Building Hexagon startup components (step 1/2)... {
+
+Hexagon bootloader - Saturno (1st stage)...
 
 flat assembler  version 1.73.31  (16384 kilobytes memory)
 3 passes, 512 bytes.
 
 flat assembler  version 1.73.31  (16384 kilobytes memory)
 2 passes, 512 bytes.
+
+
+} Saturno/MBR built successfully.
+
+----------------------------------------------------------------------
+
+Starting HBoot builder mod version 0.1...
+
+Building Hexagon startup components (step 2/2)... {
 
  > Building Hexagon Boot - HBoot (2nd stage)...
 
@@ -74,9 +89,11 @@ flat assembler  version 1.73.31  (16384 kilobytes memory)
 flat assembler  version 1.73.31  (16384 kilobytes memory)
 2 passes, 1723 bytes.
 
-} Successfully built Hexagon startup components.
+} Successfully built HBoot.
 
 ----------------------------------------------------------------------
+
+Starting Hexagon builder mod version 0.1...
 
 Building the Hexagon kernel... {
 
@@ -86,6 +103,8 @@ flat assembler  version 1.73.31  (16384 kilobytes memory)
 } Hexagon kernel built successfully.
 
 ----------------------------------------------------------------------
+
+Starting Unix environment builder mod version 0.1...
 
 Building Hexagonix Unix based applications... {
 
@@ -214,6 +233,8 @@ flat assembler  version 1.73.31  (16384 kilobytes memory)
 
 ----------------------------------------------------------------------
 
+Starting Hexagonix-Andromeda environment builder mod version 0.1...
+
 Building Hexagonix graphical applications... {
 
  > Building Hexagonix graphical application ash...
@@ -283,6 +304,8 @@ Configuring and copying Hexagonix static files... {
 
 ----------------------------------------------------------------------
 
+Starting contrib builder mod version 0.1...
+
 Building additional (contrib) packages... {
 
 > There are additional packages to build.
@@ -293,9 +316,12 @@ Building additional (contrib) packages... {
 
 ----------------------------------------------------------------------
 
+
 Build a Hexagonix disk image... {
 
 > Building temporary image for file manipulation...
+
+Starting Hexagonix on Linux builder mod version 0.1...
 
 > Building image that will receive system files...
 
@@ -304,6 +330,8 @@ Build a Hexagonix disk image... {
 > Copying system files to the image...
 
 > Checking if there are graphic fonts to copy... [Yes]
+
+Starting contrib checker mod version 0.1...
 
 > Unmounting the image...
 > Mounting the final image...
@@ -325,7 +353,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-End date/time of this log: sáb 08 jun 2024 01:05:09 -03
+End date/time of this log: qui 27 jun 2024 02:09:07 -03
 
 ----------------------------------------------------------------------
 
