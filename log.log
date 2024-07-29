@@ -15,7 +15,7 @@ build, as well as errors found in the process.
 
 hx version: 14.0.0-ALPHA7
 
-Build id: a09dd1cf-c86c-497b-9636-df02451c9e8b
+Build id: 84d06daa-981a-4dfa-bf78-e8af15ef729a
 
 Information about the current build of Hexagonix:
  > Hexagonix version: Zonai
@@ -36,13 +36,13 @@ Information about the current build of Hexagonix:
  > Remote host: https://github.com/hexagonix
 
 Information about the current build environment:
- > Date and time of this report (build time): qui 04 jul 2024 13:48:42 -03
+ > Date and time of this report (build time): seg 29 jul 2024 13:27:26 -03
  > User logged in: root
- > Operating system version: Linux 6.8.0-36-generic x86_64 x86_64 x86_64
+ > Operating system version: Linux 6.8.0-38-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.32
  > GNU bash version: GNU bash, versão 5.2.21(1)-release (x86_64-pc-linux-gnu)
  > qemu version: QEMU emulator version 8.2.2 (Debian 1:8.2.2+ds-0ubuntu1)
- > vscode version: 1.90.2
+ > vscode version: 1.91.1
 
  > Build flags:
    > HBoot build flags: SOUND_THEME=Hexagonix
@@ -145,7 +145,7 @@ flat assembler  version 1.73.32  (16384 kilobytes memory)
 
  > Building Hexagonix Unix utility free...
 flat assembler  version 1.73.32  (16384 kilobytes memory)
-3 passes, 541 bytes.
+3 passes, 551 bytes.
 
  > Building Hexagonix Unix utility hash...
 flat assembler  version 1.73.32  (16384 kilobytes memory)
@@ -217,7 +217,7 @@ flat assembler  version 1.73.32  (16384 kilobytes memory)
 
  > Building Hexagonix Unix utility top...
 flat assembler  version 1.73.32  (16384 kilobytes memory)
-3 passes, 996 bytes.
+3 passes, 989 bytes.
 
  > Building Hexagonix Unix utility uname...
 flat assembler  version 1.73.32  (16384 kilobytes memory)
@@ -351,7 +351,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-End date/time of this log: qui 04 jul 2024 13:48:45 -03
+End date/time of this log: seg 29 jul 2024 13:27:29 -03
 
 ----------------------------------------------------------------------
 
