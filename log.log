@@ -15,7 +15,7 @@ build, as well as errors found in the process.
 
 hx version: 14.0.0-ALPHA7
 
-Build id: 620eaf3c-63d3-4be6-a524-d39ffeb7ea5b
+Build id: b401c424-2332-48cd-9294-ecfbd0af4bb9
 
 Information about the current build of Hexagonix:
  > Hexagonix version: Zonai
@@ -36,7 +36,7 @@ Information about the current build of Hexagonix:
  > Remote host: https://github.com/hexagonix
 
 Information about the current build environment:
- > Date and time of this report (build time): seg 26 ago 2024 21:02:20 -03
+ > Date and time of this report (build time): qua 28 ago 2024 23:38:43 -03
  > User logged in: root
  > Operating system version: Linux 6.8.0-41-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.32
@@ -217,7 +217,7 @@ flat assembler  version 1.73.32  (16384 kilobytes memory)
 
  > Building Hexagonix Unix utility top...
 flat assembler  version 1.73.32  (16384 kilobytes memory)
-3 passes, 983 bytes.
+3 passes, 987 bytes.
 
  > Building Hexagonix Unix utility uname...
 flat assembler  version 1.73.32  (16384 kilobytes memory)
@@ -351,7 +351,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-End date/time of this log: seg 26 ago 2024 21:02:23 -03
+End date/time of this log: qua 28 ago 2024 23:38:47 -03
 
 ----------------------------------------------------------------------
 
