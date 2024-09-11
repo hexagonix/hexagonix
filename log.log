@@ -15,7 +15,7 @@ build, as well as errors found in the process.
 
 hx version: 14.0.0-ALPHA7
 
-Build id: 4380ae11-9c3a-4825-8649-8fd2c3a54a0f
+Build id: 09981889-16e5-4822-b8da-ab6ba0d93fac
 
 Information about the current build of Hexagonix:
  > Hexagonix version: Zonai
@@ -36,13 +36,13 @@ Information about the current build of Hexagonix:
  > Remote host: https://github.com/hexagonix
 
 Information about the current build environment:
- > Date and time of this report (build time): qua 04 set 2024 00:00:55 -03
+ > Date and time of this report (build time): qua 11 set 2024 01:06:00 -03
  > User logged in: root
  > Operating system version: Linux 6.8.0-41-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.32
  > GNU bash version: GNU bash, versão 5.2.21(1)-release (x86_64-pc-linux-gnu)
  > qemu version: QEMU emulator version 8.2.2 (Debian 1:8.2.2+ds-0ubuntu1.2)
- > vscode version: 1.92.2
+ > vscode version: 1.93.0
 
  > Build flags:
    > HBoot build flags: SOUND_THEME=Hexagonix
@@ -349,7 +349,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-End date/time of this log: qua 04 set 2024 00:00:58 -03
+End date/time of this log: qua 11 set 2024 01:06:03 -03
 
 ----------------------------------------------------------------------
 
