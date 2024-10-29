@@ -1,8 +1,0 @@
-plugins:
-  - jemoji
-markdown: GFM
-relative_links:
-  enabled: true
-  collections: true
-name: ""
-title: null
