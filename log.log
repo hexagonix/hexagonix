@@ -2,7 +2,7 @@ Hexagonix Operating System build and statistics report
 -------------------------------------------------------
 
 Hexagonix Operating System
-Copyright (c) 2015-2024 Felipe Miguel Nery Lunkes
+Copyright (c) 2015-2025 Felipe Miguel Nery Lunkes
 All rights reserved.
 
 Hexagonix is licenced under BSD-3-Clause and comes with no warranty.
@@ -15,7 +15,7 @@ build, as well as errors found in the process.
 
 hx version: 14.0.0-ALPHA7
 
-Build id: a999dd7e-f378-4c3b-a27e-4f9f055cc1f4
+Build id: bc48f00b-7870-4976-a7c5-4453b3ac7ca6
 
 Information about the current build of Hexagonix:
  > Hexagonix version: Zonai
@@ -36,13 +36,13 @@ Information about the current build of Hexagonix:
  > Remote host: https://github.com/hexagonix
 
 Information about the current build environment:
- > Date and time of this report (build time): ter 17 dez 2024 08:59:42 -03
+ > Date and time of this report (build time): qui 30 jan 2025 00:40:56 -03
  > User logged in: root
- > Operating system version: Linux 6.11.0-12-generic x86_64 x86_64 x86_64
+ > Operating system version: Linux 6.11.0-14-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.32
  > GNU bash version: GNU bash, versão 5.2.32(1)-release (x86_64-pc-linux-gnu)
- > qemu version: QEMU emulator version 9.0.2 (Debian 1:9.0.2+ds-4ubuntu5.1)
- > vscode version: 1.96.0
+ > qemu version: QEMU emulator version 9.0.2 (Debian 1:9.0.2+ds-4ubuntu5.2)
+ > vscode version: 1.96.4
 
  > Build flags:
    > HBoot build flags: SOUND_THEME=Hexagonix
@@ -349,7 +349,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-End date/time of this log: ter 17 dez 2024 08:59:49 -03
+End date/time of this log: qui 30 jan 2025 00:40:59 -03
 
 ----------------------------------------------------------------------
 
