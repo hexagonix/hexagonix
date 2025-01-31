@@ -87,7 +87,7 @@ Hexagonix Operating System
 
 BSD 3-Clause License
 
-Copyright (c) 2015-2023, Felipe Miguel Nery Lunkes <br>
+Copyright (c) 2015-2025, Felipe Miguel Nery Lunkes <br>
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
