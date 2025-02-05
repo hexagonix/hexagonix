@@ -15,7 +15,7 @@ build, as well as errors found in the process.
 
 hx version: 14.0.0-RELEASE
 
-Build id: 1ecee7f3-c1e5-44a5-b7da-7479ea49bac2
+Build id: f6cbda30-a408-4645-b640-58cb1a702bf5
 
 Information about the current build of Hexagonix:
  > Hexagonix version: Zonai
@@ -36,7 +36,7 @@ Information about the current build of Hexagonix:
  > Remote host: https://github.com/hexagonix
 
 Information about the current build environment:
- > Date and time of this report (build time): sex 31 jan 2025 15:26:00 -03
+ > Date and time of this report (build time): ter 04 fev 2025 23:54:35 -03
  > User logged in: root
  > Operating system version: Linux 6.11.0-14-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.32
@@ -62,7 +62,7 @@ Building Hexagon startup components (step 1/2)... {
 Hexagon bootloader - Saturno (1st stage)...
 
 flat assembler  version 1.73.32  (16384 kilobytes memory)
-3 passes, 512 bytes.
+3 passes, 0.1 seconds, 512 bytes.
 
 flat assembler  version 1.73.32  (16384 kilobytes memory)
 2 passes, 512 bytes.
@@ -78,7 +78,7 @@ Building Hexagon startup components (step 2/2)... {
  > Building Hexagon Boot - HBoot (2nd stage)...
 
 flat assembler  version 1.73.32  (16384 kilobytes memory)
-4 passes, 9542 bytes.
+4 passes, 0.1 seconds, 9542 bytes.
 
  > Building HBoot compatible module Spartan.mod...
 flat assembler  version 1.73.32  (16384 kilobytes memory)
@@ -97,7 +97,7 @@ Starting Hexagon builder mod version 0.3...
 Building the Hexagon kernel... {
 
 flat assembler  version 1.73.32  (16384 kilobytes memory)
-5 passes, 24849 bytes.
+5 passes, 0.1 seconds, 24846 bytes.
 
 } Hexagon kernel built successfully.
 
@@ -349,7 +349,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-End date/time of this log: sex 31 jan 2025 15:26:07 -03
+End date/time of this log: ter 04 fev 2025 23:54:41 -03
 
 ----------------------------------------------------------------------
 
