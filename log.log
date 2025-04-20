@@ -15,12 +15,14 @@ build, as well as errors found in the process.
 
 hx version: 15.2.0
 
-Build id: dd1e0bb1-107d-45d0-b1e2-a4850b170dde
+Build id: 62f19696-f224-4b21-a7cf-2c538fbbc47e
 
 Information about the current build of Hexagonix:
+ > Build type: Development build
  > Hexagonix version: Dormin
  > Release name: Dormin
  > Release channel: Development Branch
+ > Out of box experience (OOBE) present (not included in development builds): false
  > Disk image location: hexagonix/hexagonix.img
  > Main system branch (git): main
    > Andromeda-Apps branch: main
@@ -36,7 +38,7 @@ Information about the current build of Hexagonix:
  > Remote host: https://github.com/hexagonix
 
 Information about the current build environment:
- > Date and time of this report (build time): dom 20 abr 2025 02:15:41 -03
+ > Date and time of this report (build time): dom 20 abr 2025 02:29:09 -03
  > User logged in: root
  > Operating system version: Linux 6.14.0-15-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.32
@@ -349,7 +351,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-End date/time of this log: dom 20 abr 2025 02:15:44 -03
+End date/time of this log: dom 20 abr 2025 02:29:12 -03
 
 ----------------------------------------------------------------------
 
