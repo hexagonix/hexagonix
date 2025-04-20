@@ -13,14 +13,14 @@ In this file, you have access to the complete log of the build process of
 Hexagonix components. You can also use it to identify the environment used in
 build, as well as errors found in the process.
 
-hx version: 14.0.0-RELEASE
+hx version: 15.2.0
 
-Build id: b85f5803-76a8-43bc-a046-26f9129d3f6c
+Build id: dd1e0bb1-107d-45d0-b1e2-a4850b170dde
 
 Information about the current build of Hexagonix:
- > Hexagonix version: System II
- > Release name: Zonai
- > Release channel: RELEASE
+ > Hexagonix version: Dormin
+ > Release name: Dormin
+ > Release channel: Development Branch
  > Disk image location: hexagonix/hexagonix.img
  > Main system branch (git): main
    > Andromeda-Apps branch: main
@@ -36,13 +36,13 @@ Information about the current build of Hexagonix:
  > Remote host: https://github.com/hexagonix
 
 Information about the current build environment:
- > Date and time of this report (build time): dom 30 mar 2025 23:26:11 -03
+ > Date and time of this report (build time): dom 20 abr 2025 02:15:41 -03
  > User logged in: root
- > Operating system version: Linux 6.11.0-19-generic x86_64 x86_64 x86_64
+ > Operating system version: Linux 6.14.0-15-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.32
- > GNU bash version: GNU bash, versão 5.2.32(1)-release (x86_64-pc-linux-gnu)
- > qemu version: QEMU emulator version 9.0.2 (Debian 1:9.0.2+ds-4ubuntu5.2)
- > vscode version: 1.98.2
+ > GNU bash version: GNU bash, versão 5.2.37(1)-release (x86_64-pc-linux-gnu)
+ > qemu version: QEMU emulator version 9.2.1 (Debian 1:9.2.1+ds-1ubuntu5)
+ > vscode version: 1.99.3
 
  > Build flags:
    > HBoot build flags: SOUND_THEME=Hexagonix
@@ -51,7 +51,7 @@ Information about the current build environment:
 
 ----------------------------------------------------------------------
 
-Starting Hexagonix disk builder mod version 0.3...
+Starting Hexagonix disk builder mod version 0.4...
 
 Starting Hexagonix system builder mod version 0.3...
 
@@ -349,7 +349,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-End date/time of this log: dom 30 mar 2025 23:26:16 -03
+End date/time of this log: dom 20 abr 2025 02:15:44 -03
 
 ----------------------------------------------------------------------
 
