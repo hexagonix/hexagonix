@@ -15,7 +15,7 @@ build, as well as errors found in the process.
 
 hx version: 15.3.0
 
-Build id: a13bc900-d874-4aad-945a-7ad1316df886
+Build id: 3cd96455-213c-4be3-9604-6144cf42a8a3
 
 Information about the current build of Hexagonix:
  > Build type: Development build
@@ -38,7 +38,7 @@ Information about the current build of Hexagonix:
  > Remote host: https://github.com/hexagonix
 
 Information about the current build environment:
- > Date and time of this report (build time): seg 21 abr 2025 16:09:44 -03
+ > Date and time of this report (build time): seg 21 abr 2025 16:24:47 -03
  > User logged in: root
  > Operating system version: Linux 6.14.0-15-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.32
@@ -239,7 +239,7 @@ Building Hexagonix-Andromeda applications... {
 
  > Building Andromeda application ash...
 flat assembler  version 1.73.32  (16384 kilobytes memory)
-3 passes, 3057 bytes.
+3 passes, 3142 bytes.
 
  > Building Andromeda application calc...
 flat assembler  version 1.73.32  (16384 kilobytes memory)
@@ -251,7 +251,7 @@ flat assembler  version 1.73.32  (16384 kilobytes memory)
 
  > Building Andromeda application dossh...
 flat assembler  version 1.73.32  (16384 kilobytes memory)
-3 passes, 2400 bytes.
+3 passes, 2398 bytes.
 
  > Building Andromeda application gfont...
 flat assembler  version 1.73.32  (16384 kilobytes memory)
@@ -351,7 +351,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-End date/time of this log: seg 21 abr 2025 16:09:47 -03
+End date/time of this log: seg 21 abr 2025 16:24:50 -03
 
 ----------------------------------------------------------------------
 
