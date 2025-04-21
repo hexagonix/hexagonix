@@ -13,9 +13,9 @@ In this file, you have access to the complete log of the build process of
 Hexagonix components. You can also use it to identify the environment used in
 build, as well as errors found in the process.
 
-hx version: 15.2.0
+hx version: 15.3.0
 
-Build id: 92d37e29-d981-48bd-ae6b-bcdd5c72e5b8
+Build id: a13bc900-d874-4aad-945a-7ad1316df886
 
 Information about the current build of Hexagonix:
  > Build type: Development build
@@ -38,7 +38,7 @@ Information about the current build of Hexagonix:
  > Remote host: https://github.com/hexagonix
 
 Information about the current build environment:
- > Date and time of this report (build time): seg 21 abr 2025 04:31:45 -03
+ > Date and time of this report (build time): seg 21 abr 2025 16:09:44 -03
  > User logged in: root
  > Operating system version: Linux 6.14.0-15-generic x86_64 x86_64 x86_64
  > fasm version: flat assembler  version 1.73.32
@@ -53,7 +53,7 @@ Information about the current build environment:
 
 ----------------------------------------------------------------------
 
-Starting Hexagonix disk builder mod version 0.5...
+Starting Hexagonix disk builder mod version 0.6...
 
 Starting Hexagonix system builder mod version 0.3...
 
@@ -99,7 +99,7 @@ Starting Hexagon builder mod version 0.3...
 Building the Hexagon kernel... {
 
 flat assembler  version 1.73.32  (16384 kilobytes memory)
-5 passes, 25181 bytes.
+5 passes, 25401 bytes.
 
 } Hexagon kernel built successfully.
 
@@ -351,7 +351,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-End date/time of this log: seg 21 abr 2025 04:31:48 -03
+End date/time of this log: seg 21 abr 2025 16:09:47 -03
 
 ----------------------------------------------------------------------
 
