@@ -15,7 +15,7 @@ build, as well as errors found in the process.
 
 hx version: 15.3.2
 
-Build id: f401c8ed-cc92-4dd1-a0e8-0d1ac8a734ef
+Build id: 84d830f6-eaf0-4d2e-b1ff-c90d5c795b46
 
 Information about the current build of Hexagonix:
  > Build type: Development build
@@ -38,7 +38,7 @@ Information about the current build of Hexagonix:
  > Remote host: https://github.com/hexagonix
 
 Information about the current build environment:
- > Date and time of this report (build time): Tue Oct 21 01:13:47 -03 2025
+ > Date and time of this report (build time): Tue Oct 21 01:16:29 -03 2025
  > User logged in: root
  > Operating system version: Linux 6.17.0-5-generic x86_64 unknown unknown
  > fasm version: flat assembler  version 1.73.32
@@ -99,7 +99,7 @@ Starting Hexagon builder mod version 0.3...
 Building the Hexagon kernel... {
 
 flat assembler  version 1.73.32  (16384 kilobytes memory)
-5 passes, 0.1 seconds, 25413 bytes.
+5 passes, 25413 bytes.
 
 } Hexagon kernel built successfully.
 
@@ -351,7 +351,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-End date/time of this log: Tue Oct 21 01:13:52 -03 2025
+End date/time of this log: Tue Oct 21 01:16:33 -03 2025
 
 ----------------------------------------------------------------------
 
