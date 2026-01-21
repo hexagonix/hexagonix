@@ -25,6 +25,7 @@
 
 <details title="Sobre o Hexagonix/About Hexagonix" align='left'>
 <summary align='left'>:heart: Sobre o Hexagonix/About Hexagonix</summary>
+<br>
 
 * :brazil: [Português (Brasil)](https://github.com/hexagonix/Doc/blob/main/Hexagonix/Hexagonix.pt.md)
 * :uk: [English](https://github.com/hexagonix/Doc/blob/main/Hexagonix/Hexagonix.en.md) 
@@ -33,6 +34,7 @@
 
 <details title="Obter e executar o Hexagonix/Get and run Hexagonix" align='left'>
 <summary align='left'>:dvd: Obter e executar o Hexagonix/Get and run Hexagonix</summary>
+<br>
 
 * :brazil: [Português (Brasil)](https://github.com/hexagonix/Doc/blob/main/Hexagonix/README.pt.md)
 * :uk: [English](https://github.com/hexagonix/Doc/blob/main/Hexagonix/README.en.md) 
@@ -41,6 +43,7 @@
 
 <details title="Obter o código-fonte/Get the sources" align='left'>
 <summary align='left'>:abacus: Obter os códigos-fonte/Get the sources</summary>
+<br>
 
 * :brazil: [Obter os códigos-fonte ](https://github.com/hexagonix/src)
 * :uk: [Get the sources](https://github.com/hexagonix/src) 
@@ -49,6 +52,7 @@
 
 <details title="Construir o sistema/build the system" align='left'>
 <summary align='left'>:hammer: Construir o sistema/build the system</summary>
+<br>
 
 * :brazil: [Português (Brasil)](https://github.com/hexagonix/build/blob/main/README.pt.md)
 * :uk: [English](https://github.com/hexagonix/build/blob/main/README.en.md)
@@ -57,6 +61,7 @@
 
 <details title="Lançamentos/releases" align='left'>
 <summary align='left'>:rocket: Lançamentos/releases</summary>
+<br>
 
 * :brazil: [Português (Brasil)](https://github.com/hexagonix/Doc/blob/main/Hexagonix/REL.pt.md)
 * :uk: [English](https://github.com/hexagonix/Doc/blob/main/Hexagonix/REL.en.md) 
@@ -65,6 +70,7 @@
 
 <details title="Documentação/documentation" align='left'>
 <summary align='left'>:books: Documentação/documentation</summary>
+<br>
 
 * :brazil: [Português (Brasil)](https://github.com/hexagonix/Doc)
 * :uk: [English](https://github.com/hexagonix/Doc)
@@ -73,6 +79,7 @@
 
 <details title="Licença/License" align='left'>
 <summary align='left'>:memo: Licença/License</summary>
+<br>
 
 <div align="justify">
 
@@ -114,6 +121,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 <details title="Repositórios principais/main repositories" align='left'>
 <summary align='left'>:package: Repositórios principais/main repositories</summary>
+<br>
 
 [![Hexagon Kernel](https://github-readme-stats.vercel.app/api/pin/?username=Hexagonix&repo=Hexagon&theme=dark)](https://github.com/hexagonix/Hexagon)
 [![HBoot](https://github-readme-stats.vercel.app/api/pin/?username=Hexagonix&repo=HBoot&theme=dark)](https://github.com/hexagonix/Hboot)
