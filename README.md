@@ -24,7 +24,6 @@
 <img src="https://github.com/hexagonix/Doc/blob/main/Img/hr.png" width="100%" height="2px" />
 
 <details title="Sobre o Hexagonix/About Hexagonix" align='left'>
-<br>
 <summary align='left'>:heart: Sobre o Hexagonix/About Hexagonix</summary>
 
 * :brazil: [Português (Brasil)](https://github.com/hexagonix/Doc/blob/main/Hexagonix/Hexagonix.pt.md)
@@ -33,7 +32,6 @@
 </details>
 
 <details title="Obter e executar o Hexagonix/Get and run Hexagonix" align='left'>
-<br>
 <summary align='left'>:dvd: Obter e executar o Hexagonix/Get and run Hexagonix</summary>
 
 * :brazil: [Português (Brasil)](https://github.com/hexagonix/Doc/blob/main/Hexagonix/README.pt.md)
@@ -42,7 +40,6 @@
 </details>
 
 <details title="Obter o código-fonte/Get the sources" align='left'>
-<br>
 <summary align='left'>:abacus: Obter os códigos-fonte/Get the sources</summary>
 
 * :brazil: [Obter os códigos-fonte ](https://github.com/hexagonix/src)
@@ -51,7 +48,6 @@
 </details>
 
 <details title="Construir o sistema/build the system" align='left'>
-<br>
 <summary align='left'>:hammer: Construir o sistema/build the system</summary>
 
 * :brazil: [Português (Brasil)](https://github.com/hexagonix/build/blob/main/README.pt.md)
@@ -60,7 +56,6 @@
 </details>
 
 <details title="Lançamentos/releases" align='left'>
-<br>
 <summary align='left'>:rocket: Lançamentos/releases</summary>
 
 * :brazil: [Português (Brasil)](https://github.com/hexagonix/Doc/blob/main/Hexagonix/REL.pt.md)
@@ -69,7 +64,6 @@
 </details>
 
 <details title="Documentação/documentation" align='left'>
-<br>
 <summary align='left'>:books: Documentação/documentation</summary>
 
 * :brazil: [Português (Brasil)](https://github.com/hexagonix/Doc)
@@ -78,7 +72,6 @@
 </details>
 
 <details title="Licença/License" align='left'>
-<br>
 <summary align='left'>:memo: Licença/License</summary>
 
 <div align="justify">
@@ -120,7 +113,6 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 </details>
 
 <details title="Repositórios principais/main repositories" align='left'>
-<br>
 <summary align='left'>:package: Repositórios principais/main repositories</summary>
 
 [![Hexagon Kernel](https://github-readme-stats.vercel.app/api/pin/?username=Hexagonix&repo=Hexagon&theme=dark)](https://github.com/hexagonix/Hexagon)
