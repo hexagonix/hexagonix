@@ -15,7 +15,7 @@ build, as well as errors found in the process.
 
 hx version: 15.3.2
 
-Build id: 1f645300-de23-4817-9421-00c43d834497
+Build id: b6307448-74f2-41a7-8025-a48ff47c8383
 
 Information about the current build of Hexagonix:
  > Build type: Development build
@@ -38,7 +38,7 @@ Information about the current build of Hexagonix:
  > Remote host: https://github.com/hexagonix
 
 Information about the current build environment:
- > Date and time of this report (build time): sáb. 01 ago 2026 15:03:06 -03
+ > Date and time of this report (build time): dom. 02 ago 2026 11:37:03 -03
  > User logged in: root
  > Operating system version: Linux 7.0.0-28-generic x86_64 unknown unknown
  > fasm version: flat assembler  version 1.73.34
@@ -99,7 +99,7 @@ Starting Hexagon builder mod version 0.3...
 Building the Hexagon kernel... {
 
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-5 passes, 26045 bytes.
+5 passes, 0.1 seconds, 26705 bytes.
 
 } Hexagon kernel built successfully.
 
@@ -183,7 +183,7 @@ flat assembler  version 1.73.34  (16384 kilobytes memory)
 
  > Building Unix utility login...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-3 passes, 18938 bytes.
+3 passes, 18948 bytes.
 
  > Building Unix utility logind...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
@@ -219,7 +219,7 @@ flat assembler  version 1.73.34  (16384 kilobytes memory)
 
  > Building Unix utility ps...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-3 passes, 1301 bytes.
+3 passes, 1325 bytes.
 
  > Building Unix utility rm...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
@@ -251,7 +251,7 @@ flat assembler  version 1.73.34  (16384 kilobytes memory)
 
  > Building Unix utility top...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-3 passes, 1197 bytes.
+3 passes, 1221 bytes.
 
  > Building Unix utility uname...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
@@ -391,7 +391,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-End date/time of this log: sáb. 01 ago 2026 15:03:17 -03
+End date/time of this log: dom. 02 ago 2026 11:37:08 -03
 
 ----------------------------------------------------------------------
 
