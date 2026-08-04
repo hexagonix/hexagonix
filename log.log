@@ -15,7 +15,7 @@ build, as well as errors found in the process.
 
 hx version: 15.4.1
 
-Build id: 7785172a-2a07-4a79-a5fc-e780f5ac70b0
+Build id: 4f3e203b-ec03-437f-8238-b0d2f24d8d5f
 
 Information about the current build of Hexagonix:
  > Build type: Development build
@@ -38,7 +38,7 @@ Information about the current build of Hexagonix:
  > Remote host: https://github.com/hexagonix
 
 Information about the current build environment:
- > Date and time of this report (build time): seg. 03 ago 2026 02:27:07 -03
+ > Date and time of this report (build time): ter. 04 ago 2026 02:01:33 -03
  > User logged in: root
  > Operating system version: Linux 7.0.0-28-generic x86_64 unknown unknown
  > fasm version: flat assembler  version 1.73.34
@@ -73,14 +73,14 @@ flat assembler  version 1.73.34  (16384 kilobytes memory)
 
 ----------------------------------------------------------------------
 
-Starting HBoot builder mod version 0.2...
+Starting HBoot builder mod version 0.3...
 
 Building Hexagon startup components (step 2/2)... {
 
- > Building Hexagon Boot - HBoot (2nd stage)...
+ > Building HBoot (2nd stage)...
 
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-4 passes, 9540 bytes.
+4 passes, 9497 bytes.
 
  > Building HBoot compatible module Spartan.mod...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
@@ -391,7 +391,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-End date/time of this log: seg. 03 ago 2026 02:27:12 -03
+End date/time of this log: ter. 04 ago 2026 02:01:41 -03
 
 ----------------------------------------------------------------------
 
