@@ -15,7 +15,7 @@ build, as well as errors found in the process.
 
 hx version: 15.4.1
 
-Build id: 394fea0c-245d-42e1-813e-d0e039f4fefa
+Build id: 19ba4fa0-eccc-49f7-8d09-066f8f973125
 
 Information about the current build of Hexagonix:
  > Build type: Development build
@@ -38,7 +38,7 @@ Information about the current build of Hexagonix:
  > Remote host: https://github.com/hexagonix
 
 Information about the current build environment:
- > Date and time of this report (build time): sex. 07 ago 2026 21:35:56 -03
+ > Date and time of this report (build time): sex. 07 ago 2026 22:47:41 -03
  > User logged in: root
  > Operating system version: Linux 7.0.0-29-generic x86_64 unknown unknown
  > fasm version: flat assembler  version 1.73.34
@@ -53,9 +53,9 @@ Information about the current build environment:
 
 ----------------------------------------------------------------------
 
-Starting Hexagonix disk builder mod version 0.6...
+Starting Hexagonix disk builder mod version 0.7...
 
-Starting Hexagonix system builder mod version 0.4...
+Starting Hexagonix system builder mod version 0.5...
 
 Starting Saturno/MBR builder mod version 0.2...
 
@@ -73,7 +73,7 @@ flat assembler  version 1.73.34  (16384 kilobytes memory)
 
 ----------------------------------------------------------------------
 
-Starting HBoot builder mod version 0.3...
+Starting HBoot builder mod version 0.4...
 
 Building Hexagon startup components (step 2/2)... {
 
@@ -94,12 +94,12 @@ flat assembler  version 1.73.34  (16384 kilobytes memory)
 
 ----------------------------------------------------------------------
 
-Starting Hexagon builder mod version 0.3...
+Starting Hexagon builder mod version 0.4...
 
 Building the Hexagon kernel... {
 
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-5 passes, 0.1 seconds, 29653 bytes.
+5 passes, 29685 bytes.
 
 } Hexagon kernel built successfully.
 
@@ -191,7 +191,7 @@ flat assembler  version 1.73.34  (16384 kilobytes memory)
 
  > Building Unix utility ls...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-7 passes, 1368 bytes.
+7 passes, 1352 bytes.
 
  > Building Unix utility lshapp...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
@@ -203,7 +203,7 @@ flat assembler  version 1.73.34  (16384 kilobytes memory)
 
  > Building Unix utility man...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-3 passes, 1089 bytes.
+3 passes, 1155 bytes.
 
  > Building Unix utility mkdir...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
@@ -400,7 +400,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-End date/time of this log: sex. 07 ago 2026 21:36:01 -03
+End date/time of this log: sex. 07 ago 2026 22:47:46 -03
 
 ----------------------------------------------------------------------
 
