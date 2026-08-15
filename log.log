@@ -15,16 +15,16 @@ build, as well as errors found in the process.
 
 hx version: 15.4.1
 
-Build id: 4f3e203b-ec03-437f-8238-b0d2f24d8d5f
+Build id: b0af6d86-50f9-46af-820c-988746e2761d
 
 Information about the current build of Hexagonix:
  > Build type: Development build
- > Hexagonix version: Dormin
+ > Hexagonix version: 1.0
  > Release name: Dormin
- > Release channel: Development Branch
+ > Release channel: Dormin
  > Out of box experience (OOBE) present (not included in development builds): false
  > Disk image location: hexagonix/hexagonix.img
- > Main system branch (git): main
+ > Main system branch (git): Mineru-dev
    > Andromeda-Apps branch: main
    > Unix-Apps branch: main
    > HBoot branch: main
@@ -38,13 +38,14 @@ Information about the current build of Hexagonix:
  > Remote host: https://github.com/hexagonix
 
 Information about the current build environment:
- > Date and time of this report (build time): ter. 04 ago 2026 02:01:33 -03
+ > Date and time of this report (build time): sáb. 15 ago 2026 18:09:56 -03
  > User logged in: root
- > Operating system version: Linux 7.0.0-28-generic x86_64 unknown unknown
+ > Operating system version: Linux 7.0.0-29-generic x86_64 unknown unknown
  > fasm version: flat assembler  version 1.73.34
  > GNU bash version: GNU bash, versão 5.3.9(1)-release (x86_64-pc-linux-gnu)
- > qemu version: QEMU emulator version 10.2.1 (Debian 1:10.2.1+ds-1ubuntu3.1)
- > vscode version: 1.131.0
+ > qemu version: QEMU emulator version 10.2.1 (Debian 1:10.2.1+ds-1ubuntu3.2)
+ > VirtualBox version: 7.2.6_Ubuntur172322
+ > vscode version: 1.133.0
 
  > Build flags:
    > HBoot build flags: SOUND_THEME=Hexagonix
@@ -53,9 +54,9 @@ Information about the current build environment:
 
 ----------------------------------------------------------------------
 
-Starting Hexagonix disk builder mod version 0.6...
+Starting Hexagonix disk builder mod version 0.15...
 
-Starting Hexagonix system builder mod version 0.4...
+Starting Hexagonix system builder mod version 0.6...
 
 Starting Saturno/MBR builder mod version 0.2...
 
@@ -73,7 +74,7 @@ flat assembler  version 1.73.34  (16384 kilobytes memory)
 
 ----------------------------------------------------------------------
 
-Starting HBoot builder mod version 0.3...
+Starting HBoot builder mod version 0.4...
 
 Building Hexagon startup components (step 2/2)... {
 
@@ -94,12 +95,12 @@ flat assembler  version 1.73.34  (16384 kilobytes memory)
 
 ----------------------------------------------------------------------
 
-Starting Hexagon builder mod version 0.3...
+Starting Hexagon builder mod version 0.4...
 
 Building the Hexagon kernel... {
 
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-5 passes, 27073 bytes.
+5 passes, 29633 bytes.
 
 } Hexagon kernel built successfully.
 
@@ -111,7 +112,7 @@ Building Unix utilities... {
 
  > Building Unix utility adduser...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-3 passes, 18597 bytes.
+3 passes, 3212 bytes.
 
  > Building Unix utility arch...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
@@ -119,11 +120,11 @@ flat assembler  version 1.73.34  (16384 kilobytes memory)
 
  > Building Unix utility cat...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-2 passes, 399 bytes.
+2 passes, 401 bytes.
 
  > Building Unix utility clear...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-2 passes, 476 bytes.
+2 passes, 480 bytes.
 
  > Building Unix utility clock...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
@@ -131,11 +132,11 @@ flat assembler  version 1.73.34  (16384 kilobytes memory)
 
  > Building Unix utility cowsay...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-3 passes, 1174 bytes.
+3 passes, 1279 bytes.
 
  > Building Unix utility cp...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-3 passes, 1027 bytes.
+3 passes, 1029 bytes.
 
  > Building Unix utility date...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
@@ -143,7 +144,7 @@ flat assembler  version 1.73.34  (16384 kilobytes memory)
 
  > Building Unix utility deluser...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-3 passes, 18243 bytes.
+3 passes, 2872 bytes.
 
  > Building Unix utility echo...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
@@ -151,11 +152,11 @@ flat assembler  version 1.73.34  (16384 kilobytes memory)
 
  > Building Unix utility file...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-6 passes, 1796 bytes.
+6 passes, 1806 bytes.
 
  > Building Unix utility fnt...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-3 passes, 894 bytes.
+3 passes, 899 bytes.
 
  > Building Unix utility free...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
@@ -163,15 +164,15 @@ flat assembler  version 1.73.34  (16384 kilobytes memory)
 
  > Building Unix utility hash...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-3 passes, 1554 bytes.
+3 passes, 2840 bytes.
 
  > Building Unix utility hostname...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-2 passes, 426 bytes.
+2 passes, 433 bytes.
 
  > Building Unix utility init...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-3 passes, 1803 bytes.
+3 passes, 1917 bytes.
 
  > Building Unix utility kill...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
@@ -179,35 +180,39 @@ flat assembler  version 1.73.34  (16384 kilobytes memory)
 
  > Building Unix utility launcher...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-2 passes, 362 bytes.
+2 passes, 382 bytes.
 
  > Building Unix utility login...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-3 passes, 18948 bytes.
+3 passes, 3449 bytes.
 
  > Building Unix utility logind...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-3 passes, 18715 bytes.
+3 passes, 3266 bytes.
 
  > Building Unix utility ls...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-7 passes, 1368 bytes.
+6 passes, 1319 bytes.
 
  > Building Unix utility lshapp...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-3 passes, 1389 bytes.
+3 passes, 1394 bytes.
 
  > Building Unix utility lshmod...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-3 passes, 1288 bytes.
+3 passes, 1293 bytes.
 
  > Building Unix utility man...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-3 passes, 1087 bytes.
+3 passes, 1161 bytes.
+
+ > Building Unix utility mkdir...
+flat assembler  version 1.73.34  (16384 kilobytes memory)
+2 passes, 709 bytes.
 
  > Building Unix utility mount...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-3 passes, 1386 bytes.
+3 passes, 1388 bytes.
 
  > Building Unix utility mv...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
@@ -215,7 +220,7 @@ flat assembler  version 1.73.34  (16384 kilobytes memory)
 
  > Building Unix utility passwd...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-3 passes, 18665 bytes.
+3 passes, 3191 bytes.
 
  > Building Unix utility ps...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
@@ -225,9 +230,13 @@ flat assembler  version 1.73.34  (16384 kilobytes memory)
 flat assembler  version 1.73.34  (16384 kilobytes memory)
 3 passes, 876 bytes.
 
+ > Building Unix utility rmdir...
+flat assembler  version 1.73.34  (16384 kilobytes memory)
+2 passes, 687 bytes.
+
  > Building Unix utility sh...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-3 passes, 1675 bytes.
+3 passes, 4845 bytes.
 
  > Building Unix utility shutdown...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
@@ -235,7 +244,7 @@ flat assembler  version 1.73.34  (16384 kilobytes memory)
 
  > Building Unix utility su...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-3 passes, 18325 bytes.
+3 passes, 2804 bytes.
 
  > Building Unix utility syslogd...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
@@ -243,7 +252,7 @@ flat assembler  version 1.73.34  (16384 kilobytes memory)
 
  > Building Unix utility testa...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-2 passes, 309 bytes.
+2 passes, 314 bytes.
 
  > Building Unix utility testb...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
@@ -253,13 +262,17 @@ flat assembler  version 1.73.34  (16384 kilobytes memory)
 flat assembler  version 1.73.34  (16384 kilobytes memory)
 3 passes, 1221 bytes.
 
+ > Building Unix utility touch...
+flat assembler  version 1.73.34  (16384 kilobytes memory)
+2 passes, 707 bytes.
+
  > Building Unix utility uname...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-5 passes, 1621 bytes.
+5 passes, 1628 bytes.
 
  > Building Unix utility whoami...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-3 passes, 641 bytes.
+3 passes, 2613 bytes.
 
  > Building Unix utility workera...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
@@ -279,7 +292,7 @@ Building Hexagonix-Andromeda applications... {
 
  > Building Andromeda application ash...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-3 passes, 3273 bytes.
+3 passes, 4811 bytes.
 
  > Building Andromeda application calc...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
@@ -287,19 +300,19 @@ flat assembler  version 1.73.34  (16384 kilobytes memory)
 
  > Building Andromeda application config...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-4 passes, 12072 bytes.
+4 passes, 12026 bytes.
 
  > Building Andromeda application dossh...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-3 passes, 2398 bytes.
+3 passes, 3934 bytes.
 
  > Building Andromeda application gfont...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-2 passes, 1284 bytes.
+2 passes, 1289 bytes.
 
  > Building Andromeda application lyoko...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-4 passes, 7300 bytes.
+4 passes, 7310 bytes.
 
  > Building Andromeda application oobe...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
@@ -311,15 +324,15 @@ flat assembler  version 1.73.34  (16384 kilobytes memory)
 
  > Building Andromeda application power...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-2 passes, 1298 bytes.
+2 passes, 1304 bytes.
 
  > Building Andromeda application quartzo...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-4 passes, 3868 bytes.
+4 passes, 3878 bytes.
 
  > Building Andromeda application serial...
 flat assembler  version 1.73.34  (16384 kilobytes memory)
-3 passes, 1314 bytes.
+3 passes, 1316 bytes.
 
 } Hexagonix-Andromeda applications built successfully.
 
@@ -332,6 +345,7 @@ Configuring and copying Hexagonix static files... {
  > shadow successfully copied.
  > host configuration file successfully copied.
  > *.unx files successfully copied.
+ > shell.sh successfully copied.
  > Hexagonix version files successfully copied.
 > Copying Hexagonix utility manuals...
 > Checking for additional fonts to build...
@@ -379,6 +393,8 @@ Starting contrib checker mod version 0.2...
 
 > Moving files to final location...
 > Creating .vdi image from raw image...
+> VBoxManage found, restamping .vdi UUID to match the local VirtualBox VM...
+UUID changed to: de3feea5-c804-4134-99db-4f5c9f8d15e2
 > Adjusting file permissions (needed for git)...
 
 } Hexagonix disk images built successfully.
@@ -391,7 +407,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-End date/time of this log: ter. 04 ago 2026 02:01:41 -03
+End date/time of this log: sáb. 15 ago 2026 18:10:05 -03
 
 ----------------------------------------------------------------------
 
