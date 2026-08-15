@@ -13,9 +13,9 @@ In this file, you have access to the complete log of the build process of
 Hexagonix components. You can also use it to identify the environment used in
 build, as well as errors found in the process.
 
-hx version: 15.4.1
+hx version: 15.5.0
 
-Build id: b0af6d86-50f9-46af-820c-988746e2761d
+Build id: 36162018-474d-40cb-9f76-6c3862c3a244
 
 Information about the current build of Hexagonix:
  > Build type: Development build
@@ -24,7 +24,7 @@ Information about the current build of Hexagonix:
  > Release channel: Dormin
  > Out of box experience (OOBE) present (not included in development builds): false
  > Disk image location: hexagonix/hexagonix.img
- > Main system branch (git): Mineru-dev
+ > Main system branch (git): main
    > Andromeda-Apps branch: main
    > Unix-Apps branch: main
    > HBoot branch: main
@@ -38,7 +38,7 @@ Information about the current build of Hexagonix:
  > Remote host: https://github.com/hexagonix
 
 Information about the current build environment:
- > Date and time of this report (build time): sáb. 15 ago 2026 18:09:56 -03
+ > Date and time of this report (build time): sáb. 15 ago 2026 18:50:35 -03
  > User logged in: root
  > Operating system version: Linux 7.0.0-29-generic x86_64 unknown unknown
  > fasm version: flat assembler  version 1.73.34
@@ -407,7 +407,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-End date/time of this log: sáb. 15 ago 2026 18:10:05 -03
+End date/time of this log: sáb. 15 ago 2026 18:50:42 -03
 
 ----------------------------------------------------------------------
 
