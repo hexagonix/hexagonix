@@ -15,7 +15,7 @@ build, as well as errors found in the process.
 
 hx version: 15.4.1
 
-Build id: 07771f84-9ac6-47cc-b22b-1e90963d26cc
+Build id: e1402359-b7b1-4c66-a1e8-591ffc74a80b
 
 Information about the current build of Hexagonix:
  > Build type: Development build
@@ -24,21 +24,21 @@ Information about the current build of Hexagonix:
  > Release channel: Mineru
  > Out of box experience (OOBE) present (not included in development builds): false
  > Disk image location: hexagonix/hexagonix.img
- > Main system branch (git): 
-   > Andromeda-Apps branch: 
-   > Unix-Apps branch: 
-   > HBoot branch: 
-   > Saturno branch: 
-   > etc branch: 
-   > man branch: 
-   > Fonts branch: 
-   > Hexagon branch: 
-   > libasm branch: 
-   > hx/Scripts branch: 
+ > Main system branch (git): Mineru-dev
+   > Andromeda-Apps branch: Mineru-dev
+   > Unix-Apps branch: Mineru-dev
+   > HBoot branch: main
+   > Saturno branch: main
+   > etc branch: Mineru-dev
+   > man branch: main
+   > Fonts branch: main
+   > Hexagon branch: Mineru-dev
+   > libasm branch: Mineru-dev
+   > hx/Scripts branch: Mineru-dev
  > Remote host: https://github.com/hexagonix
 
 Information about the current build environment:
- > Date and time of this report (build time): sáb. 15 ago 2026 02:52:03 -03
+ > Date and time of this report (build time): sáb. 15 ago 2026 02:54:13 -03
  > User logged in: root
  > Operating system version: Linux 7.0.0-29-generic x86_64 unknown unknown
  > fasm version: flat assembler  version 1.73.34
@@ -407,7 +407,7 @@ image for transfer to physical disk.
 
 ----------------------------------------------------------------------
 
-End date/time of this log: sáb. 15 ago 2026 02:52:11 -03
+End date/time of this log: sáb. 15 ago 2026 02:54:22 -03
 
 ----------------------------------------------------------------------
 
